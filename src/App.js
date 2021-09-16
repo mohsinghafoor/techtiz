@@ -3,13 +3,13 @@ import Header from "./components/appbar";
 import Feedback from "./components/feedback";
 import FullStack from "./components/FullStack";
 import Industries from "./components/industries";
-import IndustriesTab from "./components/industries/tab";
 import Pricing from "./components/pricing";
 import Process from "./components/process";
 import Projects from "./components/projects";
 import Services from "./components/services";
-import ServicesTab from "./components/services/tabs";
-import TabSample from "./components/services/tabs";
+import { ContactUs } from "./components/contactUs/contactUs";
+import { Footer } from "./components/Footer/Footer";
+import { PrivacyPolocy } from "./components/privacyPolicy";
 
 function App() {
   return (
@@ -22,6 +22,9 @@ function App() {
       <Industries />
       <Feedback />
       <Pricing />
+      <ContactUs />
+      <Footer />
+      <PrivacyPolocy />
     </>
   );
 }
