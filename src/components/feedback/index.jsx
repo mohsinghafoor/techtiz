@@ -171,12 +171,13 @@ export default function Feedback() {
             <StarIcon className={classes.star} />
           </Box>
         </Box>
+        <img src={clutch} alt="" className={classes.clutchimg} />
+
+        <Typography className={classes.text}>
+          Rated 5.0/5.0 for web development, mobile development and design
+          services
+        </Typography>
       </a>
-      <img src={clutch} alt="" className={classes.clutchimg} />
-      <Typography className={classes.text}>
-        Rated 5.0/5.0 for web development, mobile development and design
-        services
-      </Typography>
       <CallMadeIcon className={classes.rightarrow} />
     </Container>
   );
