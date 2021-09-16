@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Typography } from "@material-ui/core";
 import TabValue from "./tabvalue";
+import ServicesTab from "./tabs";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,6 +32,7 @@ export default function Services() {
   return (
     <Container className={classes.root}>
       <Typography className={classes.services}>Our Valued Services</Typography>
+      <ServicesTab />
       <TabValue />
     </Container>
   );

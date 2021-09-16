@@ -84,7 +84,6 @@ export default function Industries() {
 
   return (
     <Container className={classes.root}>
-      <img src={food} alt="" className={classes.foodimg} />
       <Typography className={classes.heading}>Industries we work</Typography>
       <Typography className={classes.subheading}>
         We Help a diverse clientele build result-driven mobile apps for

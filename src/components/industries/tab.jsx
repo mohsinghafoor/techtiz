@@ -7,7 +7,10 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import { Box, Container } from "@material-ui/core";
 import Food from "./food";
-
+import Ecommerce from "./ecommerce";
+import Social from "./social";
+import Education from "./education";
+import Market from "./market";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -104,16 +107,16 @@ export default function IndustriesTab() {
         <Food />
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>
-        <Box className={classes.yettocome}> Coming Soon</Box>
+        <Ecommerce />
       </TabPanel>
       <TabPanel value={value} index={2} dir={theme.direction}>
-        <Box className={classes.yettocome}> Coming Soon</Box>
+        <Social />
       </TabPanel>
       <TabPanel value={value} index={3} dir={theme.direction}>
-        <Box className={classes.yettocome}> Coming Soon</Box>
+        <Education />
       </TabPanel>
       <TabPanel value={value} index={4} dir={theme.direction}>
-        <Box className={classes.yettocome}> Coming Soon</Box>
+        <Market />
       </TabPanel>
     </Container>
   );
