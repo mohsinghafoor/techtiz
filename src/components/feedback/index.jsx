@@ -161,7 +161,7 @@ export default function Feedback() {
       </Typography>
       <Typography className={classes.name}>Norbu Snow-Shiva, COO</Typography>
       <Typography className={classes.company}>World Tree Consulting</Typography>
-      <a href="https://clutch.co/profile/techtiz-0#portfolio">
+      <a href="https://clutch.co/profile/techtiz-0#reviews">
         <Box className={classes.dflex}>
           <Box className={classes.starbox}>
             <StarIcon className={classes.star} />
