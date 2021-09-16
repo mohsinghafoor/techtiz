@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     width: 427,
     height: 40,
     left: 567,
-    top: 4400,
+    top: 4300,
 
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -69,12 +69,12 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#000000",
   },
-  sapient: {
+  company: {
     position: "absolute",
-    width: 138,
+    width: 200,
     height: 40,
-    left: 721,
-    top: 4451,
+    left: 670,
+    top: 4360,
 
     fontFamily: "Montserrat",
     fontStyle: "normal",
@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
     width: 550,
     height: 141,
     left: 500,
-    top: 4535,
+    top: 4500,
 
     background: "#FAFCFF",
     boxShadow: "0px 5px 8px rgba(0, 0, 0, 0.1)",
@@ -101,7 +101,7 @@ const useStyles = makeStyles((theme) => ({
     width: 149,
     height: 40,
     left: 509,
-    top: 4570,
+    top: 4535,
   },
   starbox: {
     display: "flex",
@@ -111,9 +111,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 38,
   },
   star: {
-    left: 100,
-    top: "0%",
-
     color: "#FFC107",
   },
   text: {
@@ -121,7 +118,7 @@ const useStyles = makeStyles((theme) => ({
     width: 368,
     height: 41,
     left: 675,
-    top: 4606,
+    top: 4570,
 
     fontFamily: " Montserrat",
     fontStyle: "normal",
@@ -159,25 +156,25 @@ export default function Feedback() {
         Valuable Feedbacks from our Satisfied Clients
       </Typography>
       <Typography className={classes.subheading}>
-        “Thank you again for the successful launch of the 3M and Converse
-        applications. Your dedication, hard-work, flexibility, patience and
-        professionalism is recognized and appreciated. I would recommend Social
-        Cubix to any company wishing to create their application!”
+        "They have gone above and beyond to make very tight deadlines and exceed
+        my expectations."
       </Typography>
-      <Typography className={classes.name}>Michail Guzman, Director</Typography>
-      <Typography className={classes.sapient}>Sapient</Typography>
-      <Box className={classes.dflex}>
-        <Box className={classes.starbox}>
-          <StarIcon className={classes.star} />
-          <StarIcon className={classes.star} />
-          <StarIcon className={classes.star} />
-          <StarIcon className={classes.star} />
-          <StarIcon className={classes.star} />
+      <Typography className={classes.name}>Norbu Snow-Shiva, COO</Typography>
+      <Typography className={classes.company}>World Tree Consulting</Typography>
+      <a href="https://clutch.co/profile/techtiz-0#portfolio">
+        <Box className={classes.dflex}>
+          <Box className={classes.starbox}>
+            <StarIcon className={classes.star} />
+            <StarIcon className={classes.star} />
+            <StarIcon className={classes.star} />
+            <StarIcon className={classes.star} />
+            <StarIcon className={classes.star} />
+          </Box>
         </Box>
-      </Box>
+      </a>
       <img src={clutch} alt="" className={classes.clutchimg} />
       <Typography className={classes.text}>
-        Rated 4.9/5.0 for web development, mobile development and design
+        Rated 5.0/5.0 for web development, mobile development and design
         services
       </Typography>
       <CallMadeIcon className={classes.rightarrow} />

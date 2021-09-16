@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     left: 995.47,
     width: 207.17,
     height: 137.09,
-    transform: "rotate(3.40deg)",
+    transform: "rotate(2.5deg)",
     borderRadius: 21,
   },
   pic2: {
