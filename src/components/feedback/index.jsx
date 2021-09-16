@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Container, Typography } from "@material-ui/core";
 import clutch from "../../assets/clutch.png";
+import CallMadeIcon from "@material-ui/icons/CallMade";
 import StarIcon from "@material-ui/icons/Star";
 
 const useStyles = makeStyles((theme) => ({
@@ -130,6 +131,21 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#000000",
   },
+  leftarrow: {
+    position: "absolute",
+    left: 105,
+    top: 4232,
+    color: "black",
+    fontSize: 40,
+    transform: "rotate(-135.12deg)",
+  },
+  rightarrow: {
+    position: "absolute",
+    left: 1395,
+    top: 4232,
+    fontSize: 40,
+    transform: "rotate(44deg)",
+  },
 }));
 
 export default function Feedback() {
@@ -137,6 +153,7 @@ export default function Feedback() {
 
   return (
     <Container className={classes.root}>
+      <CallMadeIcon className={classes.leftarrow} />
       <Box className={classes.eclipse}></Box>
       <Typography className={classes.heading}>
         Valuable Feedbacks from our Satisfied Clients
@@ -163,6 +180,7 @@ export default function Feedback() {
         Rated 4.9/5.0 for web development, mobile development and design
         services
       </Typography>
+      <CallMadeIcon className={classes.rightarrow} />
     </Container>
   );
 }
