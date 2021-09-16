@@ -41,8 +41,9 @@ function a11yProps(index) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    position: "absolute",
     backgroundColor: theme.palette.background.paper,
-    marginTop: 981,
+    top: 981,
   },
   indicator: {
     position: "absolute",

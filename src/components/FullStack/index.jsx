@@ -116,6 +116,11 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 275,
     transform: "matrix(-0.27, 0.97, -0.95, -0.29, 0, 0)",
   },
+  wave: {
+    marginLeft: -170,
+    marginTop: 400,
+    width: "98.6rem",
+  },
 }));
 
 export default function FullStack() {
@@ -123,6 +128,27 @@ export default function FullStack() {
 
   return (
     <Container className={classes.root}>
+      <Box
+        style={{
+          height: "30rem",
+          width: "99rem",
+          background: "#f9f9f9",
+          marginLeft: -177,
+        }}
+      >
+        {" "}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className={classes.wave}
+        >
+          <path
+            fill="#f9f9f9"
+            fill-opacity="1"
+            d="M0,0L48,48C96,96,192,192,288,245.3C384,299,480,309,576,272C672,235,768,149,864,144C960,139,1056,213,1152,208C1248,203,1344,117,1392,74.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </Box>
       <Typography className={classes.full}>Full-Stack</Typography>
       <Typography className={classes.app}>App Development Company​</Typography>
       <Typography className={classes.techtiz}>

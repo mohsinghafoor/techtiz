@@ -44,10 +44,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 981,
   },
   parent: {
+    position: "absolute",
     width: 750,
     height: 52,
-    marginLeft: 470,
-    marginTop: 2330,
+    left: 670,
+    top: 3460,
   },
   indicator: {
     height: 3,
