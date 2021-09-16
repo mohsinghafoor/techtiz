@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     width: 750,
     height: 52,
     marginLeft: 470,
-    marginTop: 3482,
+    marginTop: 2330,
   },
   indicator: {
     height: 3,

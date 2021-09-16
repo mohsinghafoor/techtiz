@@ -113,7 +113,6 @@ export default function TabValue() {
       </Typography>
       <Fields />
       <Button className={classes.btn}>Calculate App development Cost</Button>
-      <MobileSide />
     </>
   );
 }

@@ -7,6 +7,10 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import { Box, Container } from "@material-ui/core";
 import TabValue from "./tabvalue";
+import MobileSide from "./mobilepic";
+import FrontEnd from "./frontend";
+import BackEnd from "./backend";
+import Quality from "./quality";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -114,16 +118,16 @@ export default function ServicesTab() {
         dir={theme.direction}
         className={classes.name}
       >
-        <TabValue />
+        <MobileSide />
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>
-        <Box className={classes.yettocome}> Coming Soon</Box>
+        <FrontEnd />
       </TabPanel>
       <TabPanel value={value} index={2} dir={theme.direction}>
-        Item Three
+        <BackEnd />
       </TabPanel>
       <TabPanel value={value} index={3} dir={theme.direction}>
-        Item Four
+        <Quality />
       </TabPanel>
     </Container>
   );
