@@ -41,10 +41,8 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    marginTop: 981,
   },
   parent: {
-    position: "absolute",
     width: 750,
     height: 52,
     left: 670,
@@ -61,9 +59,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     textAlign: "left",
     lineHeight: "32px",
-  },
-  yettocome: {
-    marginLeft: 500,
   },
 }));
 export default function IndustriesTab() {
