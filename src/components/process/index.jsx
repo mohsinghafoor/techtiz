@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     position: "absolute",
-    width: 616,
+    display: "flex",
+    maxWidth: 616,
     height: 49,
     left: 510,
     top: 1772,
@@ -24,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
   },
   subheading: {
     position: "absolute",
-    width: 778,
+    display: "flex",
+    maxWidth: 778,
     height: 30,
     left: 400,
     top: 1858,

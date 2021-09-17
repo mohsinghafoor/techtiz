@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     position: "absolute",
-    width: 492,
+    display: "flex",
+    maxWidth: 492,
     height: 150,
     left: 170,
     top: 2472,
@@ -28,7 +29,8 @@ const useStyles = makeStyles((theme) => ({
   },
   subheading: {
     position: "absolute",
-    width: 542,
+    display: "flex",
+    maxWidth: 542,
     height: 110,
     left: 170,
     top: 2645,
@@ -43,7 +45,8 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     position: "absolute",
-    width: 584,
+    display: "flex",
+    maxWidth: 584,
     height: 174,
     left: 170,
     top: 2717,

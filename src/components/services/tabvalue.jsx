@@ -42,9 +42,10 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     position: "absolute",
-    width: 646,
+    display: "flex",
+    maxWidth: 646,
     height: 47,
-    left: 150,
+    left: 165,
     top: 1145,
 
     fontFamily: "Axiforma",
@@ -58,7 +59,8 @@ const useStyles = makeStyles((theme) => ({
   },
   subheading: {
     position: "absolute",
-    width: 652,
+    display: "flex",
+    maxWidth: 652,
     height: 125,
     left: 168,
     top: 1210,

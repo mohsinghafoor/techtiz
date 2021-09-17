@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
   },
   foodheading: {
     position: "absolute",
-    width: 729,
+    display: "flex",
+    maxWidth: 729,
     height: 52,
     left: 674,
     top: 3547,
@@ -34,7 +35,8 @@ const useStyles = makeStyles((theme) => ({
   },
   foodsubheading: {
     position: "absolute",
-    width: 584,
+    display: "flex",
+    maxWidth: 584,
     height: 174,
     left: 676,
     top: 3600,

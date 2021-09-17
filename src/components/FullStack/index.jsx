@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
   },
   full: {
     position: "absolute",
-    width: 360,
+    display: "flex",
+    maxWidth: 360,
     height: 65,
     left: 170,
     top: 194,
@@ -27,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
   },
   app: {
     position: "absolute",
-    width: 631,
+    display: "flex",
+    maxWidth: 631,
     height: 89,
     left: 170,
     top: 269,
@@ -43,7 +45,8 @@ const useStyles = makeStyles((theme) => ({
   },
   techtiz: {
     position: "absolute",
-    width: 588,
+    display: "flex",
+    maxWidth: 588,
     height: 144,
     left: 170,
     top: 397,

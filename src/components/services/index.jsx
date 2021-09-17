@@ -10,7 +10,8 @@ const useStyles = makeStyles((theme) => ({
   },
   services: {
     position: "absolute",
-    width: 474,
+    display: "flex",
+    maxWidth: 474,
     height: 105,
     left: 553,
     top: 853,
