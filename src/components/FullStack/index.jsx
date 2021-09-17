@@ -89,9 +89,9 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     position: "absolute",
-    width: 624,
-    left: 819,
-    top: 250,
+    width: 620,
+    left: 829,
+    top: 200,
     borderRadius: 50,
   },
   blue: {
@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
     width: 125.4,
     height: 421.45,
     left: 963.76,
-    top: 80.26,
+    top: 42.26,
 
     background: "#7FC6DC",
     borderRadius: 275,
@@ -109,8 +109,8 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: 122.16,
     height: 441.45,
-    left: 1163.28,
-    top: 367.12,
+    top: 358.12,
+    left: 1178.28,
 
     background: "#FFC107",
     borderRadius: 275,
