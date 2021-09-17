@@ -14,18 +14,22 @@ import { PrivacyPolocy } from "./components/privacyPolicy";
 function App() {
   return (
     <>
-      <Industries />
-      {/* <Header />
-      <FullStack />
-      <Services />
+      {/* 
       <Process />
       <Projects />
-      <Feedback />
+      {/* 
       
-      <Pricing /> */}
-      {/* <ContactUs />
+      <Services /> */}
+      <Header />
+      <FullStack />
+      <Process />
+      <Industries />
+      <Feedback />
+      {/* <Pricing /> */}
+
+      <ContactUs />
       <Footer />
-      <PrivacyPolocy /> */}
+      <PrivacyPolocy />
     </>
   );
 }

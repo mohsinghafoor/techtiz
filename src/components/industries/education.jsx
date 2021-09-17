@@ -8,9 +8,12 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   img: {
+    position: "absolute",
     width: 437,
     height: 571,
     borderRadius: 34,
+    marginLeft: "-35rem",
+    marginTop: "-19.5rem",
   },
   heading: {
     display: "flex",

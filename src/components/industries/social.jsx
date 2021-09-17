@@ -12,6 +12,8 @@ const useStyles = makeStyles((theme) => ({
     height: 571,
     position: "absolute",
     borderRadius: 34,
+    marginLeft: "-35rem",
+    marginTop: "-19.5rem",
   },
   heading: {
     display: "flex",

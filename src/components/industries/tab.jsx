@@ -45,8 +45,6 @@ const useStyles = makeStyles((theme) => ({
   parent: {
     width: 750,
     height: 52,
-    left: 670,
-    top: 3460,
   },
   indicator: {
     height: 3,

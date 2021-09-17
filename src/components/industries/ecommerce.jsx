@@ -10,9 +10,9 @@ const useStyles = makeStyles((theme) => ({
   img: {
     width: 437,
     height: 571,
-    left: 170,
-    top: 3220,
-
+    position: "absolute",
+    marginLeft: "-35rem",
+    marginTop: "-19.5rem",
     borderRadius: 34,
   },
   heading: {

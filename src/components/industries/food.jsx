@@ -8,12 +8,13 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   foodimg: {
+    position: "absolute",
     width: 437,
     height: 571,
-    left: 170,
-    top: 3220,
     filter: "drop-shadow(0px 8px 9px rgba(0, 0, 0, 0.21))",
     borderRadius: 34,
+    marginLeft: "-35rem",
+    marginTop: "-19.5rem",
   },
   foodheading: {
     display: "flex",

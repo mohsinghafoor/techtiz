@@ -7,6 +7,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
+    marginTop: 100,
+  },
+  right: {
+    marginLeft: "40rem",
+    marginTop: "10rem",
   },
   foodimg: {
     width: 437,
@@ -62,7 +67,7 @@ export default function Industries() {
 
   return (
     <Grid className={classes.root} container>
-      <Grid item lg={6}>
+      <Grid item lg={6} className={classes.right}>
         <Box className={classes.heading}>Industries we work</Box>
         <Box className={classes.subheading}>
           We Help a diverse clientele build result-driven mobile apps for

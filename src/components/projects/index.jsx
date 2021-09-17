@@ -93,6 +93,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     borderRadius: 30,
     marginLeft: 170,
+    marginTop: 20,
   },
   circle: {
     width: 178,
