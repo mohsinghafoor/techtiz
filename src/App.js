@@ -15,21 +15,21 @@ function App() {
   return (
     <>
       {/* 
-      <Process />
-      <Projects />
-      {/* 
       
-      <Services /> */}
+       */}
+
       <Header />
       <FullStack />
+      <Services />
       <Process />
+      <Projects />
       <Industries />
       <Feedback />
-      {/* <Pricing /> */}
+      <Pricing />
 
-      <ContactUs />
+      {/* <ContactUs />
       <Footer />
-      <PrivacyPolocy />
+      <PrivacyPolocy /> */}
     </>
   );
 }

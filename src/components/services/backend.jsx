@@ -11,9 +11,9 @@ const useStyles = makeStyles((theme) => ({
   img: {
     position: "absolute",
     width: 528,
-    height: 433,
+    height: 470,
     left: 800.13,
-    top: 150.93,
+    marginTop: 10.93,
     filter: "drop-shadow(9px 0px 14px rgba(0, 0, 0, 0.25))",
     //transform: "rotate(17.78deg)",
   },

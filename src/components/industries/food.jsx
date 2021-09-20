@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     height: 571,
     filter: "drop-shadow(0px 8px 9px rgba(0, 0, 0, 0.21))",
     borderRadius: 34,
-    marginLeft: "-35rem",
+    marginLeft: "-38rem",
     marginTop: "-19.5rem",
   },
   foodheading: {

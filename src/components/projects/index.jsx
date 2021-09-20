@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "20rem",
     background: "#FFC560",
     marginTop: "40rem",
-    marginLeft: -300,
+    marginLeft: -220,
   },
   graydot1: {
     width: 26,
@@ -129,7 +129,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "20rem",
     background: "#C4C4C4",
     marginTop: "40rem",
-    marginLeft: -250,
+    marginLeft: -170,
   },
   graydot2: {
     width: 26,
@@ -138,7 +138,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "20rem",
     background: "#C4C4C4",
     marginTop: "40rem",
-    marginLeft: -200,
+    marginLeft: -120,
   },
 }));
 

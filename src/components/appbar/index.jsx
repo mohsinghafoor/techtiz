@@ -1,27 +1,23 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import a from "../../assets/a.svg";
-import { Typography, Box, Container, Button } from "@material-ui/core";
+import { Box, Container, Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
   logo: {
-    position: "absolute",
     width: 240,
-    left: 170,
-    top: 38,
   },
   dflex: {
     display: "flex",
     justifyContent: "space-between",
     width: 550,
-    position: "absolute",
     height: 35,
-    left: 575,
-    top: 59,
   },
   a: {
     textDecoration: "none",
@@ -34,11 +30,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
   },
   btn: {
-    position: "absolute",
     width: 189,
     height: 47,
-    left: 1250,
-    top: 50,
     background: "#FFC107",
     boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
     borderRadius: 72,
@@ -64,16 +57,16 @@ export default function Header() {
       </a>
       <Box className={classes.dflex}>
         <a href="#" className={classes.a}>
-          <Typography className={classes.buttons}>Services</Typography>
+          <Box className={classes.buttons}>Services</Box>
         </a>
         <a href="#" className={classes.a}>
-          <Typography className={classes.buttons}>Expertise</Typography>
+          <Box className={classes.buttons}>Expertise</Box>
         </a>
         <a href="#" className={classes.a}>
-          <Typography className={classes.buttons}>About</Typography>
+          <Box className={classes.buttons}>About</Box>
         </a>
         <a href="#" className={classes.a}>
-          <Typography className={classes.buttons}>Portfolio</Typography>
+          <Box className={classes.buttons}>Portfolio</Box>
         </a>
       </Box>
       <Button className={classes.btn}>Contact</Button>

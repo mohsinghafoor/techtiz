@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     width: 437,
     height: 571,
     borderRadius: 34,
-    marginLeft: "-35rem",
+    marginLeft: "-38rem",
     marginTop: "-19.5rem",
   },
   heading: {

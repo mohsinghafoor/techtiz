@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     width: 437,
     height: 571,
     position: "absolute",
-    marginLeft: "-35rem",
+    marginLeft: "-38rem",
     marginTop: "-19.5rem",
     borderRadius: 34,
   },

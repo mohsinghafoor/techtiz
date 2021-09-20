@@ -7,15 +7,16 @@ import { Container, Box, Grid } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    marginTop: 300,
+    marginTop: 150,
     display: "flex",
     justifyContent: "center",
   },
   dflex: {
     display: "flex",
-    // justifyContent: "center",
+    justifyContent: "center",
     // alignItems: "flex-start",
     flexDirection: "column",
+    marginLeft: -150,
   },
   full: {
     display: "flex",

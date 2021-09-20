@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
+    marginTop: 100,
   },
   eclipse: {
     position: "absolute",

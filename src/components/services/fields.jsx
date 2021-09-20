@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Container, Typography } from "@material-ui/core";
+import { Container, Typography, Box } from "@material-ui/core";
 import apple from "../../assets/apple.png";
 import angular from "../../assets/angular.png";
 import android from "../../assets/android.png";
@@ -9,47 +9,45 @@ import react from "../../assets/react.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    display: "flex",
+    justifyContent: "space-between",
     flexGrow: 1,
+    maxWidth: 500,
+    marginTop: 70,
   },
   apple: {
-    position: "absolute",
     width: 49.09,
     height: 60.82,
     left: 186,
     top: 1417,
   },
   react: {
-    position: "absolute",
     width: 61.55,
     height: 60.82,
     left: 278,
     top: 1423,
   },
   angular: {
-    position: "absolute",
     width: 60.08,
     height: 72.54,
     left: 373,
     top: 1417,
   },
   android: {
-    position: "absolute",
     width: 50.56,
     height: 60.82,
     left: 484,
     top: 1417,
   },
   flutter: {
-    position: "absolute",
     width: 60.08,
     height: 60.82,
     left: 585,
     top: 1417,
   },
   applet: {
-    position: "absolute",
     width: 74,
-    height: 11,
+    height: 51,
     left: 182,
     top: 1501,
 
@@ -62,8 +60,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
   },
   reactt: {
-    position: "absolute",
-    width: 110,
+    width: 72,
     height: 51,
     left: 270,
     top: 1501,
@@ -77,9 +74,8 @@ const useStyles = makeStyles((theme) => ({
     color: " #000000",
   },
   angulart: {
-    position: "absolute",
     width: 79,
-    height: 11,
+    height: 51,
     left: 373,
     top: 1501,
 
@@ -92,27 +88,19 @@ const useStyles = makeStyles((theme) => ({
     color: " #000000",
   },
   androidt: {
-    position: "absolute",
     width: 81,
-    height: 11,
-    left: 476,
-    top: 1501,
+    height: 51,
 
     fontFamily: " Montserrat",
     fontStyle: "normal",
     fontWeight: "bold",
     fontSize: 18,
     lineHeight: "22px",
-
     color: "#000000",
   },
   fluttert: {
-    position: "absolute",
     width: 67,
-    height: 11,
-    left: 578,
-    top: 1501,
-
+    height: 51,
     fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: "bold",
@@ -127,17 +115,27 @@ export default function Fields() {
   const classes = useStyles();
 
   return (
-    <Container className={classes.root}>
-      <img src={apple} alt="" className={classes.apple} />
-      <img src={react} alt="" className={classes.react} />
-      <img src={angular} alt="" className={classes.angular} />
-      <img src={android} alt="" className={classes.android} />
-      <img src={flutter} alt="" className={classes.flutter} />
-      <Typography className={classes.applet}>Apple</Typography>
-      <Typography className={classes.reactt}>React Native</Typography>
-      <Typography className={classes.angulart}>Angular</Typography>
-      <Typography className={classes.androidt}>Android</Typography>
-      <Typography className={classes.fluttert}>Flutter</Typography>
-    </Container>
+    <Box className={classes.root}>
+      <Box>
+        <img src={apple} alt="" className={classes.apple} />
+        <Box className={classes.applet}>Apple</Box>
+      </Box>
+      <Box>
+        <img src={react} alt="" className={classes.react} />
+        <Box className={classes.reactt}>React Native</Box>
+      </Box>
+      <Box>
+        <img src={angular} alt="" className={classes.angular} />
+        <Box className={classes.angulart}>Angular</Box>
+      </Box>
+      <Box>
+        <img src={android} alt="" className={classes.android} />
+        <Box className={classes.androidt}>Android</Box>
+      </Box>
+      <Box>
+        <img src={flutter} alt="" className={classes.flutter} />
+        <Box className={classes.fluttert}>Flutter</Box>
+      </Box>
+    </Box>
   );
 }

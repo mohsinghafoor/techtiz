@@ -15,12 +15,8 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 100,
   },
   services: {
-    position: "absolute",
     width: 474,
     height: 105,
-    left: 403,
-    top: 843,
-
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
@@ -30,24 +26,10 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#3B3E56",
   },
-  line: {
-    position: "absolute",
-    width: 4,
-    height: 200,
-    left: 155,
-    top: 990,
-
-    background: "#FFC107",
-    transform: "rotate(-90deg)",
-  },
   heading: {
-    position: "absolute",
     display: "flex",
     maxWidth: 646,
     height: 47,
-    left: 165,
-    top: 1145,
-
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -58,12 +40,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
   },
   subheading: {
-    position: "absolute",
     display: "flex",
     maxWidth: 652,
     height: 125,
-    left: 168,
-    top: 1210,
 
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -75,12 +54,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   btn: {
-    position: "absolute",
     width: 306,
     height: 67,
-    left: 170,
-    top: 1592,
-
     background: "#7FC6DC",
     boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
     borderRadius: 72,
@@ -93,6 +68,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     textAlign: "center",
     color: "#FFFFFF",
+    marginTop: 30,
     "&:hover": {
       background: "#D8BFD8",
     },
@@ -103,18 +79,18 @@ export default function TabValue() {
   const classes = useStyles();
 
   return (
-    <>
-      <Typography className={classes.heading}>
+    <Container>
+      <Box className={classes.heading}>
         Join the future of mobility with our expertise
-      </Typography>
-      <Typography className={classes.subheading}>
+      </Box>
+      <Box className={classes.subheading}>
         For close to a decade, Intelivita being a top mobile app development
         company has produced apps for various industries and partners, from the
         start-up Social Media app Chatagram, to the Art of Works Virtual Reality
         app for tech giant’s Microsoft, we have worked with them all.
-      </Typography>
+      </Box>
       <Fields />
       <Button className={classes.btn}>Calculate App development Cost</Button>
-    </>
+    </Container>
   );
 }

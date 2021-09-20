@@ -41,12 +41,9 @@ function a11yProps(index) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    position: "absolute",
     backgroundColor: theme.palette.background.paper,
-    top: 981,
   },
   indicator: {
-    position: "absolute",
     width: 4,
     height: 3,
     left: 56,
@@ -60,10 +57,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 30,
     textAlign: "left",
     lineHeight: "47px",
-  },
-  yettocome: {
-    height: 100,
-    FontSize: 40,
   },
 }));
 export default function ServicesTab() {

@@ -9,20 +9,17 @@ import Card3 from "./card3";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    marginTop: 200,
   },
   heading: {
-    position: "absolute",
-    width: 540,
+    display: "flex",
+    justifyContent: "center",
     height: 55,
-    left: 525,
-    top: 4755,
-
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
     fontSize: 55,
     lineHeight: "92px",
-
     color: "#3B3E56",
   },
 }));
@@ -32,7 +29,7 @@ export default function Pricing() {
 
   return (
     <Container className={classes.root}>
-      <Typography className={classes.heading}>Our Pricing model</Typography>
+      <Box className={classes.heading}>Our Pricing model</Box>
       <Card1 />
       <Card2 />
       <Card3 />

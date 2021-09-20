@@ -1,21 +1,19 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Container, Typography } from "@material-ui/core";
+import { Container, Box } from "@material-ui/core";
 import TabValue from "./tabvalue";
 import ServicesTab from "./tabs";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    marginTop: 150,
   },
   services: {
-    position: "absolute",
     display: "flex",
-    maxWidth: 474,
+    justifyContent: "center",
+    // maxWidth: 474,
     height: 105,
-    left: 553,
-    top: 853,
-
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
@@ -32,7 +30,7 @@ export default function Services() {
 
   return (
     <Container className={classes.root}>
-      <Typography className={classes.services}>Our Valued Services</Typography>
+      <Box className={classes.services}>Our Valued Services</Box>
       <ServicesTab />
       <TabValue />
     </Container>
