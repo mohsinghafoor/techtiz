@@ -7,6 +7,9 @@ import { ContactInput } from "../contactInput";
 
 import { Sales } from "../sales";
 const useStyles = makeStyles((theme) => ({
+  container: {
+    marginTop: 700,
+  },
   bgClr: {
     backgroundColor: "#F6FDFF",
     width: 572,

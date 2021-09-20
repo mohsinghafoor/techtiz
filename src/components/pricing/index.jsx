@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, Card, Container, Typography } from "@material-ui/core";
+import { Box, Container } from "@material-ui/core";
 
 import Card1 from "./card1";
 import Card2 from "./card2";

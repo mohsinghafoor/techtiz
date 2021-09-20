@@ -7,7 +7,7 @@ import flutter from "../../assets/flutter.png";
 import angular from "../../assets/angular.png";
 import html from "../../assets/html.png";
 import node from "../../assets/node.png";
-import clutch from "../../assets/clutch.png";
+import clutch from "../../assets/clutchfooter.png";
 const useStyles = makeStyles({
   bulletPoint: {
     backgroundColor: "#C4C4C4",
@@ -53,7 +53,7 @@ const useStyles = makeStyles({
     height: 95,
   },
   clutchDetail: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: 300,
     color: "#000000",
     width: 219,
@@ -71,7 +71,7 @@ const useStyles = makeStyles({
 export const Footer = () => {
   const classes = useStyles();
   return (
-    <Grid container justifyContent="center">
+    <Grid container justifyContent="center" style={{ marginTop: 0 }}>
       <Grid item lg={9} spacing={4}>
         <Grid container style={{ marginTop: 50 }}>
           <Grid item lg={4}>

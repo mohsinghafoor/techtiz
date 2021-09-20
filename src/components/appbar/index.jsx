@@ -1,7 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import a from "../../assets/a.svg";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
 import { Box, Container, Button } from "@material-ui/core";
+import AppbarDrawer from "./drawer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,27 +52,35 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header() {
   const classes = useStyles();
+  const theme = useTheme();
+  const isTab = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Container className={classes.root}>
-      <a href="#">
-        <img src={a} alt="" className={classes.logo} />
-      </a>
-      <Box className={classes.dflex}>
-        <a href="#" className={classes.a}>
-          <Box className={classes.buttons}>Services</Box>
-        </a>
-        <a href="#" className={classes.a}>
-          <Box className={classes.buttons}>Expertise</Box>
-        </a>
-        <a href="#" className={classes.a}>
-          <Box className={classes.buttons}>About</Box>
-        </a>
-        <a href="#" className={classes.a}>
-          <Box className={classes.buttons}>Portfolio</Box>
-        </a>
-      </Box>
-      <Button className={classes.btn}>Contact</Button>
-    </Container>
+    <>
+      {isTab ? (
+        <AppbarDrawer />
+      ) : (
+        <Container className={classes.root}>
+          <a href="#">
+            <img src={a} alt="" className={classes.logo} />
+          </a>
+          <Box className={classes.dflex}>
+            <a href="#" className={classes.a}>
+              <Box className={classes.buttons}>Services</Box>
+            </a>
+            <a href="#" className={classes.a}>
+              <Box className={classes.buttons}>Expertise</Box>
+            </a>
+            <a href="#" className={classes.a}>
+              <Box className={classes.buttons}>About</Box>
+            </a>
+            <a href="#" className={classes.a}>
+              <Box className={classes.buttons}>Portfolio</Box>
+            </a>
+          </Box>
+          <Button className={classes.btn}>Contact</Button>
+        </Container>
+      )}
+    </>
   );
 }

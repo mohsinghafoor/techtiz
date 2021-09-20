@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import laptopimg from "../../assets/img1.png";
 import { Container, Box, Grid } from "@material-ui/core";

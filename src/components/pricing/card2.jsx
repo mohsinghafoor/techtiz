@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
   line: {
     width: 300,
-    height: 3,
+    height: 2,
     marginTop: 20,
     background: "#C4C4C4",
   },

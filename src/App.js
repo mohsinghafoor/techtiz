@@ -14,10 +14,6 @@ import { PrivacyPolocy } from "./components/privacyPolicy";
 function App() {
   return (
     <>
-      {/* 
-      
-       */}
-
       <Header />
       <FullStack />
       <Services />
@@ -26,9 +22,11 @@ function App() {
       <Industries />
       <Feedback />
       <Pricing />
-
-      {/* <ContactUs />
+      <ContactUs />
       <Footer />
+
+      {/* 
+      
       <PrivacyPolocy /> */}
     </>
   );
