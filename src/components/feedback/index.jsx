@@ -19,6 +19,20 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "30rem",
     border: " 100px solid rgba(127, 198, 220, 0.1)",
     boxSizing: "border-box",
+    [theme.breakpoints.only("md")]: {
+      width: 730.58,
+      height: 730.58,
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: 454,
+      height: 454,
+      border: " 62px solid rgba(127, 198, 220, 0.1)",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: 354,
+      height: 354,
+      border: " 42px solid rgba(127, 198, 220, 0.1)",
+    },
   },
   heading: {
     width: 852,
@@ -29,8 +43,26 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 55,
     lineHeight: "72px",
     textAlign: "center",
-
     color: "#3B3E56",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 45,
+      lineHeight: "130.1%",
+      width: 713,
+      height: 100,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 30,
+      width: 420,
+      height: 30,
+      lineHeight: "130.1%",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 25,
+      width: 350,
+      height: 20,
+      lineHeight: "130.1%",
+      marginTop: 40,
+    },
   },
   subheading: {
     width: 949,
@@ -45,6 +77,21 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
 
     color: "#777777",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 24,
+      width: 764,
+      height: 60,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 18,
+      width: 524,
+      height: 15,
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 14,
+      width: 424,
+      height: 15,
+    },
   },
   name: {
     width: 427,
@@ -56,6 +103,21 @@ const useStyles = makeStyles((theme) => ({
     textAlign: " center",
     color: "#000000",
     marginTop: 30,
+    [theme.breakpoints.only("md")]: {
+      width: 290,
+      height: 50,
+      fontSize: 24,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 18,
+      width: 290,
+      height: 10,
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 14,
+      width: 290,
+      height: 10,
+    },
   },
   company: {
     width: 200,
@@ -68,6 +130,21 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "37px",
     textAlign: "center",
     color: "#1840CF",
+    [theme.breakpoints.only("md")]: {
+      width: 200.49,
+      height: 33.47,
+      fontSize: 24,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 18,
+      width: 220,
+      height: 0,
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 14,
+      width: 220,
+      height: 0,
+    },
   },
   dflex: {
     display: "flex",
@@ -77,6 +154,19 @@ const useStyles = makeStyles((theme) => ({
     background: "#FAFCFF",
     boxShadow: "0px 5px 8px rgba(0, 0, 0, 0.1)",
     borderRadius: 25,
+    [theme.breakpoints.only("md")]: {
+      width: 446,
+      height: 125,
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: 400,
+      height: 120,
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: 350,
+      height: 120,
+      marginTop: 30,
+    },
   },
   clutchimg: {
     width: 149,
@@ -101,6 +191,18 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "20px",
     textDecoration: "none",
     color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 14,
+      width: 300,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 13,
+      width: 250,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 10,
+      width: 200,
+    },
   },
   leftarrow: {
     position: "absolute",
@@ -109,6 +211,16 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "-40rem",
     fontSize: 40,
     transform: "rotate(-135.12deg)",
+    [theme.breakpoints.only("md")]: {
+      marginTop: 330,
+      fontSize: 30,
+      marginLeft: "-28rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginTop: 0,
+      fontSize: 0,
+      marginLeft: 0,
+    },
   },
   rightarrow: {
     position: "absolute",
@@ -116,6 +228,16 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 400,
     marginLeft: "40rem",
     transform: "rotate(44deg)",
+    [theme.breakpoints.only("md")]: {
+      marginTop: 330,
+      fontSize: 30,
+      marginLeft: "28rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginTop: 0,
+      fontSize: 0,
+      marginLeft: 0,
+    },
   },
 }));
 

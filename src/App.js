@@ -21,7 +21,7 @@ function App() {
     <>
       {/* 
      
-       <FullStack />
+      <FullStack />
       <Services />
       <Process />
       <Projects />
@@ -31,16 +31,14 @@ function App() {
       <ContactUs />
       <Footer />
       <PracticeFooter />
-      
-      <DummyCard />*/}
-      {/*  */}
-      {/* <DummyDrawer /> */}
-      <Header />
+      */}
+
+      <Feedback />
+
+      {/*//Components that are fully Responsive
+       <Header />
       <Pricing />
-      <ResponsiveFooter />
-      {/* 
-      //
-     <PrivacyPolocy /> */}
+      <ResponsiveFooter /> */}
     </>
   );
 }
