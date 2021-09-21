@@ -10,12 +10,15 @@ import Services from "./components/services";
 import { ContactUs } from "./components/contactUs/contactUs";
 import { Footer } from "./components/Footer/Footer";
 import { PrivacyPolocy } from "./components/privacyPolicy";
+import { PracticeFooter } from "./components/Footer/footerpractice";
+import FooterAccordion from "./components/Footer/accordian";
+import ResponsiveFooter from "./components/Footer";
 
 function App() {
   return (
     <>
-      <Header />
-      <FullStack />
+      {/* <Header />
+       <FullStack />
       <Services />
       <Process />
       <Projects />
@@ -24,7 +27,8 @@ function App() {
       <Pricing />
       <ContactUs />
       <Footer />
-
+      <PracticeFooter />*/}
+      <ResponsiveFooter />
       {/* 
       //
      <PrivacyPolocy /> */}

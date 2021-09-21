@@ -71,7 +71,7 @@ const useStyles = makeStyles({
 export const Footer = () => {
   const classes = useStyles();
   return (
-    <Grid container justifyContent="center" style={{ marginTop: 0 }}>
+    <Grid container justifyContent="center">
       <Grid item lg={9} spacing={4}>
         <Grid container style={{ marginTop: 50 }}>
           <Grid item lg={4}>
