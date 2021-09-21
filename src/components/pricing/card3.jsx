@@ -8,19 +8,21 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   card: {
-    position: "absolute",
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
     width: 418,
     height: 531,
-    left: 551,
     marginTop: 90,
-
     background: "#F0FBFF",
     boxShadow: "2px -2px 21px 6px rgba(0, 0, 0, 0.15)",
     borderRadius: 33,
+    [theme.breakpoints.up("md")]: { position: "absolute" },
+    [theme.breakpoints.only("sm")]: { width: 500 },
+    [theme.breakpoints.only("md")]: { width: 360, marginLeft: -35 },
+    [theme.breakpoints.down("xs")]: { width: 350 },
   },
+
   heading: {
     width: 311,
     height: 60,

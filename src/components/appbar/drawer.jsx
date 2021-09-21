@@ -11,6 +11,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { Button, Box } from "@material-ui/core";
 import logo from "../../assets/a.svg";
+import { DummyDrawer } from "./dummy";
 
 const drawerWidth = 240;
 
@@ -142,49 +143,13 @@ export default function AppbarDrawer() {
         style={{ background: "white" }}
       >
         <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
-          >
-            <MenuIcon className={classes.menubutton} />
-          </IconButton>
+          <DummyDrawer />
           <img src={logo} alt="" className={classes.img} />
           <Box className={classes.dflex}>
             <Button className={classes.btn}>Contact</Button>
           </Box>
         </Toolbar>
       </AppBar>
-      <Drawer
-        className={classes.drawer}
-        variant="persistent"
-        anchor="left"
-        open={open}
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-      >
-        <div className={classes.drawerHeader}>
-          <IconButton
-            onClick={handleDrawerClose}
-            className={classes.menubutton}
-          >
-            {theme.direction === "ltr" ? (
-              <ChevronLeftIcon />
-            ) : (
-              <ChevronRightIcon />
-            )}
-          </IconButton>
-        </div>
-        <Box className={classes.itembox}>
-          <Box className={classes.items}>Services</Box>
-          <Box className={classes.items}>Expertise</Box>
-          <Box className={classes.items}>About</Box>
-          <Box className={classes.items}>Porfolio</Box>
-        </Box>
-      </Drawer>
     </div>
   );
 }

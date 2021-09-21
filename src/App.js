@@ -13,21 +13,30 @@ import { PrivacyPolocy } from "./components/privacyPolicy";
 import { PracticeFooter } from "./components/Footer/footerpractice";
 import FooterAccordion from "./components/Footer/accordian";
 import ResponsiveFooter from "./components/Footer";
+import DummyCard from "./components/pricing/dummycard";
+import { DummyDrawer } from "./components/appbar/dummy";
 
 function App() {
   return (
     <>
-      {/* <Header />
+      {/* 
+     
        <FullStack />
       <Services />
       <Process />
       <Projects />
       <Industries />
       <Feedback />
-      <Pricing />
+      
       <ContactUs />
       <Footer />
-      <PracticeFooter />*/}
+      <PracticeFooter />
+      
+      <DummyCard />*/}
+      {/*  */}
+      {/* <DummyDrawer /> */}
+      <Header />
+      <Pricing />
       <ResponsiveFooter />
       {/* 
       //

@@ -4,7 +4,8 @@ import a from "../../assets/a.svg";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import { Box, Container, Button } from "@material-ui/core";
-import AppbarDrawer from "./drawer";
+import { DummyDrawer } from "./dummy";
+import logo from "../../assets/a.svg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     width: 240,
   },
-  dflex: {
+  buttonbox: {
     display: "flex",
     justifyContent: "space-between",
     width: 550,
@@ -47,6 +48,28 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       background: "#ADD8E6",
     },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 16,
+      width: 140,
+      height: 40,
+    },
+  },
+
+  img: {
+    width: 240,
+    [theme.breakpoints.down("sm")]: {
+      width: 150,
+    },
+  },
+  dflex: {
+    display: "flex",
+    justifyContent: "flex-end",
+    [theme.breakpoints.down("md")]: {
+      width: "70%",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "45%",
+    },
   },
 }));
 
@@ -56,15 +79,21 @@ export default function Header() {
   const isTab = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <>
+    <div style={{ display: "flex", alignItems: "center" }}>
       {isTab ? (
-        <AppbarDrawer />
+        <>
+          <DummyDrawer />
+          <img src={logo} alt="" className={classes.img} />
+          <Box className={classes.dflex}>
+            <Button className={classes.btn}>Contact</Button>
+          </Box>
+        </>
       ) : (
         <Container className={classes.root}>
           <a href="#">
-            <img src={a} alt="" className={classes.logo} />
+            <img src={a} alt="" className={classes.img} />
           </a>
-          <Box className={classes.dflex}>
+          <Box className={classes.buttonbox}>
             <a href="#" className={classes.a}>
               <Box className={classes.buttons}>Services</Box>
             </a>
@@ -81,6 +110,6 @@ export default function Header() {
           <Button className={classes.btn}>Contact</Button>
         </Container>
       )}
-    </>
+    </div>
   );
 }
