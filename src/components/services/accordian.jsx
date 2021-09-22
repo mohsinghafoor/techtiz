@@ -39,10 +39,6 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "133%",
     /* or 29px */
 
-    color: "black",
-    "&: expanded": {
-      color: "red",
-    },
     [theme.breakpoints.down("xs")]: {
       width: 250,
       fontSize: 18,
@@ -124,9 +120,12 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(17.78deg)",
     marginTop: 170,
   },
+  expandedPanel: {
+    color: "#FFC107",
+  },
 }));
 
-export default function AccordionServices() {
+export default function AccordionServices(props) {
   const classes = useStyles();
 
   return (
@@ -137,6 +136,7 @@ export default function AccordionServices() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
+          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Mobile Devolpment</Box>
         </AccordionSummary>
@@ -163,6 +163,7 @@ export default function AccordionServices() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Front-end Development</Box>
         </AccordionSummary>
@@ -188,6 +189,7 @@ export default function AccordionServices() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Back-end Development</Box>
         </AccordionSummary>
@@ -213,6 +215,7 @@ export default function AccordionServices() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Quality assurance</Box>
         </AccordionSummary>

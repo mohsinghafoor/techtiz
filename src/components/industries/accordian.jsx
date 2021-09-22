@@ -34,8 +34,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 22,
     lineHeight: "133%",
     /* or 29px */
-
-    color: "black",
     [theme.breakpoints.down("xs")]: {
       width: 250,
       fontSize: 18,
@@ -107,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function IndustriesAccordion() {
+export default function IndustriesAccordion(props) {
   const classes = useStyles();
 
   return (
@@ -118,6 +116,7 @@ export default function IndustriesAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
+          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Food</Box>
         </AccordionSummary>
@@ -134,6 +133,7 @@ export default function IndustriesAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>E-Commerce</Box>
         </AccordionSummary>
@@ -150,6 +150,7 @@ export default function IndustriesAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Social</Box>
         </AccordionSummary>
@@ -166,6 +167,7 @@ export default function IndustriesAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Education</Box>
         </AccordionSummary>
@@ -182,6 +184,7 @@ export default function IndustriesAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>MarketPlace</Box>
         </AccordionSummary>
