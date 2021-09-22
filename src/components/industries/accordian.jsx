@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   },
   details: {
     width: 531,
-    height: 220,
+    height: 120,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
