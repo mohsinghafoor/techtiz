@@ -31,6 +31,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "47px",
 
     color: "#000000",
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 450,
+      fontSize: 35,
+    },
   },
   img: {
     width: 80,
@@ -41,6 +45,9 @@ const useStyles = makeStyles((theme) => ({
     height: 2,
     marginTop: 20,
     background: "#C4C4C4",
+    [theme.breakpoints.down("sm")]: {
+      width: 260,
+    },
   },
   circle: {
     position: "absolute",
@@ -63,6 +70,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 23px */
 
     color: "#000000",
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 340,
+      fontSize: 18,
+      height: 100,
+    },
   },
   text2: {
     display: "flex",
@@ -76,6 +88,10 @@ const useStyles = makeStyles((theme) => ({
     /* or 22 */
 
     color: " #000000",
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 340,
+      fontSize: 18,
+    },
   },
   btn: {
     width: 223,

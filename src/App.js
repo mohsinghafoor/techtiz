@@ -13,8 +13,9 @@ import { PrivacyPolocy } from "./components/privacyPolicy";
 import { PracticeFooter } from "./components/Footer/footerpractice";
 import FooterAccordion from "./components/Footer/accordian";
 import ResponsiveFooter from "./components/Footer";
-import DummyCard from "./components/pricing/dummycard";
 import { DummyDrawer } from "./components/appbar/dummy";
+import ServicesAccordion from "./components/services/accordian";
+import IndustriesAccordion from "./components/industries/accordian";
 
 function App() {
   return (
@@ -22,10 +23,10 @@ function App() {
       {/* 
      
       <FullStack />
-      <Services />
-      <Process />
+      
+      
       <Projects />
-      <Industries />
+      
       <Feedback />
       
       <ContactUs />
@@ -33,12 +34,13 @@ function App() {
       <PracticeFooter />
       */}
 
+      <Header />
+      <Process />
+      <Services />
       <Feedback />
-
-      {/*//Components that are fully Responsive
-       <Header />
+      <Industries />
       <Pricing />
-      <ResponsiveFooter /> */}
+      <ResponsiveFooter />
     </>
   );
 }

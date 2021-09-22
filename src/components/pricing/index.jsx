@@ -15,8 +15,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   heading: {
-    display: "flex",
-    justifyContent: "center",
+    textAlign: "center",
     height: 55,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -24,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 55,
     lineHeight: "92px",
     color: "#3B3E56",
-    [theme.breakpoints.down("xs")]: { fontSize: 40 },
+    [theme.breakpoints.down("sm")]: { fontSize: 30 },
   },
 }));
 

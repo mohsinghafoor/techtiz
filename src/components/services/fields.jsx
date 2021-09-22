@@ -1,11 +1,12 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Typography, Box } from "@material-ui/core";
+
 import apple from "../../assets/apple.png";
+import react from "../../assets/react.png";
 import angular from "../../assets/angular.png";
 import android from "../../assets/android.png";
 import flutter from "../../assets/flutter.png";
-import react from "../../assets/react.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,36 +15,44 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     maxWidth: 500,
     marginTop: 70,
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 600,
+    },
   },
   apple: {
     width: 49.09,
     height: 60.82,
-    left: 186,
-    top: 1417,
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 30,
+    },
   },
   react: {
     width: 61.55,
     height: 60.82,
-    left: 278,
-    top: 1423,
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 30,
+    },
   },
   angular: {
     width: 60.08,
     height: 72.54,
-    left: 373,
-    top: 1417,
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 30,
+    },
   },
   android: {
     width: 50.56,
     height: 60.82,
-    left: 484,
-    top: 1417,
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 30,
+    },
   },
   flutter: {
     width: 60.08,
     height: 60.82,
-    left: 585,
-    top: 1417,
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 30,
+    },
   },
   applet: {
     width: 74,

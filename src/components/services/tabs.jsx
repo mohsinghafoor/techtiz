@@ -7,10 +7,10 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import { Box, Container } from "@material-ui/core";
 import TabValue from "./tabvalue";
-import MobileSide from "./mobilepic";
 import FrontEnd from "./frontend";
 import BackEnd from "./backend";
 import Quality from "./quality";
+import PictureSide from "./mobiledevlop";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -42,6 +42,9 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
+    [theme.breakpoints.only("md")]: {
+      width: 1000,
+    },
   },
   indicator: {
     width: 4,
@@ -57,6 +60,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 30,
     textAlign: "left",
     lineHeight: "47px",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 25,
+    },
   },
 }));
 export default function ServicesTab() {
@@ -73,7 +79,7 @@ export default function ServicesTab() {
   };
 
   return (
-    <Container className={classes.root}>
+    <div className={classes.root}>
       <Tabs
         value={value}
         onChange={handleChange}
@@ -112,7 +118,7 @@ export default function ServicesTab() {
         dir={theme.direction}
         className={classes.name}
       >
-        <MobileSide />
+        <PictureSide />
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>
         <FrontEnd />
@@ -123,6 +129,6 @@ export default function ServicesTab() {
       <TabPanel value={value} index={3} dir={theme.direction}>
         <Quality />
       </TabPanel>
-    </Container>
+    </div>
   );
 }

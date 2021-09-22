@@ -1,8 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Box } from "@material-ui/core";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
 import TabValue from "./tabvalue";
 import ServicesTab from "./tabs";
+import AccordionServices from "./accordian";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,12 +30,20 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Services() {
   const classes = useStyles();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Container className={classes.root}>
-      <Box className={classes.services}>Our Valued Services</Box>
-      <ServicesTab />
-      <TabValue />
-    </Container>
+    <>
+      {isMobile ? (
+        <AccordionServices />
+      ) : (
+        <Container className={classes.root}>
+          <Box className={classes.services}>Our Valued Services</Box>
+          <ServicesTab />
+          <TabValue />
+        </Container>
+      )}
+    </>
   );
 }

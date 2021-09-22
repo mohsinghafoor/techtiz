@@ -6,9 +6,9 @@ import DrawerList from "./drawerList";
 const useStyles = makeStyles((theme) => ({
   menubtn: {
     color: "black",
-    fontSize: 36,
+    fontSize: 40,
     [theme.breakpoints.down("md")]: {
-      fontSize: 26,
+      fontSize: 32,
     },
   },
 }));

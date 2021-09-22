@@ -10,12 +10,15 @@ const useStyles = makeStyles((theme) => ({
 
   img: {
     position: "absolute",
-    width: 528,
-    height: 520,
-    left: 800.13,
-    // marginTop: 10.93,
-    filter: "drop-shadow(9px 0px 14px rgba(0, 0, 0, 0.25))",
-    //transform: "rotate(17.78deg)",
+    width: 450.92,
+    height: 400.62,
+    marginLeft: 100.13,
+    [theme.breakpoints.only("md")]: {
+      marginLeft: 400,
+    },
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: 700,
+    },
   },
 }));
 

@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     flexDirection: "column",
     marginTop: 100,
+    [theme.breakpoints.down("sm")]: {
+      marginTop: 400,
+    },
   },
   eclipse: {
     position: "absolute",

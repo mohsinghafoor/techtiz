@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "2px -2px 21px 6px rgba(0, 0, 0, 0.15)",
     borderRadius: 33,
     [theme.breakpoints.up("md")]: { position: "absolute" },
-    [theme.breakpoints.only("sm")]: { width: 500 },
+    [theme.breakpoints.only("sm")]: { width: 500, height: 600 },
     [theme.breakpoints.only("md")]: { width: 360, marginLeft: -35 },
     [theme.breakpoints.down("xs")]: { width: 350 },
   },
@@ -33,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "47px",
 
     color: "#000000",
+    [theme.breakpoints.only("sm")]: {
+      width: 330,
+      fontSize: 33,
+    },
   },
   img: {
     width: 128,
@@ -43,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
     height: 2,
 
     background: "#C4C4C4",
+    [theme.breakpoints.down("sm")]: {
+      width: 260,
+    },
   },
   circle: {
     position: "absolute",
@@ -63,6 +70,11 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "25px",
 
     color: "#000000",
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 340,
+      fontSize: 18,
+      height: 100,
+    },
   },
   text2: {
     width: 300,
@@ -74,6 +86,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "25px",
 
     color: "#000000",
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 340,
+      fontSize: 18,
+    },
   },
   btn: {
     width: 223,

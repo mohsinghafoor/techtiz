@@ -1,7 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid } from "@material-ui/core";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
 import IndustriesTab from "./tab";
+import IndustriesAccordion from "./accordian";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,17 +67,25 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Industries() {
   const classes = useStyles();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Grid className={classes.root} container>
-      <Grid item lg={6} className={classes.right}>
-        <Box className={classes.heading}>Industries we work</Box>
-        <Box className={classes.subheading}>
-          We Help a diverse clientele build result-driven mobile apps for
-          different industries
-        </Box>
-        <IndustriesTab />
-      </Grid>
-    </Grid>
+    <>
+      {isMobile ? (
+        <IndustriesAccordion />
+      ) : (
+        <Grid className={classes.root} container>
+          <Grid item lg={6} className={classes.right}>
+            <Box className={classes.heading}>Industries we work</Box>
+            <Box className={classes.subheading}>
+              We Help a diverse clientele build result-driven mobile apps for
+              different industries
+            </Box>
+            <IndustriesTab />
+          </Grid>
+        </Grid>
+      )}
+    </>
   );
 }

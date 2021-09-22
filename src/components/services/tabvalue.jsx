@@ -2,12 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import { Container, Box, Button } from "@material-ui/core";
-import mobile from "../../assets/zoom.png";
-import pic1 from "../../assets/pic1.png";
-import pic2 from "../../assets/pic2.png";
-import pic3 from "../../assets/pic3.png";
 import Fields from "./fields";
-import MobileSide from "./mobilepic";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
 
     color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 20,
+      width: 500,
+    },
   },
   subheading: {
     display: "flex",
@@ -51,6 +50,10 @@ const useStyles = makeStyles((theme) => ({
     // line-height: 35,
 
     color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 18,
+      width: 400,
+    },
   },
 
   btn: {

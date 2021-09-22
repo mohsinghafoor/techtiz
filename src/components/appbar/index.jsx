@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import a from "../../assets/a.svg";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
-import { Box, Container, Button } from "@material-ui/core";
+import { Box, Container, Button, Grid } from "@material-ui/core";
 import { DummyDrawer } from "./dummy";
 import logo from "../../assets/a.svg";
 
@@ -11,11 +11,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     display: "flex",
-    justifyContent: "space-between",
     alignItems: "center",
-  },
-  logo: {
-    width: 240,
+    marginTop: 20,
+    [theme.breakpoints.up("lg")]: {
+      marginTop: 10,
+    },
   },
   buttonbox: {
     display: "flex",
@@ -53,22 +53,17 @@ const useStyles = makeStyles((theme) => ({
       width: 140,
       height: 40,
     },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 14,
+      width: 120,
+      height: 35,
+    },
   },
 
   img: {
     width: 240,
     [theme.breakpoints.down("sm")]: {
       width: 150,
-    },
-  },
-  dflex: {
-    display: "flex",
-    justifyContent: "flex-end",
-    [theme.breakpoints.down("md")]: {
-      width: "70%",
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: "45%",
     },
   },
 }));
@@ -79,36 +74,58 @@ export default function Header() {
   const isTab = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <div style={{ display: "flex", alignItems: "center" }}>
+    <div className={classes.root}>
       {isTab ? (
-        <>
-          <DummyDrawer />
-          <img src={logo} alt="" className={classes.img} />
-          <Box className={classes.dflex}>
+        <Grid container style={{ display: "flex", alignItems: "center" }}>
+          <Grid
+            item
+            xs={2}
+            sm={1}
+            style={{ display: "flex", justifyContent: "flex-end" }}
+          >
+            <DummyDrawer />
+          </Grid>
+          <Grid item xs={6} sm={8}>
+            <img src={logo} alt="" className={classes.img} />
+          </Grid>
+          <Grid item xs={1} sm={2}>
             <Button className={classes.btn}>Contact</Button>
-          </Box>
-        </>
+          </Grid>
+        </Grid>
       ) : (
-        <Container className={classes.root}>
-          <a href="#">
-            <img src={a} alt="" className={classes.img} />
-          </a>
-          <Box className={classes.buttonbox}>
-            <a href="#" className={classes.a}>
-              <Box className={classes.buttons}>Services</Box>
+        <Grid container className={classes.root}>
+          <Grid
+            item
+            md={4}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            {" "}
+            <a href="#">
+              <img src={a} alt="" className={classes.img} />
             </a>
-            <a href="#" className={classes.a}>
-              <Box className={classes.buttons}>Expertise</Box>
-            </a>
-            <a href="#" className={classes.a}>
-              <Box className={classes.buttons}>About</Box>
-            </a>
-            <a href="#" className={classes.a}>
-              <Box className={classes.buttons}>Portfolio</Box>
-            </a>
-          </Box>
-          <Button className={classes.btn}>Contact</Button>
-        </Container>
+          </Grid>
+          <Grid item md={6}>
+            {" "}
+            <Box className={classes.buttonbox}>
+              <a href="#" className={classes.a}>
+                <Box className={classes.buttons}>Services</Box>
+              </a>
+              <a href="#" className={classes.a}>
+                <Box className={classes.buttons}>Expertise</Box>
+              </a>
+              <a href="#" className={classes.a}>
+                <Box className={classes.buttons}>About</Box>
+              </a>
+              <a href="#" className={classes.a}>
+                <Box className={classes.buttons}>Portfolio</Box>
+              </a>
+            </Box>
+          </Grid>
+          <Grid item md={1}>
+            {" "}
+            <Button className={classes.btn}>Contact</Button>
+          </Grid>
+        </Grid>
       )}
     </div>
   );
