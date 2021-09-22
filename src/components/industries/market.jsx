@@ -14,6 +14,11 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 34,
     marginLeft: "-38rem",
     marginTop: "-19.5rem",
+    [theme.breakpoints.only("md")]: {
+      width: 350,
+      height: 500,
+      marginLeft: "-24rem",
+    },
   },
   heading: {
     display: "flex",

@@ -11,16 +11,15 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     marginTop: 100,
+    justifyContent: "center",
   },
   right: {
     marginLeft: "40rem",
     marginTop: "10rem",
-  },
-  foodimg: {
-    width: 437,
-    height: 571,
-    filter: "drop-shadow(0px 8px 9px rgba(0, 0, 0, 0.21))",
-    borderRadius: 34,
+    [theme.breakpoints.only("md")]: {
+      marginLeft: "21rem",
+      marginTop: "8rem",
+    },
   },
   heading: {
     width: 546,
@@ -32,6 +31,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "64px",
     marginLeft: 70,
     color: "#3B3E56",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 40,
+      width: 450,
+    },
   },
   subheading: {
     marginLeft: 70,
@@ -44,6 +47,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "37px",
 
     color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 20,
+      width: 450,
+    },
   },
   dflex: {
     display: "flex",
@@ -77,7 +84,7 @@ export default function Industries() {
       ) : (
         <Grid className={classes.root} container>
           <Grid item lg={6} className={classes.right}>
-            <Box className={classes.heading}>Industries we work</Box>
+            <Box className={classes.heading}>Industries We Work</Box>
             <Box className={classes.subheading}>
               We Help a diverse clientele build result-driven mobile apps for
               different industries

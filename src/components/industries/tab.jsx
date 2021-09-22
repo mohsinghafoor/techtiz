@@ -43,8 +43,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   parent: {
+    display: "flex",
     width: 750,
     height: 52,
+    [theme.breakpoints.only("md")]: {
+      width: 650,
+    },
   },
   indicator: {
     height: 3,

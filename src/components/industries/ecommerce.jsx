@@ -14,14 +14,16 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "-38rem",
     marginTop: "-19.5rem",
     borderRadius: 34,
+    [theme.breakpoints.only("md")]: {
+      width: 350,
+      height: 500,
+      marginLeft: "-24rem",
+    },
   },
   heading: {
     display: "flex",
     maxWidth: 729,
     height: 52,
-    left: 674,
-    top: 3547,
-
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
@@ -35,8 +37,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     maxWidth: 584,
     height: 174,
-    left: 676,
-    top: 3600,
 
     fontFamily: "Montserrat",
     fontStyle: "normal",

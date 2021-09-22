@@ -15,13 +15,17 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     maxWidth: 500,
     marginTop: 70,
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: 600,
+    [theme.breakpoints.down("md")]: {
+      maxWidth: 400,
     },
   },
   apple: {
     width: 49.09,
     height: 60.82,
+    [theme.breakpoints.down("md")]: {
+      maxWidth: 40,
+      height: 40.82,
+    },
     [theme.breakpoints.down("sm")]: {
       maxWidth: 30,
     },
@@ -29,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
   react: {
     width: 61.55,
     height: 60.82,
+    [theme.breakpoints.down("md")]: {
+      maxWidth: 40,
+      height: 40.82,
+    },
     [theme.breakpoints.down("sm")]: {
       maxWidth: 30,
     },
@@ -36,6 +44,10 @@ const useStyles = makeStyles((theme) => ({
   angular: {
     width: 60.08,
     height: 72.54,
+    [theme.breakpoints.down("md")]: {
+      maxWidth: 40,
+      height: 40.82,
+    },
     [theme.breakpoints.down("sm")]: {
       maxWidth: 30,
     },
@@ -43,6 +55,10 @@ const useStyles = makeStyles((theme) => ({
   android: {
     width: 50.56,
     height: 60.82,
+    [theme.breakpoints.down("md")]: {
+      maxWidth: 40,
+      height: 40.82,
+    },
     [theme.breakpoints.down("sm")]: {
       maxWidth: 30,
     },
@@ -50,6 +66,10 @@ const useStyles = makeStyles((theme) => ({
   flutter: {
     width: 60.08,
     height: 60.82,
+    [theme.breakpoints.down("md")]: {
+      maxWidth: 40,
+      height: 40.82,
+    },
     [theme.breakpoints.down("sm")]: {
       maxWidth: 30,
     },
@@ -57,16 +77,16 @@ const useStyles = makeStyles((theme) => ({
   applet: {
     width: 74,
     height: 51,
-    left: 182,
-    top: 1501,
-
     fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: "bold",
     fontSize: 18,
     lineHeight: "22px",
-
     color: "#000000",
+    [theme.breakpoints.down("md")]: {
+      fontSize: 14,
+      width: 65,
+    },
   },
   reactt: {
     width: 72,
@@ -81,6 +101,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "22px",
 
     color: " #000000",
+    [theme.breakpoints.down("md")]: {
+      fontSize: 14,
+      width: 65,
+    },
   },
   angulart: {
     width: 79,
@@ -95,6 +119,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "22px",
 
     color: " #000000",
+    [theme.breakpoints.down("md")]: {
+      fontSize: 14,
+      width: 65,
+    },
   },
   androidt: {
     width: 81,
@@ -106,6 +134,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     lineHeight: "22px",
     color: "#000000",
+    [theme.breakpoints.down("md")]: {
+      fontSize: 14,
+      width: 65,
+    },
   },
   fluttert: {
     width: 67,
@@ -117,6 +149,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "22px",
 
     color: "#000000",
+    [theme.breakpoints.down("md")]: {
+      fontSize: 14,
+      width: 65,
+    },
   },
 }));
 

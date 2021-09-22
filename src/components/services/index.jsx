@@ -8,10 +8,10 @@ import ServicesTab from "./tabs";
 import AccordionServices from "./accordian";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    marginTop: 150,
+  main: {
+    marginTop: 300,
   },
+
   services: {
     display: "flex",
     justifyContent: "center",
@@ -34,7 +34,7 @@ export default function Services() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <>
+    <div className={classes.main}>
       {isMobile ? (
         <AccordionServices />
       ) : (
@@ -44,6 +44,6 @@ export default function Services() {
           <TabValue />
         </Container>
       )}
-    </>
+    </div>
   );
 }

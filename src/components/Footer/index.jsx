@@ -9,6 +9,7 @@ import { PracticeFooter } from "./footerpractice";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    marginTop: 150,
   },
 }));
 
@@ -17,5 +18,9 @@ export default function ResponsiveFooter() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-  return <>{isMobile ? <FooterAccordion /> : <PracticeFooter />}</>;
+  return (
+    <div className={classes.root}>
+      {isMobile ? <FooterAccordion /> : <PracticeFooter />}
+    </div>
+  );
 }
