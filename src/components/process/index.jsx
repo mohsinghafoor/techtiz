@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     maxWidth: 616,
     height: 49,
+    justifyContent: "center",
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
@@ -30,9 +31,14 @@ const useStyles = makeStyles((theme) => ({
       width: 399,
       fontSize: 30,
     },
+    [theme.breakpoints.down("xs")]: {
+      width: 350,
+      fontSize: 26,
+    },
   },
   subheading: {
     display: "flex",
+    justifyContent: "center",
     maxWidth: 778,
     height: 30,
     marginTop: 30,
@@ -49,6 +55,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: 403,
       fontSize: 18,
+      lineHeight: "28px",
+      textAlign: "center",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: 300,
+      fontSize: 16,
       lineHeight: "28px",
       textAlign: "center",
     },
@@ -90,6 +102,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: 411,
       height: 392,
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: 350,
+      height: 350,
     },
   },
 }));

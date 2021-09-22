@@ -39,7 +39,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "133%",
     /* or 29px */
 
-    color: "#FFC107",
+    color: "black",
+    "&: expanded": {
+      color: "red",
+    },
     [theme.breakpoints.down("xs")]: {
       width: 250,
       fontSize: 18,

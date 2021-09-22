@@ -35,13 +35,13 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "133%",
     /* or 29px */
 
-    color: "#FFC107",
+    color: "black",
     [theme.breakpoints.down("xs")]: {
       width: 250,
       fontSize: 18,
     },
   },
-  suumary: {
+  summary: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#000000",
     [theme.breakpoints.down("xs")]: {
-      width: 400,
+      width: 370,
       fontSize: 18,
     },
   },
@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#000000",
     [theme.breakpoints.down("xs")]: {
-      width: 390,
+      width: 360,
       fontSize: 14,
     },
   },
@@ -102,6 +102,9 @@ const useStyles = makeStyles((theme) => ({
       height: 48,
     },
   },
+  expandedPanel: {
+    color: "#FFC107",
+  },
 }));
 
 export default function IndustriesAccordion() {
@@ -118,7 +121,7 @@ export default function IndustriesAccordion() {
         >
           <Box className={classes.heading}>Food</Box>
         </AccordionSummary>
-        <AccordionDetails className={classes.suumary}>
+        <AccordionDetails className={classes.sumary}>
           <Box className={classes.details}>
             Thank you again for the successful launch of the 3M and Converse
             applications. Your dedication, hard-work, flexibility, patience and

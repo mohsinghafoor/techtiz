@@ -35,13 +35,13 @@ function App() {
       */}
 
       {/* Responsive components */}
-      {/* <Header />
+      <Header />
       <Process />
       <Services />
       <Feedback />
-      <Industries /> 
-      */}
+      <Industries />
       <Pricing />
+      <ResponsiveFooter />
     </>
   );
 }
