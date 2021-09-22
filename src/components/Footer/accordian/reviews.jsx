@@ -66,7 +66,6 @@ export const ReviewAccordian = () => {
   return (
     <Container style={{ display: "flex", justifyContent: "space-around" }}>
       <Box>
-        <Box className={classes.title}>Reviews</Box>
         <Box mt={5}>
           <Box>
             <img className={classes.clutchStyles} src={clutch} alt="" />

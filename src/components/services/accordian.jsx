@@ -15,6 +15,20 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
   },
+  mainheading: {
+    width: "100%",
+    height: 100,
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 800,
+    fontSize: 30,
+    lineHeight: "113.6%",
+    /* or 34px */
+
+    color: "#3B3E56",
+  },
   heading: {
     width: 284,
     height: 29,
@@ -114,7 +128,8 @@ export default function AccordionServices() {
 
   return (
     <div className={classes.root}>
-      <Accordion>
+      <Box className={classes.mainheading}>Our Valued Services</Box>
+      <Accordion elevation={0} style={{ border: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -140,7 +155,7 @@ export default function AccordionServices() {
           </Button>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion elevation={0} style={{ border: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -165,7 +180,7 @@ export default function AccordionServices() {
           </Button>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion elevation={0} style={{ border: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -190,7 +205,7 @@ export default function AccordionServices() {
           </Button>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion elevation={0} style={{ border: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"

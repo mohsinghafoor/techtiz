@@ -47,7 +47,6 @@ export const StackAccordian = () => {
   return (
     <Container style={{ display: "flex", justifyContent: "space-around" }}>
       <Box>
-        <Box className={classes.title}>Technology Stacks</Box>
         <Box display="flex">
           <Box>
             <Box className={classes.dflex} mt={5}>

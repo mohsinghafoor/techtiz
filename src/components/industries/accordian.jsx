@@ -9,6 +9,21 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
+    marginTop: 30,
+  },
+  mainheading: {
+    display: "flex",
+    justifyContent: "center",
+    width: "100%",
+    height: 100,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 800,
+    fontSize: 30,
+    lineHeight: "116.1%",
+    /* identical to box height, or 35px */
+    alignItems: "center",
+    color: "#3B3E56",
   },
   heading: {
     width: 284,
@@ -94,7 +109,8 @@ export default function IndustriesAccordion() {
 
   return (
     <div className={classes.root}>
-      <Accordion>
+      <Box className={classes.mainheading}>Industries we work</Box>
+      <Accordion elevation={0} style={{ border: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -110,7 +126,7 @@ export default function IndustriesAccordion() {
           </Box>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion elevation={0} style={{ border: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -126,7 +142,7 @@ export default function IndustriesAccordion() {
           </Box>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion elevation={0} style={{ border: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -142,7 +158,7 @@ export default function IndustriesAccordion() {
           </Box>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion elevation={0} style={{ border: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -158,7 +174,7 @@ export default function IndustriesAccordion() {
           </Box>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion elevation={0} style={{ border: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"

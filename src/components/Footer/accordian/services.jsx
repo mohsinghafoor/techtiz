@@ -65,7 +65,6 @@ export const ServicesAccordian = () => {
   return (
     <Container style={{ display: "flex", justifyContent: "space-around" }}>
       <Box>
-        <Box className={classes.title}>Services</Box>
         <Box mt={5}>
           <Box className={classes.dflex} mt={4}>
             <Box className={classes.bulletPoint}></Box>

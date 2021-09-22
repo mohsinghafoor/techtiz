@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     marginTop: 100,
     [theme.breakpoints.down("sm")]: {
-      marginTop: 400,
+      marginTop: 100,
     },
   },
   eclipse: {

@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     marginTop: 200,
+    marginBottom: 40,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
