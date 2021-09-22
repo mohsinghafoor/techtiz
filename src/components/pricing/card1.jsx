@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#FFFFFF",
     boxShadow: "2px -2px 21px 6px rgba(0, 0, 0, 0.1)",
     borderRadius: 33,
-    [theme.breakpoints.up("lg")]: { marginLeft: 50 },
+    [theme.breakpoints.up("lg")]: { position: "absolute", marginLeft: 130 },
     [theme.breakpoints.only("md")]: { width: 330 },
     [theme.breakpoints.only("sm")]: { width: 500 },
     [theme.breakpoints.down("xs")]: { width: 350 },

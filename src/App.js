@@ -34,6 +34,7 @@ function App() {
       <PracticeFooter />
       */}
 
+      {/* Responsive components */}
       <Header />
       <Process />
       <Services />

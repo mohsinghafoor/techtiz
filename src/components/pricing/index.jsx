@@ -44,7 +44,7 @@ export default function Pricing() {
           md={4}
           style={{ display: "flex", justifyContent: "center" }}
         >
-          <Card3 />
+          <Card2 />
         </Grid>
         <Grid
           item
@@ -52,7 +52,7 @@ export default function Pricing() {
           md={4}
           style={{ display: "flex", justifyContent: "center" }}
         >
-          <Card2 />
+          <Card3 />
         </Grid>
       </Grid>
     </div>
