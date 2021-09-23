@@ -42,8 +42,10 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
+    display: "flex",
+    justifyContent: "center",
     [theme.breakpoints.only("md")]: {
-      width: 1000,
+      width: "100%",
     },
   },
   indicator: {

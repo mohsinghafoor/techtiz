@@ -15,9 +15,16 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "-38rem",
     marginTop: "-19.5rem",
     [theme.breakpoints.only("md")]: {
-      width: 350,
-      height: 500,
-      marginLeft: "-24rem",
+      width: 287,
+      height: 419,
+      marginLeft: "-22rem",
+      marginTop: "-14rem",
+    },
+    [theme.breakpoints.up("lg")]: {
+      width: 380,
+      height: 540,
+      marginLeft: "-27rem",
+      marginTop: "-17.5rem",
     },
   },
   heading: {
@@ -32,6 +39,10 @@ const useStyles = makeStyles((theme) => ({
     /* or 43px */
 
     color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      maxWidth: 484,
+      fontSize: 24,
+    },
   },
   subheading: {
     display: "flex",
@@ -45,6 +56,10 @@ const useStyles = makeStyles((theme) => ({
     /* or 32px */
 
     color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 18,
+      maxWidth: 484,
+    },
   },
 }));
 

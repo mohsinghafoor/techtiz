@@ -43,10 +43,14 @@ const useStyles = makeStyles((theme) => ({
     height: 501.62,
     marginLeft: 100.13,
     [theme.breakpoints.only("md")]: {
-      marginLeft: 400,
+      marginLeft: -450,
+      marginTop: 100,
+      width: 450.92,
+      height: 451.62,
     },
     [theme.breakpoints.up("lg")]: {
-      marginLeft: 650,
+      marginLeft: -500,
+      marginTop: 100,
     },
 
     // top: 200.93,

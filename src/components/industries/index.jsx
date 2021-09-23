@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, Grid } from "@material-ui/core";
+import { Box, Grid, Container } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import IndustriesTab from "./tab";
@@ -12,12 +12,17 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     marginTop: 100,
     justifyContent: "center",
+    overflowX: "none",
   },
   right: {
     marginLeft: "40rem",
     marginTop: "10rem",
     [theme.breakpoints.only("md")]: {
-      marginLeft: "21rem",
+      marginLeft: "15rem",
+      marginTop: "8rem",
+    },
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: "25rem",
       marginTop: "8rem",
     },
   },
@@ -32,8 +37,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 70,
     color: "#3B3E56",
     [theme.breakpoints.only("md")]: {
-      fontSize: 40,
+      fontSize: 30,
       width: 450,
+      height: 48,
     },
   },
   subheading: {
@@ -48,8 +54,9 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#000000",
     [theme.breakpoints.only("md")]: {
-      fontSize: 20,
-      width: 450,
+      fontSize: 24,
+      width: 600,
+      height: 100,
     },
   },
   dflex: {
@@ -82,16 +89,18 @@ export default function Industries() {
       {isMobile ? (
         <IndustriesAccordion />
       ) : (
-        <Grid className={classes.root} container>
-          <Grid item lg={6} className={classes.right}>
-            <Box className={classes.heading}>Industries We Work</Box>
-            <Box className={classes.subheading}>
-              We Help a diverse clientele build result-driven mobile apps for
-              different industries
-            </Box>
-            <IndustriesTab />
+        <Container style={{ display: "felx", justifyContent: "center" }}>
+          <Grid className={classes.root} container>
+            <Grid item lg={6} className={classes.right}>
+              <Box className={classes.heading}>Industries We Work</Box>
+              <Box className={classes.subheading}>
+                We Help a diverse clientele build result-driven mobile apps for
+                different industries
+              </Box>
+              <IndustriesTab />
+            </Grid>
           </Grid>
-        </Grid>
+        </Container>
       )}
     </>
   );

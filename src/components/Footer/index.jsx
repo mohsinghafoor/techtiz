@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     marginTop: 150,
     [theme.breakpoints.up("lg")]: {
-      marginTop: 700,
+      marginTop: 100,
     },
   },
 }));

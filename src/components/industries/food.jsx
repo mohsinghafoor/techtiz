@@ -16,42 +16,51 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "-38rem",
     marginTop: "-19.5rem",
     [theme.breakpoints.only("md")]: {
-      width: 350,
-      height: 500,
-      marginLeft: "-24rem",
+      width: 287,
+      height: 419,
+      marginLeft: "-22rem",
+      marginTop: "-14rem",
+    },
+    [theme.breakpoints.up("lg")]: {
+      width: 380,
+      height: 540,
+      marginLeft: "-27rem",
+      marginTop: "-17.5rem",
     },
   },
   foodheading: {
     display: "flex",
     maxWidth: 729,
     height: 52,
-    left: 674,
-    top: 3547,
-
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
     fontSize: 30,
-    lineHeight: "43px",
+    lineHeight: "143.4%",
     /* or 43px */
 
     color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      maxWidth: 484,
+      fontSize: 24,
+    },
   },
   foodsubheading: {
     display: "flex",
     maxWidth: 584,
     height: 174,
-    left: 676,
-    top: 3600,
-
     fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: 22,
-    lineHeight: "32px",
+    lineHeight: "143.4%",
     /* or 32px */
 
     color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 18,
+      maxWidth: 484,
+    },
   },
 }));
 

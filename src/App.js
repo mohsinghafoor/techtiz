@@ -13,13 +13,15 @@ import { PrivacyPolocy } from "./components/privacyPolicy";
 import { PracticeFooter } from "./components/Footer/footerpractice";
 import FooterAccordion from "./components/Footer/accordian";
 import ResponsiveFooter from "./components/Footer";
-import { DummyDrawer } from "./components/appbar/dummy";
 import ServicesAccordion from "./components/services/accordian";
 import IndustriesAccordion from "./components/industries/accordian";
+import { Container } from "@material-ui/core";
+import Blog1 from "./components/blogs/blog1";
+import Blogs from "./components/blogs";
 
 function App() {
   return (
-    <>
+    <Container>
       {/* 
      
       <FullStack />
@@ -34,15 +36,19 @@ function App() {
       <PracticeFooter />
       */}
 
-      {/* Responsive components */}
+      {/* Responsive components 
+      
+    */}
+
       <Header />
-      <Process />
       <Services />
-      <Feedback />
+      <Process />
       <Industries />
+      <Feedback />
       <Pricing />
+      <Blogs />
       <ResponsiveFooter />
-    </>
+    </Container>
   );
 }
 

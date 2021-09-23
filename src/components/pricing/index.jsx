@@ -8,12 +8,14 @@ import Card3 from "./card3";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    overflowX: "none",
     flexGrow: 1,
     marginTop: 200,
     marginBottom: 40,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    width: "100%",
   },
   heading: {
     textAlign: "center",
@@ -32,29 +34,19 @@ export default function Pricing() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <Container className={classes.root}>
       <Box className={classes.heading}>Our Pricing model</Box>
       <Grid container style={{ display: "flex", justifyContent: "center" }}>
-        <Grid justifyContent="center" item sm={9} md={4}>
+        <Grid style={{ display: "flex", justifyContent: "center" }} item md={3}>
           <Card1 />
         </Grid>
-        <Grid
-          item
-          sm={9}
-          md={4}
-          style={{ display: "flex", justifyContent: "center" }}
-        >
-          <Card2 />
-        </Grid>
-        <Grid
-          item
-          sm={9}
-          md={4}
-          style={{ display: "flex", justifyContent: "center" }}
-        >
+        <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
           <Card3 />
         </Grid>
+        <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
+          <Card2 />
+        </Grid>
       </Grid>
-    </div>
+    </Container>
   );
 }

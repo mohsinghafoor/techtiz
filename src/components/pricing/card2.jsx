@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
   card: {
     display: "flex",
     alignItems: "center",
+    justifyContentz: "center",
     flexDirection: "column",
     width: 410,
     height: 462,
@@ -17,13 +18,9 @@ const useStyles = makeStyles((theme) => ({
     background: "#FFFFFF",
     boxShadow: "2px -2px 21px 6px rgba(0, 0, 0, 0.1)",
     borderRadius: 33,
-    [theme.breakpoints.up("lg")]: { position: "absolute", marginLeft: 355 },
-    [theme.breakpoints.only("md")]: {
-      position: "absolute",
-      width: 330,
-      marginLeft: 300,
-    },
-    [theme.breakpoints.only("sm")]: { width: 500 },
+    [theme.breakpoints.up("lg")]: { marginLeft: 80 },
+    [theme.breakpoints.only("md")]: { width: 300, height: 400 },
+    [theme.breakpoints.down("sm")]: { width: 454, height: 490 },
     [theme.breakpoints.down("xs")]: { width: 350 },
   },
   heading: {
@@ -35,9 +32,13 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "47px",
 
     color: "#000000",
-    [theme.breakpoints.only("sm")]: {
-      maxWidth: 450,
-      fontSize: 35,
+    [theme.breakpoints.down("md")]: {
+      maxWidth: 183,
+      fontSize: 24,
+    },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 203,
+      fontSize: 30,
     },
   },
   img: {
@@ -49,6 +50,10 @@ const useStyles = makeStyles((theme) => ({
     height: 2,
     marginTop: 20,
     background: "#C4C4C4",
+    [theme.breakpoints.down("md")]: {
+      width: 126,
+      height: 1,
+    },
     [theme.breakpoints.down("sm")]: {
       width: 260,
     },
@@ -60,6 +65,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 130,
     borderRadius: "20rem",
     background: "#81B1C1",
+    [theme.breakpoints.down("md")]: {
+      width: 10,
+      height: 10,
+      marginTop: 135,
+    },
   },
   text: {
     display: "flex",
@@ -74,10 +84,20 @@ const useStyles = makeStyles((theme) => ({
     /* or 23px */
 
     color: "#000000",
-    [theme.breakpoints.only("sm")]: {
-      maxWidth: 340,
+    [theme.breakpoints.only("md")]: {
+      maxWidth: 262,
+      fontSize: 14,
+      height: 80,
+    },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 373,
       fontSize: 18,
-      height: 100,
+      height: 70,
+    },
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 330,
+      fontSize: 16,
+      height: 70,
     },
   },
   text2: {
@@ -92,9 +112,19 @@ const useStyles = makeStyles((theme) => ({
     /* or 22 */
 
     color: " #000000",
-    [theme.breakpoints.only("sm")]: {
-      maxWidth: 340,
+    [theme.breakpoints.only("md")]: {
+      maxWidth: 252,
+      fontSize: 14,
+      height: 66,
+    },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 373,
       fontSize: 18,
+    },
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 330,
+      fontSize: 16,
+      height: 170,
     },
   },
   btn: {
@@ -111,6 +141,16 @@ const useStyles = makeStyles((theme) => ({
     /* identical to box height */
 
     color: "#FFFFFF",
+    [theme.breakpoints.only("md")]: {
+      maxWidth: 177,
+      fontSize: 18,
+      height: 40,
+    },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 226,
+      fontSize: 18,
+      height: 49,
+    },
   },
 }));
 
@@ -121,18 +161,18 @@ export default function Card2() {
     <Container className={classes.root}>
       <Card className={classes.card}>
         <img src={clock} alt="" className={classes.img} />
-        <Typography className={classes.heading}>Hourly Basis</Typography>
+        <Box className={classes.heading}>Hourly Basis</Box>
         <Box className={classes.line} />
         <Box className={classes.circle} />
-        <Typography className={classes.text}>
+        <Box className={classes.text}>
           TechTiz offers a maintenance follow-up after launching your
           application.
-        </Typography>
-        <Typography className={classes.text2}>
+        </Box>
+        <Box className={classes.text2}>
           This reduces the operational hassle and removes any unprecedented bug
           from the application.
-        </Typography>
-        <Button className={classes.btn}>Let’s Begin</Button>
+        </Box>
+        {/* <Button className={classes.btn}>Let’s Begin</Button> */}
       </Card>
     </Container>
   );

@@ -17,15 +17,20 @@ const useStyles = makeStyles((theme) => ({
     background: "#FFFFFF",
     boxShadow: "2px -2px 21px 6px rgba(0, 0, 0, 0.1)",
     borderRadius: 33,
-    [theme.breakpoints.up("lg")]: { position: "absolute", marginLeft: 130 },
-    [theme.breakpoints.only("md")]: { width: 330 },
-    [theme.breakpoints.only("sm")]: { width: 500 },
+    [theme.breakpoints.up("lg")]: { marginLeft: -30 },
+    [theme.breakpoints.only("md")]: {
+      width: 300,
+      height: 400,
+      marginLeft: -90,
+    },
+    [theme.breakpoints.down("sm")]: { width: 454, height: 490 },
     [theme.breakpoints.down("xs")]: { width: 350 },
   },
   heading1: {
     height: 37,
     display: "flex",
     alignItems: "center",
+    justifyContent: "center",
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -33,9 +38,13 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "47px",
     maxWidth: 415,
     color: "#000000",
-    [theme.breakpoints.only("sm")]: {
-      maxWidth: 450,
-      fontSize: 35,
+    [theme.breakpoints.down("md")]: {
+      maxWidth: 183,
+      fontSize: 24,
+    },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 203,
+      fontSize: 30,
     },
   },
   dollarimg: {
@@ -47,6 +56,10 @@ const useStyles = makeStyles((theme) => ({
     height: 2,
     marginTop: 20,
     background: "#C4C4C4",
+    [theme.breakpoints.down("md")]: {
+      width: 126,
+      height: 1,
+    },
     [theme.breakpoints.down("sm")]: {
       width: 260,
     },
@@ -58,6 +71,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 132,
     borderRadius: "20rem",
     background: "#81B1C1",
+    [theme.breakpoints.down("md")]: {
+      maxWidth: 10,
+      height: 10,
+      marginTop: 135,
+    },
   },
   text1: {
     display: "flex",
@@ -72,10 +90,20 @@ const useStyles = makeStyles((theme) => ({
     /* or 23px */
 
     color: "#000000",
-    [theme.breakpoints.only("sm")]: {
-      maxWidth: 340,
+    [theme.breakpoints.only("md")]: {
+      maxWidth: 262,
+      fontSize: 14,
+      height: 80,
+    },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 373,
       fontSize: 18,
-      height: 100,
+      height: 90,
+    },
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 330,
+      fontSize: 16,
+      height: 90,
     },
   },
   text2: {
@@ -90,9 +118,20 @@ const useStyles = makeStyles((theme) => ({
     /* or 22 */
 
     color: " #000000",
-    [theme.breakpoints.only("sm")]: {
-      maxWidth: 340,
+    [theme.breakpoints.only("md")]: {
+      maxWidth: 252,
+      fontSize: 14,
+      height: 66,
+    },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 373,
       fontSize: 18,
+      height: 110,
+    },
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 330,
+      fontSize: 16,
+      height: 140,
     },
   },
   btn: {
@@ -109,6 +148,16 @@ const useStyles = makeStyles((theme) => ({
     /* identical to box height */
 
     color: "#FFFFFF",
+    [theme.breakpoints.only("md")]: {
+      maxWidth: 177,
+      fontSize: 18,
+      height: 40,
+    },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 226,
+      fontSize: 18,
+      height: 49,
+    },
   },
 }));
 

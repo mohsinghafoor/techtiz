@@ -4,7 +4,7 @@ import a from "../../assets/a.svg";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import { Box, Container, Button, Grid } from "@material-ui/core";
-import { DummyDrawer } from "./dummy";
+import { AppBarDrawer } from "./drawer";
 import logo from "../../assets/a.svg";
 
 const useStyles = makeStyles((theme) => ({
@@ -48,22 +48,34 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       background: "#ADD8E6",
     },
+    [theme.breakpoints.down("md")]: {
+      width: 155,
+      height: 37,
+      fontSize: 18,
+    },
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
-      width: 140,
-      height: 40,
+      width: 130,
+      height: 32,
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: 14,
-      width: 120,
-      height: 35,
+      fontSize: 16,
+      width: 100,
+      height: 30,
     },
   },
 
   img: {
     width: 240,
+    [theme.breakpoints.down("md")]: {
+      width: 203,
+      height: 63,
+    },
     [theme.breakpoints.down("sm")]: {
       width: 150,
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: 140,
     },
   },
 }));
@@ -83,12 +95,18 @@ export default function Header() {
             sm={1}
             style={{ display: "flex", justifyContent: "flex-end" }}
           >
-            <DummyDrawer />
+            <AppBarDrawer />
           </Grid>
-          <Grid item xs={6} sm={8}>
+          <Grid item xs={6} sm={8} md={8}>
             <img src={logo} alt="" className={classes.img} />
           </Grid>
-          <Grid item xs={1} sm={2}>
+          <Grid
+            item
+            xs={4}
+            sm={3}
+            md={3}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             <Button className={classes.btn}>Contact</Button>
           </Grid>
         </Grid>
@@ -99,13 +117,11 @@ export default function Header() {
             md={4}
             style={{ display: "flex", justifyContent: "center" }}
           >
-            {" "}
             <a href="#">
               <img src={a} alt="" className={classes.img} />
             </a>
           </Grid>
           <Grid item md={6}>
-            {" "}
             <Box className={classes.buttonbox}>
               <a href="#" className={classes.a}>
                 <Box className={classes.buttons}>Services</Box>
@@ -122,7 +138,6 @@ export default function Header() {
             </Box>
           </Grid>
           <Grid item md={1}>
-            {" "}
             <Button className={classes.btn}>Contact</Button>
           </Grid>
         </Grid>

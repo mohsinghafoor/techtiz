@@ -32,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
       border: " 62px solid rgba(127, 198, 220, 0.1)",
     },
     [theme.breakpoints.down("xs")]: {
-      width: 354,
-      height: 354,
+      width: 334,
+      height: 344,
       border: " 42px solid rgba(127, 198, 220, 0.1)",
     },
   },
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: 25,
-      width: 350,
+      maxWidth: 330,
       height: 20,
       lineHeight: "130.1%",
       marginTop: 40,
@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: 14,
-      width: 424,
+      maxWidth: 330,
       height: 15,
     },
   },
@@ -167,6 +167,11 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("sm")]: {
       width: 350,
+      height: 120,
+      marginTop: 30,
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: 340,
       height: 120,
       marginTop: 30,
     },
