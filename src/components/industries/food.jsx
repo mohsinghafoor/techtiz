@@ -7,28 +7,27 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  foodimg: {
-    position: "absolute",
+  img: {
     width: 437,
     height: 571,
-    filter: "drop-shadow(0px 8px 9px rgba(0, 0, 0, 0.21))",
-    borderRadius: 34,
+    position: "absolute",
     marginLeft: "-38rem",
     marginTop: "-19.5rem",
+    borderRadius: 34,
     [theme.breakpoints.only("md")]: {
-      width: 287,
-      height: 419,
-      marginLeft: "-22rem",
-      marginTop: "-14rem",
+      width: 290,
+      height: 440,
+      marginLeft: "-21rem",
+      marginTop: "-16.5rem",
     },
     [theme.breakpoints.up("lg")]: {
       width: 380,
       height: 540,
       marginLeft: "-27rem",
-      marginTop: "-17.5rem",
+      marginTop: "-20rem",
     },
   },
-  foodheading: {
+  heading: {
     display: "flex",
     maxWidth: 729,
     height: 52,
@@ -40,15 +39,19 @@ const useStyles = makeStyles((theme) => ({
     /* or 43px */
 
     color: "#000000",
+    [theme.breakpoints.up("lg")]: {
+      marginTop: 40,
+    },
     [theme.breakpoints.only("md")]: {
       maxWidth: 484,
       fontSize: 24,
     },
   },
-  foodsubheading: {
+  subheading: {
     display: "flex",
     maxWidth: 584,
     height: 174,
+
     fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: "normal",
@@ -59,11 +62,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       fontSize: 18,
-      maxWidth: 484,
-    },
-    [theme.breakpoints.up("lg")]: {
-      fontSize: 20,
-      maxWidth: 600,
+      maxWidth: 584,
+      height: 178,
     },
   },
 }));
@@ -73,9 +73,9 @@ export default function Food() {
 
   return (
     <Container className={classes.root}>
-      <img src={food} alt="" className={classes.foodimg} />
-      <Box className={classes.foodheading}>Food </Box>
-      <Box className={classes.foodsubheading}>
+      <img src={food} alt="" className={classes.img} />
+      <Box className={classes.heading}>Food </Box>
+      <Box className={classes.subheading}>
         Thank you again for the successful launch of the 3M and Converse
         applications. Your dedication, hard-work, flexibility, patience and
         professionalism is recognized and appreciated.

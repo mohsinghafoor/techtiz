@@ -26,6 +26,14 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#000000",
   },
+  expandedPanel: {
+    color: "#FFC107",
+  },
+  MuiAccordionroot: {
+    "&.MuiAccordion-root:before": {
+      backgroundColor: "white",
+    },
+  },
 }));
 
 export default function FooterAccordion() {
@@ -33,7 +41,13 @@ export default function FooterAccordion() {
 
   return (
     <div className={classes.root}>
-      <Accordion elevation={0}>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -45,7 +59,13 @@ export default function FooterAccordion() {
           <ServicesAccordian />
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -57,7 +77,13 @@ export default function FooterAccordion() {
           <StackAccordian />
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"

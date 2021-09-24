@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Typography, Box } from "@material-ui/core";
-import img from "../../assets/2.PNG";
+import img from "../../assets/front.PNG";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,10 +43,10 @@ const useStyles = makeStyles((theme) => ({
     height: 501.62,
     marginLeft: 100.13,
     [theme.breakpoints.only("md")]: {
-      marginLeft: -450,
+      marginLeft: -400,
       marginTop: 100,
-      width: 450.92,
-      height: 451.62,
+      width: 320,
+      height: 320,
     },
     [theme.breakpoints.up("lg")]: {
       marginLeft: -500,

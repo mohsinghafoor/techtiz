@@ -31,17 +31,18 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 28,
     // lineHeight: 47,
     textAlign: "center",
-    marginTop: 30,
+    marginTop: 50,
     color: "#000000",
     [theme.breakpoints.only("md")]: {
-      fontSize: 20,
-      width: 500,
+      fontSize: 24,
+      width: 517,
+      height: 50,
     },
   },
   subheading: {
     display: "flex",
-    maxWidth: 652,
-    height: 125,
+    maxWidth: 613,
+    height: 140,
 
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -52,7 +53,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       fontSize: 18,
-      width: 400,
+      maxWidth: 531,
+      height: 145,
     },
   },
 

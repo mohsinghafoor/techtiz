@@ -10,15 +10,17 @@ const useStyles = makeStyles((theme) => ({
 
   img: {
     position: "absolute",
-    width: 450.92,
-    height: 400.62,
-    marginLeft: 100.13,
+    width: 371.92,
+    height: 360.62,
+    marginLeft: 170.13,
     [theme.breakpoints.only("md")]: {
       marginLeft: -400,
       marginTop: 100,
+      width: 320,
+      height: 320,
     },
     [theme.breakpoints.up("lg")]: {
-      marginLeft: -500,
+      marginLeft: -400,
       marginTop: 100,
     },
   },

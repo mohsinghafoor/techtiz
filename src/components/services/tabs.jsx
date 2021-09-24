@@ -43,9 +43,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
     display: "flex",
-    justifyContent: "center",
     [theme.breakpoints.only("md")]: {
-      width: "100%",
+      marginLeft: 25,
     },
   },
   indicator: {
@@ -56,14 +55,16 @@ const useStyles = makeStyles((theme) => ({
     color: "black",
   },
   name: {
+    display: "flex",
+    justifyContent: "space-between",
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: 30,
     textAlign: "left",
-    lineHeight: "47px",
+    lineHeight: "40px",
     [theme.breakpoints.only("md")]: {
-      fontSize: 25,
+      fontSize: 24,
     },
   },
 }));

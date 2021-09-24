@@ -39,6 +39,7 @@ function App() {
       */}
       <Header />
       <FullStack />
+
       <Services />
       <Process />
       <Industries />

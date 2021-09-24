@@ -13,11 +13,16 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 100,
     justifyContent: "center",
   },
+  main: {
+    [theme.breakpoints.only("md")]: {
+      marginLeft: 50,
+    },
+  },
   right: {
     marginLeft: "40rem",
     marginTop: "10rem",
     [theme.breakpoints.only("md")]: {
-      marginLeft: "15rem",
+      marginLeft: "16rem",
       marginTop: "8rem",
     },
     [theme.breakpoints.up("lg")]: {
@@ -36,9 +41,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 70,
     color: "#3B3E56",
     [theme.breakpoints.only("md")]: {
-      fontSize: 30,
-      width: 450,
-      height: 48,
+      fontSize: 45,
+      width: 546,
+      height: 78,
     },
   },
   subheading: {
@@ -84,7 +89,7 @@ export default function Industries() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <>
+    <div className={classes.main}>
       {isMobile ? (
         <IndustriesAccordion />
       ) : (
@@ -101,6 +106,6 @@ export default function Industries() {
           </Box>
         </Container>
       )}
-    </>
+    </div>
   );
 }

@@ -103,6 +103,11 @@ const useStyles = makeStyles((theme) => ({
   expandedPanel: {
     color: "#FFC107",
   },
+  MuiAccordionroot: {
+    "&.MuiAccordion-root:before": {
+      backgroundColor: "white",
+    },
+  },
 }));
 
 export default function IndustriesAccordion(props) {
@@ -111,12 +116,17 @@ export default function IndustriesAccordion(props) {
   return (
     <div className={classes.root}>
       <Box className={classes.mainheading}>Industries we work</Box>
-      <Accordion elevation={0} style={{ border: "none" }}>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
-          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Food</Box>
         </AccordionSummary>
@@ -128,12 +138,17 @@ export default function IndustriesAccordion(props) {
           </Box>
         </AccordionDetails>
       </Accordion>
-      <Accordion elevation={0} style={{ border: "none" }}>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
-          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>E-Commerce</Box>
         </AccordionSummary>
@@ -145,12 +160,17 @@ export default function IndustriesAccordion(props) {
           </Box>
         </AccordionDetails>
       </Accordion>
-      <Accordion elevation={0} style={{ border: "none" }}>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
-          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Social</Box>
         </AccordionSummary>
@@ -162,12 +182,17 @@ export default function IndustriesAccordion(props) {
           </Box>
         </AccordionDetails>
       </Accordion>
-      <Accordion elevation={0} style={{ border: "none" }}>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
-          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Education</Box>
         </AccordionSummary>
@@ -179,12 +204,17 @@ export default function IndustriesAccordion(props) {
           </Box>
         </AccordionDetails>
       </Accordion>
-      <Accordion elevation={0} style={{ border: "none" }}>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
-          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>MarketPlace</Box>
         </AccordionSummary>

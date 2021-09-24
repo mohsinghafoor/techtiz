@@ -5,7 +5,7 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import mobile from "../../assets/mobile1.png";
+import mobile from "../../assets/big.png";
 import pic1 from "../../assets/frontend.png";
 import pic2 from "../../assets/backend.png";
 import pic3 from "../../assets/quality.png";
@@ -123,6 +123,11 @@ const useStyles = makeStyles((theme) => ({
   expandedPanel: {
     color: "#FFC107",
   },
+  MuiAccordionroot: {
+    "&.MuiAccordion-root:before": {
+      backgroundColor: "white",
+    },
+  },
 }));
 
 export default function AccordionServices(props) {
@@ -131,12 +136,17 @@ export default function AccordionServices(props) {
   return (
     <div className={classes.root}>
       <Box className={classes.mainheading}>Our Valued Services</Box>
-      <Accordion elevation={0} style={{ border: "none" }}>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
-          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Mobile Devolpment</Box>
         </AccordionSummary>
@@ -158,12 +168,17 @@ export default function AccordionServices(props) {
           </Button>
         </AccordionDetails>
       </Accordion>
-      <Accordion elevation={0} style={{ border: "none" }}>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
-          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Front-end Development</Box>
         </AccordionSummary>
@@ -184,12 +199,17 @@ export default function AccordionServices(props) {
           </Button>
         </AccordionDetails>
       </Accordion>
-      <Accordion elevation={0} style={{ border: "none" }}>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
-          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Back-end Development</Box>
         </AccordionSummary>
@@ -210,12 +230,17 @@ export default function AccordionServices(props) {
           </Button>
         </AccordionDetails>
       </Accordion>
-      <Accordion elevation={0} style={{ border: "none" }}>
+      <Accordion
+        elevation={0}
+        classes={{
+          expanded: classes.expandedPanel,
+          root: classes.MuiAccordionroot,
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
-          classes={{ expanded: classes.expandedPanel }}
         >
           <Box className={classes.heading}>Quality assurance</Box>
         </AccordionSummary>
