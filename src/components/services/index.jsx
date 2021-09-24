@@ -10,6 +10,9 @@ import AccordionServices from "./accordian";
 const useStyles = makeStyles((theme) => ({
   main: {
     marginTop: 100,
+    [theme.breakpoints.only("md")]: {
+      marginLeft: 20,
+    },
   },
 
   services: {

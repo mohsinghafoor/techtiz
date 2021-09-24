@@ -14,9 +14,9 @@ const useStyles = makeStyles((theme) => ({
     height: 360.62,
     marginLeft: 100.13,
     [theme.breakpoints.only("md")]: {
-      marginLeft: -400,
+      marginLeft: -320,
       marginTop: 100,
-      width: 320,
+      width: 300,
       height: 320,
     },
     [theme.breakpoints.up("lg")]: {
