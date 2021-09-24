@@ -61,6 +61,10 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 18,
       maxWidth: 484,
     },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: 20,
+      maxWidth: 600,
+    },
   },
 }));
 

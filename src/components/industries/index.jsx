@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     marginTop: 100,
     justifyContent: "center",
-    overflowX: "none",
   },
   right: {
     marginLeft: "40rem",
@@ -90,16 +89,16 @@ export default function Industries() {
         <IndustriesAccordion />
       ) : (
         <Container style={{ display: "felx", justifyContent: "center" }}>
-          <Grid className={classes.root} container>
-            <Grid item lg={6} className={classes.right}>
+          <Box className={classes.root}>
+            <Box item lg={12} className={classes.right}>
               <Box className={classes.heading}>Industries We Work</Box>
               <Box className={classes.subheading}>
                 We Help a diverse clientele build result-driven mobile apps for
                 different industries
               </Box>
               <IndustriesTab />
-            </Grid>
-          </Grid>
+            </Box>
+          </Box>
         </Container>
       )}
     </>

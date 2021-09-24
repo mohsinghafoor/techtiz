@@ -9,7 +9,7 @@ import AccordionServices from "./accordian";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    marginTop: 300,
+    marginTop: 100,
   },
 
   services: {

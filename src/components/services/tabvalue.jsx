@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 28,
     // lineHeight: 47,
     textAlign: "center",
-
+    marginTop: 30,
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       fontSize: 20,

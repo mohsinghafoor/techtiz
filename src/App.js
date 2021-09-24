@@ -18,13 +18,14 @@ import IndustriesAccordion from "./components/industries/accordian";
 import { Container } from "@material-ui/core";
 import Blog1 from "./components/blogs/blog1";
 import Blogs from "./components/blogs";
+import MobileStack from "./components/FullStack/mobile";
 
 function App() {
   return (
     <Container>
       {/* 
      
-      <FullStack />
+      
       
       
       <Projects />
@@ -33,14 +34,11 @@ function App() {
       
       <ContactUs />
       <Footer />
+      
       <PracticeFooter />
       */}
-
-      {/* Responsive components 
-      
-    */}
-
       <Header />
+      <FullStack />
       <Services />
       <Process />
       <Industries />
@@ -48,6 +46,19 @@ function App() {
       <Pricing />
       <Blogs />
       <ResponsiveFooter />
+      {/* <MobileStack /> */}
+      {/* Responsive components 
+    <Header />
+      <FullStack />
+
+      <Services />
+      <Process />
+      <Industries />
+      <Feedback />
+      <Pricing />
+      <Blogs />
+      <ResponsiveFooter />
+    */}
     </Container>
   );
 }

@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     marginTop: 100,
+    [theme.breakpoints.only("sm")]: {
+      marginBottom: 400,
+    },
   },
   heading: {
     display: "flex",
@@ -115,7 +118,7 @@ export default function Process() {
   const theme = useTheme();
   const iPad = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <>
+    <div>
       {iPad ? (
         <Container className={classes.root}>
           <Box className={classes.heading}>Our development process</Box>
@@ -138,6 +141,6 @@ export default function Process() {
           <Box className={classes.leftcircle}></Box>
         </Container>
       )}
-    </>
+    </div>
   );
 }

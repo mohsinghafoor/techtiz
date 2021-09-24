@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#FFFFFF",
     boxShadow: "2px -2px 21px 6px rgba(0, 0, 0, 0.1)",
     borderRadius: 33,
-    [theme.breakpoints.up("lg")]: { marginLeft: -30 },
+    [theme.breakpoints.up("lg")]: { marginLeft: -130 },
     [theme.breakpoints.only("md")]: {
       width: 300,
       height: 400,
@@ -50,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
   dollarimg: {
     width: 105,
     height: 83,
+    marginTop: 30,
   },
   line1: {
     width: 300,
@@ -68,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: 18,
     height: 18,
-    marginTop: 132,
+    marginTop: 162,
     borderRadius: "20rem",
     background: "#81B1C1",
     [theme.breakpoints.down("md")]: {
@@ -81,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     marginTop: 20,
     maxWidth: 297,
-    height: 112,
+    height: 100,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,

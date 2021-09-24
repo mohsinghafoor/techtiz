@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     marginTop: 20,
+    marginLeft: -40,
     [theme.breakpoints.up("lg")]: {
       marginTop: 10,
     },

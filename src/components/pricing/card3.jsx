@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
       position: "absolute",
       width: 418,
       height: 531,
+      marginLeft: -110,
     },
     [theme.breakpoints.only("md")]: {
       position: "absolute",
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   heading: {
-    height: 37,
+    height: 70,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -78,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: 18,
     height: 18,
-    marginTop: 160,
+    marginTop: -130,
     borderRadius: "20rem",
     background: "#81B1C1",
     [theme.breakpoints.down("md")]: {

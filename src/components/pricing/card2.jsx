@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#FFFFFF",
     boxShadow: "2px -2px 21px 6px rgba(0, 0, 0, 0.1)",
     borderRadius: 33,
-    [theme.breakpoints.up("lg")]: { marginLeft: 80 },
+    [theme.breakpoints.up("lg")]: { marginLeft: -50 },
     [theme.breakpoints.only("md")]: { width: 300, height: 400 },
     [theme.breakpoints.down("sm")]: { width: 454, height: 490 },
     [theme.breakpoints.down("xs")]: { width: 350 },
@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
     width: 80,
     height: 80,
+    marginTop: 30,
   },
   line: {
     width: 300,
@@ -62,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: 18,
     height: 18,
-    marginTop: 130,
+    marginTop: 162,
     borderRadius: "20rem",
     background: "#81B1C1",
     [theme.breakpoints.down("md")]: {
@@ -172,7 +173,7 @@ export default function Card2() {
           This reduces the operational hassle and removes any unprecedented bug
           from the application.
         </Box>
-        {/* <Button className={classes.btn}>Let’s Begin</Button> */}
+        <Button className={classes.btn}>Let’s Begin</Button>
       </Card>
     </Container>
   );

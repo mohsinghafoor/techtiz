@@ -9,7 +9,7 @@ import { Box } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 562,
+    width: 562,
     height: 531,
     background: "#FFFFFF",
     boxShadow: "2px -2px 21px 6px rgba(0, 0, 0, 0.1)",
@@ -48,8 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     maxWidth: 482,
-    height: 285,
-
+    height: 315,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,

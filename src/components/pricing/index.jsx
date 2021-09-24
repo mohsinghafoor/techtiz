@@ -8,12 +8,10 @@ import Card3 from "./card3";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    overflowX: "none",
     flexGrow: 1,
     marginTop: 200,
     marginBottom: 40,
     display: "flex",
-    flexDirection: "column",
     justifyContent: "center",
     width: "100%",
   },
@@ -26,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 55,
     lineHeight: "92px",
     color: "#3B3E56",
-    [theme.breakpoints.down("sm")]: { fontSize: 30 },
+    [theme.breakpoints.down("sm")]: { fontSize: 45 },
   },
 }));
 
@@ -34,19 +32,22 @@ export default function Pricing() {
   const classes = useStyles();
 
   return (
-    <Container className={classes.root}>
-      <Box className={classes.heading}>Our Pricing model</Box>
-      <Grid container style={{ display: "flex", justifyContent: "center" }}>
-        <Grid style={{ display: "flex", justifyContent: "center" }} item md={3}>
-          <Card1 />
-        </Grid>
-        <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
-          <Card3 />
-        </Grid>
-        <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
-          <Card2 />
-        </Grid>
+    <Grid
+      container
+      style={{ display: "flex", justifyContent: "center", marginTop: 150 }}
+    >
+      <Grid item xs={12} style={{ display: "flex", justifyContent: "center" }}>
+        <Box className={classes.heading}>Our Pricing model</Box>
       </Grid>
-    </Container>
+      <Grid style={{ display: "flex", justifyContent: "center" }} item md={3}>
+        <Card1 />
+      </Grid>
+      <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
+        <Card3 />
+      </Grid>
+      <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
+        <Card2 />
+      </Grid>
+    </Grid>
   );
 }

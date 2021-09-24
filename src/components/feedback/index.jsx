@@ -266,7 +266,6 @@ export default function Feedback() {
       <Box className={classes.name}>Norbu Snow-Shiva, COO</Box>
       <Box className={classes.company}>World Tree Consulting</Box>
       <a href="https://clutch.co/profile/techtiz-0#reviews">
-        {" "}
         <Box className={classes.dflex}>
           <img src={clutch} alt="" className={classes.clutchimg} />
           <Box style={{ marginTop: 40, marginLeft: 10 }}>

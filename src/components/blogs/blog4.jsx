@@ -9,30 +9,30 @@ import img from "../../assets/blog2.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    alignItems: "center",
     flexDirection: "column",
+    alignItems: "center",
     width: 562,
-    height: 531,
-    background: " #FFFFFF",
+    height: 581,
+    background: "#FFFFFF",
     boxShadow: "2px -2px 21px 6px rgba(0, 0, 0, 0.1)",
     borderRadius: 33,
     [theme.breakpoints.only("md")]: {
-      maxWidth: 400,
+      maxWidth: 380,
       height: 480,
     },
     [theme.breakpoints.down("xs")]: {
       maxWidth: 350,
-      height: 450,
+      height: 480,
     },
   },
   img: {
-    width: 519,
+    width: 530,
     height: 242,
     borderRadius: 27,
-    marginTop: 20,
+    marginTop: 10,
     [theme.breakpoints.only("md")]: {
       maxWidth: 370,
-      height: 150,
+      height: 200,
     },
     [theme.breakpoints.down("xs")]: {
       maxWidth: 330,
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     width: 489,
-    height: 94,
+    height: 100,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -49,7 +49,6 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "47px",
     color: "#000000",
     marginTop: 30,
-    height: 100,
     [theme.breakpoints.only("md")]: {
       maxWidth: 350,
       height: 80,
@@ -65,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     width: 482,
-    height: 37,
+    height: 67,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
