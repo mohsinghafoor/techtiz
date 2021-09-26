@@ -69,13 +69,12 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: 18,
     height: 18,
-    marginTop: 162,
+    marginTop: 165,
     borderRadius: "20rem",
     background: "#81B1C1",
     [theme.breakpoints.down("md")]: {
       maxWidth: 10,
       height: 10,
-      marginTop: 135,
     },
   },
   text1: {
