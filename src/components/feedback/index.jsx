@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, Container, Typography } from "@material-ui/core";
+import { Box, Container } from "@material-ui/core";
 import clutch from "../../assets/clutch.png";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 import StarIcon from "@material-ui/icons/Star";
@@ -265,24 +265,24 @@ export default function Feedback() {
       </Box>
       <Box className={classes.name}>Norbu Snow-Shiva, COO</Box>
       <Box className={classes.company}>World Tree Consulting</Box>
-      <a href="https://clutch.co/profile/techtiz-0#reviews">
-        <Box className={classes.dflex}>
-          <img src={clutch} alt="" className={classes.clutchimg} />
-          <Box style={{ marginTop: 40, marginLeft: 10 }}>
-            <Box className={classes.starbox}>
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-            </Box>
-            <Box className={classes.text}>
-              Rated 5.0/5.0 for web development, mobile development and design
-              services
-            </Box>
+
+      <Box className={classes.dflex}>
+        <img src={clutch} alt="" className={classes.clutchimg} />
+        <Box style={{ marginTop: 40, marginLeft: 10 }}>
+          <Box className={classes.starbox}>
+            <StarIcon className={classes.star} />
+            <StarIcon className={classes.star} />
+            <StarIcon className={classes.star} />
+            <StarIcon className={classes.star} />
+            <StarIcon className={classes.star} />
+          </Box>
+          <Box className={classes.text}>
+            Rated 5.0/5.0 for web development, mobile development and design
+            services
           </Box>
         </Box>
-      </a>
+      </Box>
+
       <CallMadeIcon className={classes.rightarrow} />
     </Container>
   );

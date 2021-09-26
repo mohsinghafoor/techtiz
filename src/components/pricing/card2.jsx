@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Container, Card, Box, Typography, Button } from "@material-ui/core";
+import { Container, Card, Box, Button } from "@material-ui/core";
 import clock from "../../assets/clock.png";
 
 const useStyles = makeStyles((theme) => ({

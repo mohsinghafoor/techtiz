@@ -51,13 +51,13 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("md")]: {
       width: 155,
-      height: 37,
-      fontSize: 18,
+      height: 45,
+      fontSize: 20,
     },
     [theme.breakpoints.down("sm")]: {
-      fontSize: 16,
+      fontSize: 18,
       width: 130,
-      height: 32,
+      height: 37,
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: 16,
@@ -69,14 +69,16 @@ const useStyles = makeStyles((theme) => ({
   img: {
     width: 240,
     [theme.breakpoints.down("md")]: {
-      width: 203,
-      height: 63,
+      width: 230,
+      height: 70,
     },
-    [theme.breakpoints.down("sm")]: {
-      width: 150,
+    [theme.breakpoints.only("sm")]: {
+      width: 180,
+      marginLeft: -30,
     },
     [theme.breakpoints.down("xs")]: {
       width: 140,
+      marginLeft: -20,
     },
   },
 }));
@@ -92,13 +94,14 @@ export default function Header() {
         <Grid container style={{ display: "flex", alignItems: "center" }}>
           <Grid
             item
-            xs={2}
-            sm={1}
-            style={{ display: "flex", justifyContent: "flex-end" }}
+            xs={3}
+            sm={2}
+            md={1}
+            style={{ display: "flex", justifyContent: "center" }}
           >
             <AppBarDrawer />
           </Grid>
-          <Grid item xs={6} sm={8} md={8}>
+          <Grid item xs={5} sm={7} md={8}>
             <img src={logo} alt="" className={classes.img} />
           </Grid>
           <Grid

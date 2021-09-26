@@ -3,13 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Accordion, Box, Button } from "@material-ui/core";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
-import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import mobile from "../../assets/big.png";
 import pic1 from "../../assets/frontend.png";
 import pic2 from "../../assets/backend.png";
 import pic3 from "../../assets/quality.png";
-import Fields from "./fields";
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, Grid, Container } from "@material-ui/core";
+import { Box, Container } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import IndustriesTab from "./tab";
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     height: 110,
     fontFamily: "Montserrat",
     fontStyle: "normal",
-    fontWeight: "normal",
+    fontWeight: 400,
     fontSize: 30,
     lineHeight: "37px",
 

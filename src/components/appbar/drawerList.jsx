@@ -1,9 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, ButtonBase } from "@material-ui/core";
+import { Box } from "@material-ui/core";
+import logo from "../../assets/a.svg";
 const useStyles = makeStyles((theme) => ({
   itembox: {
-    marginTop: 200,
+    marginTop: 100,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -24,9 +25,22 @@ const useStyles = makeStyles((theme) => ({
     /* identical to box height */
     color: "#000000",
     height: 50,
+    [theme.breakpoints.only("md")]: {
+      fontSize: 20,
+    },
   },
   atag: {
     textDecoration: "none",
+  },
+  logo: {
+    [theme.breakpoints.only("md")]: {
+      width: 200,
+      marginBottom: 50,
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: 150,
+      marginBottom: 50,
+    },
   },
 }));
 
@@ -42,6 +56,7 @@ export default function DrawerList({ onClose }) {
 
   return (
     <Box className={classes.itembox}>
+      <img src={logo} alt="" className={classes.logo} />
       <a href="#" className={classes.atag}>
         <Box className={classes.items}>Services</Box>
       </a>

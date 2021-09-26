@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Container, Typography, Box } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import front from "../../assets/frontend.png";
 
 const useStyles = makeStyles((theme) => ({
