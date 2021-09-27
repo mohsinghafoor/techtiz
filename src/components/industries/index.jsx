@@ -50,12 +50,11 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 70,
     width: 676,
     height: 110,
-    fontFamily: "Montserrat",
+    // fontFamily: "Montserrat",
     fontStyle: "normal",
-    fontWeight: 400,
+    fontWeight: 300,
     fontSize: 30,
     lineHeight: "37px",
-
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       fontSize: 24,

@@ -8,6 +8,10 @@ import angular from "../../assets/angular.png";
 import html from "../../assets/html.png";
 import node from "../../assets/node.png";
 import clutch from "../../assets/clutchfooter.png";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import RssFeedIcon from "@material-ui/icons/RssFeed";
 const useStyles = makeStyles({
   bulletPoint: {
     backgroundColor: "#C4C4C4",
@@ -68,7 +72,7 @@ const useStyles = makeStyles({
     backgroundColor: "#EDEDED",
   },
 });
-export const PracticeFooter = () => {
+export const WebFooter = () => {
   const classes = useStyles();
   return (
     <Container style={{ display: "flex", justifyContent: "space-around" }}>
@@ -170,6 +174,15 @@ export const PracticeFooter = () => {
           </Box>
         </Box>
       </Box>
+      {/* <Box>
+        <Box>Follow Us:</Box>
+        <Box>
+          <FacebookIcon />
+          <TwitterIcon />
+          <InstagramIcon />
+          <RssFeedIcon />
+        </Box>
+      </Box> */}
     </Container>
   );
 };

@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: 18,
     height: 18,
-    marginTop: 162,
+    marginTop: 160,
     borderRadius: "20rem",
     background: "#81B1C1",
     [theme.breakpoints.down("md")]: {
@@ -128,12 +128,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   btn: {
-    width: 223,
+    width: 200,
     height: 50,
     background: "#7FC6DC",
     boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
     borderRadius: 72,
-    fontFamily: "Montserrat",
+    // fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: 500,
     fontSize: 18,

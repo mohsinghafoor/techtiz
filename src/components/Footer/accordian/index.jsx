@@ -12,6 +12,10 @@ import { StackAccordian } from "./technologystack";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
   },
   heading: {
     width: 284,
@@ -34,6 +38,12 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "white",
     },
   },
+  parent: {
+    width: 350,
+    [theme.breakpoints.only("sm")]: {
+      width: 550,
+    },
+  },
 }));
 
 export default function FooterAccordion() {
@@ -41,60 +51,62 @@ export default function FooterAccordion() {
 
   return (
     <div className={classes.root}>
-      <Accordion
-        elevation={0}
-        classes={{
-          expanded: classes.expandedPanel,
-          root: classes.MuiAccordionroot,
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
+      <Box className={classes.parent}>
+        <Accordion
+          elevation={0}
+          classes={{
+            expanded: classes.expandedPanel,
+            root: classes.MuiAccordionroot,
+          }}
         >
-          <Box className={classes.heading}>Services</Box>
-        </AccordionSummary>
-        <AccordionDetails>
-          <ServicesAccordian />
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        elevation={0}
-        classes={{
-          expanded: classes.expandedPanel,
-          root: classes.MuiAccordionroot,
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Box className={classes.heading}>Services</Box>
+          </AccordionSummary>
+          <AccordionDetails>
+            <ServicesAccordian />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          elevation={0}
+          classes={{
+            expanded: classes.expandedPanel,
+            root: classes.MuiAccordionroot,
+          }}
         >
-          <Box className={classes.heading}>Technology Stacks</Box>
-        </AccordionSummary>
-        <AccordionDetails>
-          <StackAccordian />
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        elevation={0}
-        classes={{
-          expanded: classes.expandedPanel,
-          root: classes.MuiAccordionroot,
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Box className={classes.heading}>Technology Stacks</Box>
+          </AccordionSummary>
+          <AccordionDetails>
+            <StackAccordian />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          elevation={0}
+          classes={{
+            expanded: classes.expandedPanel,
+            root: classes.MuiAccordionroot,
+          }}
         >
-          <Box className={classes.heading}>Reviews</Box>
-        </AccordionSummary>
-        <AccordionDetails>
-          <ReviewAccordian />
-        </AccordionDetails>
-      </Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Box className={classes.heading}>Reviews</Box>
+          </AccordionSummary>
+          <AccordionDetails>
+            <ReviewAccordian />
+          </AccordionDetails>
+        </Accordion>
+      </Box>
     </div>
   );
 }

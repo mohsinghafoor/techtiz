@@ -9,6 +9,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     marginTop: 30,
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
   },
   mainheading: {
     display: "flex",
@@ -99,6 +103,9 @@ const useStyles = makeStyles((theme) => ({
       height: 48,
     },
   },
+  parent: {
+    width: 350,
+  },
   expandedPanel: {
     color: "#FFC107",
   },
@@ -115,116 +122,118 @@ export default function IndustriesAccordion(props) {
   return (
     <div className={classes.root}>
       <Box className={classes.mainheading}>Industries we work</Box>
-      <Accordion
-        elevation={0}
-        classes={{
-          expanded: classes.expandedPanel,
-          root: classes.MuiAccordionroot,
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
+      <Box className={classes.parent}>
+        <Accordion
+          elevation={0}
+          classes={{
+            expanded: classes.expandedPanel,
+            root: classes.MuiAccordionroot,
+          }}
         >
-          <Box className={classes.heading}>Food</Box>
-        </AccordionSummary>
-        <AccordionDetails className={classes.sumary}>
-          <Box className={classes.details}>
-            Thank you again for the successful launch of the 3M and Converse
-            applications. Your dedication, hard-work, flexibility, patience and
-            professionalism is recognized and appreciated.
-          </Box>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        elevation={0}
-        classes={{
-          expanded: classes.expandedPanel,
-          root: classes.MuiAccordionroot,
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Box className={classes.heading}>Food</Box>
+          </AccordionSummary>
+          <AccordionDetails className={classes.summary}>
+            <Box className={classes.details}>
+              Thank you again for the successful launch of the 3M and Converse
+              applications. Your dedication, hard-work, flexibility, patience
+              and professionalism is recognized and appreciated.
+            </Box>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          elevation={0}
+          classes={{
+            expanded: classes.expandedPanel,
+            root: classes.MuiAccordionroot,
+          }}
         >
-          <Box className={classes.heading}>E-Commerce</Box>
-        </AccordionSummary>
-        <AccordionDetails className={classes.suumary}>
-          <Box className={classes.details}>
-            Thank you again for the successful launch of the 3M and Converse
-            applications. Your dedication, hard-work, flexibility, patience and
-            professionalism is recognized and appreciated.
-          </Box>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        elevation={0}
-        classes={{
-          expanded: classes.expandedPanel,
-          root: classes.MuiAccordionroot,
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Box className={classes.heading}>E-Commerce</Box>
+          </AccordionSummary>
+          <AccordionDetails className={classes.summary}>
+            <Box className={classes.details}>
+              Thank you again for the successful launch of the 3M and Converse
+              applications. Your dedication, hard-work, flexibility, patience
+              and professionalism is recognized and appreciated.
+            </Box>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          elevation={0}
+          classes={{
+            expanded: classes.expandedPanel,
+            root: classes.MuiAccordionroot,
+          }}
         >
-          <Box className={classes.heading}>Social</Box>
-        </AccordionSummary>
-        <AccordionDetails className={classes.suumary}>
-          <Box className={classes.details}>
-            Thank you again for the successful launch of the 3M and Converse
-            applications. Your dedication, hard-work, flexibility, patience and
-            professionalism is recognized and appreciated.
-          </Box>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        elevation={0}
-        classes={{
-          expanded: classes.expandedPanel,
-          root: classes.MuiAccordionroot,
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Box className={classes.heading}>Social</Box>
+          </AccordionSummary>
+          <AccordionDetails className={classes.summary}>
+            <Box className={classes.details}>
+              Thank you again for the successful launch of the 3M and Converse
+              applications. Your dedication, hard-work, flexibility, patience
+              and professionalism is recognized and appreciated.
+            </Box>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          elevation={0}
+          classes={{
+            expanded: classes.expandedPanel,
+            root: classes.MuiAccordionroot,
+          }}
         >
-          <Box className={classes.heading}>Education</Box>
-        </AccordionSummary>
-        <AccordionDetails className={classes.suumary}>
-          <Box className={classes.details}>
-            Thank you again for the successful launch of the 3M and Converse
-            applications. Your dedication, hard-work, flexibility, patience and
-            professionalism is recognized and appreciated.
-          </Box>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        elevation={0}
-        classes={{
-          expanded: classes.expandedPanel,
-          root: classes.MuiAccordionroot,
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Box className={classes.heading}>Education</Box>
+          </AccordionSummary>
+          <AccordionDetails className={classes.summary}>
+            <Box className={classes.details}>
+              Thank you again for the successful launch of the 3M and Converse
+              applications. Your dedication, hard-work, flexibility, patience
+              and professionalism is recognized and appreciated.
+            </Box>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          elevation={0}
+          classes={{
+            expanded: classes.expandedPanel,
+            root: classes.MuiAccordionroot,
+          }}
         >
-          <Box className={classes.heading}>MarketPlace</Box>
-        </AccordionSummary>
-        <AccordionDetails className={classes.suumary}>
-          <Box className={classes.details}>
-            Thank you again for the successful launch of the 3M and Converse
-            applications. Your dedication, hard-work, flexibility, patience and
-            professionalism is recognized and appreciated.
-          </Box>
-        </AccordionDetails>
-      </Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Box className={classes.heading}>MarketPlace</Box>
+          </AccordionSummary>
+          <AccordionDetails className={classes.summary}>
+            <Box className={classes.details}>
+              Thank you again for the successful launch of the 3M and Converse
+              applications. Your dedication, hard-work, flexibility, patience
+              and professionalism is recognized and appreciated.
+            </Box>
+          </AccordionDetails>
+        </Accordion>
+      </Box>
     </div>
   );
 }

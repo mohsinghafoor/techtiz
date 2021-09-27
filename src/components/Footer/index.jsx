@@ -4,7 +4,7 @@ import { Container } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import FooterAccordion from "./accordian";
-import { PracticeFooter } from "./footerpractice";
+import { WebFooter } from "./webfooter";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,7 +23,7 @@ export default function ResponsiveFooter() {
 
   return (
     <div className={classes.root}>
-      {isMobile ? <FooterAccordion /> : <PracticeFooter />}
+      {isMobile ? <FooterAccordion /> : <WebFooter />}
     </div>
   );
 }

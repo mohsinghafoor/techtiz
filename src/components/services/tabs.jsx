@@ -44,6 +44,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("md")]: {
       marginLeft: 25,
     },
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: 25,
+      width: 1200,
+    },
   },
   indicator: {
     width: 4,
@@ -58,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 30,
+    fontSize: 24,
     textAlign: "left",
     lineHeight: "40px",
     [theme.breakpoints.only("md")]: {
