@@ -22,7 +22,6 @@ function App() {
       <Feedback />
       <Pricing />
       <Blogs />
-      <ContactUs />
       <ResponsiveFooter />
     </Container>
   );
