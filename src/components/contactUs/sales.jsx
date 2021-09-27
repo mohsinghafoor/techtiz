@@ -1,16 +1,16 @@
 import { Box, makeStyles, Paper } from "@material-ui/core";
 import React from "react";
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   container: {
     width: 397,
     height: 470,
     backgroundColor: "#FFFAF3",
-    position: "relative",
-    zIndex: -2,
-    top: 260,
-    left: 377,
     boxShadow: "0px -1px 17px -5px rgba(0, 0, 0, 0.25)",
     borderRadius: 18,
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: 140,
+      marginTop: 120,
+    },
   },
   heading: {
     color: "#FFC107",
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     fontSize: 16,
     fontWeight: 300,
   },
-});
+}));
 export const Sales = () => {
   const classes = useStyles();
   return (

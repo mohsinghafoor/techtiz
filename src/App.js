@@ -9,6 +9,7 @@ import Services from "./components/services";
 import ResponsiveFooter from "./components/Footer";
 import { Container } from "@material-ui/core";
 import Blogs from "./components/blogs";
+import { ContactUs } from "./components/contactUs/contactUs";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Feedback />
       <Pricing />
       <Blogs />
+      <ContactUs />
       <ResponsiveFooter />
     </Container>
   );

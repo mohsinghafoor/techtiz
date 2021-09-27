@@ -5,10 +5,11 @@ import React from "react";
 import { ContactUsBtn } from "../contactusBtn";
 import { ContactInput } from "../contactInput";
 
-import { Sales } from "../sales";
+import { Sales } from "./sales";
 const useStyles = makeStyles((theme) => ({
   container: {
-    marginTop: 700,
+    marginTop: 0,
+    marginLeft: -60,
   },
   bgClr: {
     backgroundColor: "#F6FDFF",
@@ -20,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
     left: 68,
     boxShadow: "-7px 7px 9px 4px rgba(24, 64, 207, 0.1);",
     borderRadius: 39,
+    [theme.breakpoints.only("md")]: {
+      width: 743.23,
+      height: 763.43,
+    },
   },
   heading: {
     fontSize: 40,
@@ -64,6 +69,7 @@ const useStyles = makeStyles((theme) => ({
     top: 71,
     zIndex: -3,
   },
+  blue: {},
 }));
 export const ContactUs = () => {
   const classes = useStyles();
@@ -74,20 +80,20 @@ export const ContactUs = () => {
           <Grid item lg={3}>
             <Box>
               <Box>
-                <img src={rectangle1} />
+                <img src={rectangle1} className={classes.blue} />
               </Box>
               <Box>
                 <Paper className={classes.bgClr}>
                   <Box className={classes.heading}>Contact Us About</Box>
                   <Box display="flex" justifyContent="center">
                     <ContactUsBtn
-                      text="Front-end Development"
+                      text="Web Development"
                       width="235px"
                       height="46px"
                       marginTop="10px"
                     />
                     <ContactUsBtn
-                      text="Back-end Development"
+                      text="Front-end Development"
                       width="235px"
                       height="46px"
                       marginLeft="20px"
