@@ -49,9 +49,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 30,
     [theme.breakpoints.only("md")]: {
       maxWidth: 350,
-      height: 80,
+      height: 110,
       fontSize: 24,
-      lineHeight: "40px",
+      lineHeight: "35px",
     },
     [theme.breakpoints.down("xs")]: {
       maxWidth: 330,
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       maxWidth: 350,
-      height: 40,
+      height: 10,
       fontSize: 18,
       lineHeight: "30px",
     },

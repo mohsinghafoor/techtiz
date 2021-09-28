@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
 
     [theme.breakpoints.up("xs")]: { marginTop: "30rem" },
+    [theme.breakpoints.only("md")]: { marginTop: "45rem" },
   },
   blue: {
     position: "absolute",

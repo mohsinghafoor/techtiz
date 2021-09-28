@@ -33,13 +33,14 @@ const useStyles = makeStyles((theme) => ({
     color: "#3B3E56",
     [theme.breakpoints.only("md")]: {
       maxWidth: 350,
-      height: 80,
+      height: 50,
       fontSize: 24,
+      paddingTop: 10,
       lineHeight: "40px",
     },
     [theme.breakpoints.down("xs")]: {
       maxWidth: 330,
-      height: 80,
+      height: 60,
       fontSize: 20,
       lineHeight: "40px",
     },
@@ -56,13 +57,13 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       maxWidth: 350,
-      height: 300,
+      height: 335,
       fontSize: 18,
       lineHeight: "30px",
     },
     [theme.breakpoints.down("xs")]: {
       maxWidth: 330,
-      height: 280,
+      height: 250,
       fontSize: 16,
       lineHeight: "28px",
     },
@@ -85,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     /* identical to box height */
 
     color: "#FFFFFF",
-    [theme.breakpoints.only("md")]: {},
+    [theme.breakpoints.only("xs")]: { marginTop: 60 },
   },
   line: {
     position: "absolute",

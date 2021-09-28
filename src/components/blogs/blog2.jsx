@@ -32,10 +32,11 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 30,
     color: "#3B3E56",
     [theme.breakpoints.only("md")]: {
-      maxWidth: 350,
-      height: 80,
+      maxWidth: 330,
+      height: 60,
       fontSize: 24,
       lineHeight: "40px",
+      paddingTop: 10,
     },
     [theme.breakpoints.down("xs")]: {
       maxWidth: 330,
@@ -56,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       maxWidth: 350,
-      height: 300,
+      height: 327,
       fontSize: 18,
       lineHeight: "30px",
     },
