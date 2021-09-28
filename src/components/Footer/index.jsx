@@ -10,8 +10,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     marginTop: 150,
-    [theme.breakpoints.up("lg")]: {
-      marginTop: 100,
+
+    [theme.breakpoints.up("xs")]: {
+      marginTop: "32rem",
     },
   },
 }));
