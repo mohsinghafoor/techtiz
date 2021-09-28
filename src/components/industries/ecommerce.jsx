@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 584,
     height: 174,
 
-    fontFamily: "Montserrat",
+    // fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: 22,

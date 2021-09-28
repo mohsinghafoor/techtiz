@@ -81,7 +81,7 @@ export const ServicesAccordian = () => {
           <Box className={classes.dflex} mt={4}>
             <Box className={classes.bulletPoint}></Box>
             <Box className={classes.service} ml={1}>
-              Appdevelopment
+              App Development
             </Box>
           </Box>
           <Box className={classes.dflex} mt={4}>

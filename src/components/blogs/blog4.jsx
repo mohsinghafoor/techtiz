@@ -98,6 +98,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     marginTop: 40,
     marginLeft: "-20rem",
+    "&:hover": {
+      background: "#D3D3D3",
+    },
     [theme.breakpoints.only("md")]: {
       marginLeft: "-12rem",
     },

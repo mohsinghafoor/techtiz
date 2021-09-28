@@ -223,7 +223,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 10,
+    fontSize: 12,
     lineHeight: "16px",
     color: "#787878",
     [theme.breakpoints.only("md")]: {
@@ -254,6 +254,9 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "35px",
 
     color: "#FFFFFF",
+    "&:hover": {
+      background: "#ADD8E6",
+    },
     [theme.breakpoints.down("sm")]: {
       width: 148,
       height: 34,

@@ -9,8 +9,6 @@ import Services from "./components/services";
 import ResponsiveFooter from "./components/Footer";
 import { Container } from "@material-ui/core";
 import Blogs from "./components/blogs";
-import { ContactUs } from "./components/contactUs/contactUs";
-import ContactForm from "./components/mohsincontactus/form";
 import MyContactUs from "./components/mohsincontactus";
 
 function App() {

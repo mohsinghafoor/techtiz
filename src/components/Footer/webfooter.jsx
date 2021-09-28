@@ -7,11 +7,11 @@ import flutter from "../../assets/flutter.png";
 import angular from "../../assets/angular.png";
 import html from "../../assets/html.png";
 import node from "../../assets/node.png";
+import MailIcon from "@material-ui/icons/Mail";
+import linkedin from "../../assets/linkedin.png";
 import clutch from "../../assets/clutchfooter.png";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import RssFeedIcon from "@material-ui/icons/RssFeed";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 const useStyles = makeStyles({
   bulletPoint: {
     backgroundColor: "#C4C4C4",
@@ -34,6 +34,7 @@ const useStyles = makeStyles({
   dflex: {
     display: "flex",
     alignItems: "center",
+    height: 15,
   },
   iconName: {
     fontSize: 14,
@@ -71,6 +72,10 @@ const useStyles = makeStyles({
     height: "1.54px",
     backgroundColor: "#EDEDED",
   },
+  cnticon: {
+    width: 30,
+    height: 30,
+  },
 });
 export const WebFooter = () => {
   const classes = useStyles();
@@ -94,7 +99,7 @@ export const WebFooter = () => {
           <Box className={classes.dflex} mt={4}>
             <Box className={classes.bulletPoint}></Box>
             <Box className={classes.service} ml={1}>
-              Appdevelopment
+              App Development
             </Box>
           </Box>
           <Box className={classes.dflex} mt={4}>
@@ -161,28 +166,65 @@ export const WebFooter = () => {
       </Box>
 
       <Box>
-        <Box className={classes.title}>Reviews</Box>
-        <Box mt={5}>
-          <Box>
-            <img className={classes.clutchStyles} src={clutch} alt="" />
+        <Box className={classes.title}>Contact Us</Box>
+        <Box mt={4}>
+          <Box className={classes.dflex} mt={4}>
+            <MailIcon style={{ color: "red", fontSize: 30 }} />
+            <Box ml={1} className={classes.iconName}>
+              contact@techtiz.com
+            </Box>
           </Box>
-          <Box className={classes.clutchDetail}>
-            They are technically excellent, have an agile process in place and
-            are always looking for "win/win" opportunities. The team is
-            incredibly honest, hard working and has been a source of new ideas
-            and improvements.
-          </Box>
+          <a
+            href="https://web.whatsapp.com/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            {" "}
+            <Box className={classes.dflex} mt={4}>
+              <WhatsAppIcon style={{ color: "#0fa958", fontSize: 30 }} />
+              <Box ml={1} className={classes.iconName}>
+                +92 334 4265883
+              </Box>
+            </Box>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/techtiz/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Box className={classes.dflex} mt={4}>
+              <img className={classes.cnticon} src={linkedin} alt="" />
+              <Box ml={1} className={classes.iconName}>
+                Linkedin
+              </Box>
+            </Box>
+          </a>
+          <a
+            href="https://www.facebook.com/techtiz"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Box className={classes.dflex} mt={4}>
+              <FacebookIcon style={{ color: "blue", fontSize: 30 }} />
+              <Box ml={1} className={classes.iconName}>
+                Facebook
+              </Box>
+            </Box>
+          </a>
+          <a
+            href="https://clutch.co/profile/techtiz-0#summary"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Box className={classes.dflex} mt={4}>
+              <img className={classes.cnticon} src={clutch} alt="" />
+              <Box ml={1} className={classes.iconName}>
+                Clutch
+              </Box>
+            </Box>
+          </a>
         </Box>
       </Box>
-      {/* <Box>
-        <Box>Follow Us:</Box>
-        <Box>
-          <FacebookIcon />
-          <TwitterIcon />
-          <InstagramIcon />
-          <RssFeedIcon />
-        </Box>
-      </Box> */}
     </Container>
   );
 };

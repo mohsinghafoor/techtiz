@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     width: 489,
-    height: 100,
+    height: 120,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -94,7 +94,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     lineHeight: "22px",
     /* identical to box height */
-
+    "&:hover": {
+      background: "#D3D3D3",
+    },
     color: "#FFFFFF",
     marginTop: 40,
     marginLeft: "-20rem",
@@ -114,11 +116,9 @@ export default function Blog3() {
     <Card className={classes.root}>
       <img src={img} alt="" className={classes.img} />
       <Box className={classes.heading}>
-        Join the future of mobility with our expertise
+        World-class software solutions for business across the globe.
       </Box>
-      <Box className={classes.text}>
-        For close to a decade, Intelivita being a top mobile app development
-      </Box>
+      <Box className={classes.text}>Design , Development and Consultancy</Box>
       <Button className={classes.btn}>Details</Button>
     </Card>
   );

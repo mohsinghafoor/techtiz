@@ -1,29 +1,11 @@
 import { Box, Container, Grid, makeStyles } from "@material-ui/core";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import MailIcon from "@material-ui/icons/Mail";
+import linkedin from "../../../assets/linkedin.png";
 import React from "react";
 import clutch from "../../../assets/clutchfooter.png";
 const useStyles = makeStyles({
-  bulletPoint: {
-    backgroundColor: "#C4C4C4",
-    width: "9.64px",
-    height: "7.7px",
-    borderRadius: 10,
-  },
-  iconStyles: {
-    width: 18,
-    height: 24,
-  },
-  icon: {
-    width: 22,
-    height: 24,
-  },
-  node: {
-    width: 52,
-    height: 22,
-  },
-  dflex: {
-    display: "flex",
-    alignItems: "center",
-  },
   iconName: {
     fontSize: 14,
     fontWeight: 300,
@@ -35,30 +17,13 @@ const useStyles = makeStyles({
     fontWeight: 300,
     fontFamily: "Axiforma",
   },
-  service: {
-    fontSize: 18,
-    fontWeight: 300,
-    color: "#4E4E4E",
-    fontFamily: "Axiforma",
+  dflex: {
+    display: "flex",
+    alignItems: "center",
   },
-  clutchStyles: {
-    width: 100,
-    height: 95,
-  },
-  clutchDetail: {
-    fontSize: 14,
-    fontWeight: 300,
-    color: "#000000",
-    width: 219,
-    fontFamily: "Axiforma",
-    // marginLeft: "auto",
-    textAlign: "left",
-    marginTop: 10,
-  },
-  divider: {
-    width: 1510,
-    height: "1.54px",
-    backgroundColor: "#EDEDED",
+  cnticon: {
+    width: 30,
+    height: 30,
   },
 });
 export const ReviewAccordian = () => {
@@ -67,14 +32,35 @@ export const ReviewAccordian = () => {
     <Container style={{ display: "flex", justifyContent: "space-around" }}>
       <Box>
         <Box mt={5}>
-          <Box>
-            <img className={classes.clutchStyles} src={clutch} alt="" />
+          <Box className={classes.dflex} mt={4}>
+            <MailIcon style={{ color: "red", fontSize: 30 }} />
+            <Box ml={1} className={classes.iconName}>
+              contact@techtiz.com
+            </Box>
           </Box>
-          <Box className={classes.clutchDetail}>
-            They are technically excellent, have an agile process in place and
-            are always looking for "win/win" opportunities. The team is
-            incredibly honest, hard working and has been a source of new ideas
-            and improvements.
+          <Box className={classes.dflex} mt={4}>
+            <FacebookIcon style={{ color: "blue", fontSize: 30 }} />
+            <Box ml={1} className={classes.iconName}>
+              Facebook
+            </Box>
+          </Box>
+          <Box className={classes.dflex} mt={4}>
+            <img className={classes.cnticon} src={linkedin} alt="" />
+            <Box ml={1} className={classes.iconName}>
+              Linkedin
+            </Box>
+          </Box>
+          <Box className={classes.dflex} mt={4}>
+            <img className={classes.cnticon} src={clutch} alt="" />
+            <Box ml={1} className={classes.iconName}>
+              Clutch
+            </Box>
+          </Box>
+          <Box className={classes.dflex} mt={4}>
+            <WhatsAppIcon style={{ color: "#0fa958", fontSize: 30 }} />
+            <Box ml={1} className={classes.iconName}>
+              +92 334 4265883
+            </Box>
           </Box>
         </Box>
       </Box>

@@ -23,13 +23,13 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     maxWidth: 489,
-    height: 100,
+    height: 80,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
     fontSize: 30,
     lineHeight: "50px",
-
+    paddingTop: 30,
     color: "#3B3E56",
     [theme.breakpoints.only("md")]: {
       maxWidth: 350,
@@ -46,11 +46,11 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     maxWidth: 482,
-    height: 315,
+    height: 335,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 22,
+    fontSize: 20,
     lineHeight: "35px",
 
     color: "#000000",
@@ -78,6 +78,10 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 500,
     fontSize: 18,
     lineHeight: 22,
+
+    "&:hover": {
+      background: "#D3D3D3",
+    },
     /* identical to box height */
 
     color: "#FFFFFF",
@@ -100,15 +104,14 @@ export default function Blog1() {
     <Card className={classes.root} variant="outlined">
       <CardContent>
         <Box className={classes.line} />
-        <Box className={classes.heading}>
-          Join the future of mobility with our expertise
-        </Box>
+        <Box className={classes.heading}>Flutter vs React Native 2021</Box>
         <Box className={classes.text}>
-          Whether you’re a Solo Entrepreneur getting started, or a business with
-          a collaborating team. Whether you are a doer with no design skills or
-          even a designer with more technical tastebuds. A high quality image
-          has the power to ramp up your sales and turn your business around. You
-          deserve to have the coolest online .
+          Flutter is a open-source software development kit (SDK) developed by
+          google . It develop IOS and Android applications using a single
+          codebase only. In other words, Flutter app development is worth
+          considering because it builds intuitive , fast and responsive
+          applications that function on multiple platforms effortlessly . it has
+          pre-written codes with customizable and easy to use widgets
         </Box>
         <Button className={classes.btn}>Read More</Button>
       </CardContent>

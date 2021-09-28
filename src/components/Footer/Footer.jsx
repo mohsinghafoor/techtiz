@@ -160,7 +160,7 @@ export const Footer = () => {
 
           <Grid item lg={4}>
             <Box className={classes.title} textAlign="center">
-              Reviews
+              Contact Us
             </Box>
             <Box mt={5}>
               <Box textAlign="center">

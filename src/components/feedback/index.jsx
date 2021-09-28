@@ -247,6 +247,10 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: 0,
     },
   },
+  inactiveLink: {
+    pointerEvents: "none",
+    cursor: "default",
+  },
 }));
 
 export default function Feedback() {
@@ -254,7 +258,7 @@ export default function Feedback() {
 
   return (
     <Container className={classes.root}>
-      <CallMadeIcon className={classes.leftarrow} />
+      {/* <CallMadeIcon className={classes.leftarrow} /> */}
       <Box className={classes.eclipse}></Box>
       <Box className={classes.heading}>
         Valuable Feedbacks from our Satisfied Clients
@@ -283,7 +287,7 @@ export default function Feedback() {
         </Box>
       </Box>
 
-      <CallMadeIcon className={classes.rightarrow} />
+      {/* <CallMadeIcon className={classes.rightarrow} /> */}
     </Container>
   );
 }

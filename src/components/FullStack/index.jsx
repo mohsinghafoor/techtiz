@@ -98,17 +98,18 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     textAlign: "center",
-
-    color: "#FFFFFF",
     "&:hover": {
-      background: "#ADD8E6",
-      [theme.breakpoints.only("md")]: {
-        width: 156,
-        height: 45,
-        fontSize: 10,
-      },
+      background: "#D3D3D3",
+    },
+    color: "#FFFFFF",
+
+    [theme.breakpoints.only("md")]: {
+      width: 156,
+      height: 45,
+      fontSize: 10,
     },
   },
+
   img: {
     position: "absolute",
     width: 560,

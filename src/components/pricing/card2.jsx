@@ -151,6 +151,9 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 18,
       height: 49,
     },
+    "&:hover": {
+      background: "#D3D3D3",
+    },
   },
 }));
 

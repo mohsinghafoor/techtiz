@@ -100,7 +100,7 @@ export default function FooterAccordion() {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Box className={classes.heading}>Reviews</Box>
+            <Box className={classes.heading}>Contact Us</Box>
           </AccordionSummary>
           <AccordionDetails>
             <ReviewAccordian />

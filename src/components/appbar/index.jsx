@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import a from "../../assets/a.svg";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
-import { Box, Container, Button, Grid } from "@material-ui/core";
+import { Box, Button, Grid } from "@material-ui/core";
 import { AppBarDrawer } from "./drawer";
 import logo from "../../assets/a.svg";
 
