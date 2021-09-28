@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/techtiz/static/css/main.eb01c660.chunk.css",
-    "main.js": "/techtiz/static/js/main.2b11ea43.chunk.js",
-    "main.js.map": "/techtiz/static/js/main.2b11ea43.chunk.js.map",
+    "main.js": "/techtiz/static/js/main.c5d5a231.chunk.js",
+    "main.js.map": "/techtiz/static/js/main.c5d5a231.chunk.js.map",
     "runtime-main.js": "/techtiz/static/js/runtime-main.73408850.js",
     "runtime-main.js.map": "/techtiz/static/js/runtime-main.73408850.js.map",
-    "static/js/2.e021ac11.chunk.js": "/techtiz/static/js/2.e021ac11.chunk.js",
-    "static/js/2.e021ac11.chunk.js.map": "/techtiz/static/js/2.e021ac11.chunk.js.map",
+    "static/js/2.b0c8e309.chunk.js": "/techtiz/static/js/2.b0c8e309.chunk.js",
+    "static/js/2.b0c8e309.chunk.js.map": "/techtiz/static/js/2.b0c8e309.chunk.js.map",
     "static/js/3.b3bc97a2.chunk.js": "/techtiz/static/js/3.b3bc97a2.chunk.js",
     "static/js/3.b3bc97a2.chunk.js.map": "/techtiz/static/js/3.b3bc97a2.chunk.js.map",
     "index.html": "/techtiz/index.html",
     "static/css/main.eb01c660.chunk.css.map": "/techtiz/static/css/main.eb01c660.chunk.css.map",
-    "static/js/2.e021ac11.chunk.js.LICENSE.txt": "/techtiz/static/js/2.e021ac11.chunk.js.LICENSE.txt",
+    "static/js/2.b0c8e309.chunk.js.LICENSE.txt": "/techtiz/static/js/2.b0c8e309.chunk.js.LICENSE.txt",
     "static/media/index.css": "/techtiz/static/media/FontsFree-Net-Axiforma2woff2.d33b50e9.ttf",
     "static/media/a.1bfcd61b.svg": "/techtiz/static/media/a.1bfcd61b.svg",
     "static/media/backend.e1251e63.png": "/techtiz/static/media/backend.e1251e63.png",
@@ -32,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.73408850.js",
-    "static/js/2.e021ac11.chunk.js",
+    "static/js/2.b0c8e309.chunk.js",
     "static/css/main.eb01c660.chunk.css",
-    "static/js/main.2b11ea43.chunk.js"
+    "static/js/main.c5d5a231.chunk.js"
   ]
 }
