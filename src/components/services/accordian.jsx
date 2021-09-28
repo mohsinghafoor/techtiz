@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 18,
     },
   },
-  suumary: {
+  summary: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -67,12 +67,13 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     [theme.breakpoints.down("xs")]: {
       width: 320,
-      fontSize: 14,
+      fontSize: 16,
+      height: 70,
     },
   },
-  details: {
+  mobiledetails: {
     width: 531,
-    height: 220,
+    height: 140,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -81,8 +82,23 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#000000",
     [theme.breakpoints.down("xs")]: {
-      width: 340,
-      fontSize: 10,
+      width: 320,
+      fontSize: 12,
+    },
+  },
+  details: {
+    width: 531,
+    height: 130,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 18,
+    lineHeight: "28px",
+
+    color: "#000000",
+    [theme.breakpoints.down("xs")]: {
+      width: 320,
+      fontSize: 12,
     },
   },
   btn: {
@@ -123,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
     height: 309.22,
     filter: "drop-shadow(9px 0px 14px rgba(0, 0, 0, 0.25))",
     transform: "rotate(17.78deg)",
-    marginTop: 170,
+    marginTop: 80,
   },
   expandedPanel: {
     color: "#FFC107",
@@ -160,16 +176,15 @@ export default function AccordionServices(props) {
           >
             <Box className={classes.heading}>Mobile Devolpment</Box>
           </AccordionSummary>
-          <AccordionDetails className={classes.suumary}>
+          <AccordionDetails className={classes.summary}>
             <Box className={classes.detailsheading}>
               Join the future of mobility with our expertise
             </Box>
-            <Box className={classes.details}>
-              For close to a decade, Intelivita being a top mobile app
-              development company has produced apps for various industries and
-              partners, from the start-up Social Media app Chatagram, to the Art
-              of Works Virtual Reality app for tech giant’s Microsoft, we have
-              worked with them all.
+            <Box className={classes.mobiledetails}>
+              At techtiz , the best mobile app development company in pakistan,
+              an apt pt and efficient cross-functional team is always on a
+              lookout for challenges that ask for creating visually stunning &
+              functionally effective mobile apps.
             </Box>
             <Box className={classes.circle}></Box>
             <img src={mobile} alt="" className={classes.img} />
@@ -193,16 +208,14 @@ export default function AccordionServices(props) {
           >
             <Box className={classes.heading}>Front-end Development</Box>
           </AccordionSummary>
-          <AccordionDetails className={classes.suumary}>
+          <AccordionDetails className={classes.summary}>
             <Box className={classes.detailsheading}>
-              Join the future of mobility with our expertise
+              What We Offer as a Frontend Team
             </Box>
             <Box className={classes.details}>
-              For close to a decade, Intelivita being a top mobile app
-              development company has produced apps for various industries and
-              partners, from the start-up Social Media app Chatagram, to the Art
-              of Works Virtual Reality app for tech giant’s Microsoft, we have
-              worked with them all.
+              Top class front end development services to create interative
+              custom web and mobile applications to deliver pixel perfect
+              ,stunning user experience.
             </Box>
             <img src={pic1} alt="" style={{ width: 300 }} />
             <Button className={classes.btn}>
@@ -225,16 +238,14 @@ export default function AccordionServices(props) {
           >
             <Box className={classes.heading}>Back-end Development</Box>
           </AccordionSummary>
-          <AccordionDetails className={classes.suumary}>
+          <AccordionDetails className={classes.summary}>
             <Box className={classes.detailsheading}>
-              Join the future of mobility with our expertise
+              Get Services of Our Experienced Backend Team
             </Box>
             <Box className={classes.details}>
-              For close to a decade, Intelivita being a top mobile app
-              development company has produced apps for various industries and
-              partners, from the start-up Social Media app Chatagram, to the Art
-              of Works Virtual Reality app for tech giant’s Microsoft, we have
-              worked with them all.
+              Top class Backend development services to create interative custom
+              web and mobile applications to deliver pixel perfect ,stunning
+              user experience.
             </Box>
             <img src={pic2} alt="" style={{ width: 300 }} />
             <Button className={classes.btn}>
@@ -257,16 +268,14 @@ export default function AccordionServices(props) {
           >
             <Box className={classes.heading}>Quality assurance</Box>
           </AccordionSummary>
-          <AccordionDetails className={classes.suumary}>
+          <AccordionDetails className={classes.summary}>
             <Box className={classes.detailsheading}>
-              Join the future of mobility with our expertise
+              Satsifaction of Customer is Our First Priority
             </Box>
             <Box className={classes.details}>
-              For close to a decade, Intelivita being a top mobile app
-              development company has produced apps for various industries and
-              partners, from the start-up Social Media app Chatagram, to the Art
-              of Works Virtual Reality app for tech giant’s Microsoft, we have
-              worked with them all.
+              We have a team of professional experts having years of experience
+              in this field. Our specialized team can provide custom web
+              solutions to establish your business online.
             </Box>
             <img src={pic3} alt="" style={{ width: 300 }} />
             <Button className={classes.btn}>

@@ -1,42 +1,13 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Container } from "@material-ui/core";
+import { Container, Box } from "@material-ui/core";
 import img from "../../assets/front.PNG";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  circle: {
-    position: "absolute",
-    width: 424.36,
-    height: 420.36,
-    left: 850.89,
-    marginTop: 50.93,
-    borderRadius: "50rem",
-    background: "#F0F0F0",
-    transform: "rotate(5.76deg)",
-  },
-  smallyellow: {
-    position: "absolute",
-    width: 83.06,
-    height: 83.06,
-    left: 970.47,
-    // top: 200.91,
-    borderRadius: "20rem",
-    background: "#FFC560",
-    transform: "rotate(17.12deg)",
-  },
-  smallblue: {
-    position: "absolute",
-    width: 83.06,
-    height: 83.06,
-    left: 1070.79,
-    marginTop: 400.93,
-    borderRadius: "20rem",
-    background: "#00D7D3",
-    transform: "rotate(17.12deg)",
-  },
+
   mobile: {
     position: "absolute",
     width: 503.92,
@@ -56,6 +27,54 @@ const useStyles = makeStyles((theme) => ({
     // top: 200.93,
     //transform: "rotate(17.78deg)",
   },
+  heading: {
+    display: "flex",
+    maxWidth: 646,
+    height: 47,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 28,
+    // lineHeight: 47,
+    textAlign: "center",
+
+    color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 24,
+      width: 517,
+      height: 50,
+    },
+    [theme.breakpoints.only("lg")]: {
+      height: 70,
+    },
+  },
+  subheading: {
+    display: "flex",
+    maxWidth: 613,
+    height: 140,
+
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 22,
+    // line-height: 35,
+
+    color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 18,
+      maxWidth: 531,
+      height: 145,
+    },
+  },
+  txtbox: {
+    position: "absolute",
+    display: "flex",
+    flexDirection: "column",
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: "-72rem",
+      marginTop: "8rem",
+    },
+  },
 }));
 
 export default function PictureSide() {
@@ -63,6 +82,17 @@ export default function PictureSide() {
 
   return (
     <Container className={classes.root}>
+      <Box className={classes.txtbox}>
+        <Box className={classes.heading}>
+          Join the future of mobility with our expertise
+        </Box>
+        <Box className={classes.subheading}>
+          At techtiz , the best mobile app development company in pakistan, an
+          apt pt and efficient cross-functional team is always on a lookout for
+          challenges that ask for creating visually stunning & functionally
+          effective mobile apps.
+        </Box>
+      </Box>
       <img src={img} alt="" className={classes.mobile} />
     </Container>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Container } from "@material-ui/core";
+import { Container, Box } from "@material-ui/core";
 import front from "../../assets/frontend.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -26,6 +26,54 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 100,
     },
   },
+  heading: {
+    display: "flex",
+    maxWidth: 646,
+    height: 47,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 28,
+    // lineHeight: 47,
+    textAlign: "center",
+
+    color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 24,
+      width: 517,
+      height: 50,
+    },
+    [theme.breakpoints.only("lg")]: {
+      height: 70,
+    },
+  },
+  subheading: {
+    display: "flex",
+    maxWidth: 613,
+    height: 140,
+
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 22,
+    // line-height: 35,
+
+    color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 18,
+      maxWidth: 531,
+      height: 145,
+    },
+  },
+  txtbox: {
+    position: "absolute",
+    display: "flex",
+    flexDirection: "column",
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: "-72rem",
+      marginTop: "10rem",
+    },
+  },
 }));
 
 export default function FrontEnd() {
@@ -33,6 +81,14 @@ export default function FrontEnd() {
 
   return (
     <Container className={classes.root}>
+      <Box className={classes.txtbox}>
+        <Box className={classes.heading}>What We Offer as a Frontend Team</Box>
+        <Box className={classes.subheading}>
+          Top class front end development services to create interative custom
+          web and mobile applications to deliver pixel perfect ,stunning user
+          experience.
+        </Box>
+      </Box>
       <img src={front} alt="" className={classes.img} />
     </Container>
   );

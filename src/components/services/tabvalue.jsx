@@ -5,55 +5,8 @@ import Fields from "./fields";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    marginLeft: 100,
-  },
-  services: {
-    width: 474,
-    height: 105,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 800,
-    fontSize: 45,
-    // line-height: 113.6%,
-    /* or 51px */
-
-    color: "#3B3E56",
-  },
-  heading: {
-    display: "flex",
-    maxWidth: 646,
-    height: 47,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 28,
-    // lineHeight: 47,
-    textAlign: "center",
-    marginTop: 50,
-    color: "#000000",
-    [theme.breakpoints.only("md")]: {
-      fontSize: 24,
-      width: 517,
-      height: 50,
-    },
-  },
-  subheading: {
-    display: "flex",
-    maxWidth: 613,
-    height: 140,
-
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 22,
-    // line-height: 35,
-
-    color: "#000000",
-    [theme.breakpoints.only("md")]: {
-      fontSize: 18,
-      maxWidth: 531,
-      height: 145,
+    [theme.breakpoints.only("lg")]: {
+      marginTop: "20rem",
     },
   },
 
@@ -83,8 +36,8 @@ export default function TabValue() {
   const classes = useStyles();
 
   return (
-    <Container>
-      <Box className={classes.heading}>
+    <Container className={classes.root}>
+      {/* <Box className={classes.heading}>
         Join the future of mobility with our expertise
       </Box>
       <Box className={classes.subheading}>
@@ -92,7 +45,7 @@ export default function TabValue() {
         company has produced apps for various industries and partners, from the
         start-up Social Media app Chatagram, to the Art of Works Virtual Reality
         app for tech giant’s Microsoft, we have worked with them all.
-      </Box>
+      </Box> */}
       <Fields />
       <Button className={classes.btn}>Calculate App development Cost</Button>
     </Container>
