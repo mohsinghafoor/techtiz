@@ -14,8 +14,7 @@ import MyContactUs from "./components/mohsincontactus";
 function App() {
   return (
     <Container>
-      <Services />
-      {/* <Header />
+      <Header />
       <FullStack />
       <Services />
       <Process />
@@ -24,7 +23,7 @@ function App() {
       <Pricing />
       <Blogs />
       <MyContactUs />
-      <ResponsiveFooter /> */}
+      <ResponsiveFooter />
     </Container>
   );
 }

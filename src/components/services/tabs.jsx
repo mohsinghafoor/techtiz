@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     lineHeight: "40px",
     [theme.breakpoints.only("md")]: {
-      fontSize: 24,
+      fontSize: 22,
     },
   },
 }));

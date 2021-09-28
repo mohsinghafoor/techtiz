@@ -5,8 +5,11 @@ import Fields from "./fields";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    [theme.breakpoints.only("lg")]: {
+    [theme.breakpoints.up("lg")]: {
       marginTop: "20rem",
+    },
+    [theme.breakpoints.only("md")]: {
+      marginTop: "15rem",
     },
   },
 

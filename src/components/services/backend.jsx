@@ -39,9 +39,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("md")]: {
       fontSize: 24,
       width: 517,
-      height: 50,
+      height: 80,
     },
-    [theme.breakpoints.only("lg")]: {
+    [theme.breakpoints.up("lg")]: {
       height: 100,
     },
   },
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       fontSize: 18,
-      maxWidth: 531,
+      maxWidth: 480,
       height: 145,
     },
   },
@@ -70,6 +70,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("lg")]: {
       marginLeft: "-72rem",
       marginTop: "8rem",
+    },
+    [theme.breakpoints.only("md")]: {
+      marginLeft: "-50rem",
+      marginTop: "6rem",
     },
   },
 }));
