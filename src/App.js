@@ -10,6 +10,7 @@ import ResponsiveFooter from "./components/Footer";
 import { Container } from "@material-ui/core";
 import Blogs from "./components/blogs";
 import MyContactUs from "./components/mohsincontactus";
+import { Projects } from "./components/projects";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <FullStack />
       <Services />
       <Process />
+      <Projects />
       <Industries />
       <Feedback />
       <Pricing />
