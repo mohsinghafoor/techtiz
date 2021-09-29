@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Container, Box } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
-import TabValue from "./tabvalue";
 import ServicesTab from "./tabs";
 import AccordionServices from "./accordian";
 
@@ -44,7 +43,6 @@ export default function Services() {
         <Container className={classes.root}>
           <Box className={classes.services}>Our Valued Services</Box>
           <ServicesTab />
-          <TabValue />
         </Container>
       )}
     </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box } from "@material-ui/core";
-
+import { Box, Button } from "@material-ui/core";
 import apple from "../../assets/apple.png";
 import react from "../../assets/react.png";
 import angular from "../../assets/angular.png";
@@ -14,66 +13,22 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     flexGrow: 1,
     maxWidth: 500,
-    marginTop: 70,
+    [theme.breakpoints.up("lg")]: {
+      marginTop: "-8rem",
+      marginLeft: 30,
+    },
     [theme.breakpoints.down("md")]: {
-      maxWidth: 400,
+      marginTop: "-5rem",
     },
   },
   apple: {
     width: 49.09,
     height: 60.82,
-    [theme.breakpoints.down("md")]: {
-      maxWidth: 40,
-      height: 40.82,
-    },
     [theme.breakpoints.down("sm")]: {
       maxWidth: 30,
     },
   },
-  react: {
-    width: 61.55,
-    height: 60.82,
-    [theme.breakpoints.down("md")]: {
-      maxWidth: 40,
-      height: 40.82,
-    },
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: 30,
-    },
-  },
-  angular: {
-    width: 60.08,
-    height: 72.54,
-    [theme.breakpoints.down("md")]: {
-      maxWidth: 40,
-      height: 40.82,
-    },
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: 30,
-    },
-  },
-  android: {
-    width: 50.56,
-    height: 60.82,
-    [theme.breakpoints.down("md")]: {
-      maxWidth: 40,
-      height: 40.82,
-    },
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: 30,
-    },
-  },
-  flutter: {
-    width: 60.08,
-    height: 60.82,
-    [theme.breakpoints.down("md")]: {
-      maxWidth: 40,
-      height: 40.82,
-    },
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: 30,
-    },
-  },
+
   applet: {
     width: 74,
     height: 51,
@@ -84,74 +39,36 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "22px",
     color: "#000000",
     [theme.breakpoints.down("md")]: {
-      fontSize: 14,
+      fontSize: 16,
       width: 65,
     },
   },
-  reactt: {
-    width: 72,
-    height: 51,
-    left: 270,
-    top: 1501,
+
+  btn: {
+    width: 306,
+    height: 67,
+    background: "#7FC6DC",
+    boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
+    borderRadius: 72,
+    fontFamily: "Montserrat",
+    fontStyle: "normal",
+    fontWeight: 500,
+    fontSize: 13,
+    // line-height: 20px,
     display: "flex",
-    fontFamily: "Montserrat",
-    fontStyle: "normal",
-    fontWeight: "bold",
-    fontSize: 18,
-    lineHeight: "22px",
-
-    color: " #000000",
-    [theme.breakpoints.down("md")]: {
-      fontSize: 14,
-      width: 65,
+    alignItems: "center",
+    textAlign: "center",
+    color: "#FFFFFF",
+    marginTop: 30,
+    "&:hover": {
+      background: "#D3D3D3",
     },
-  },
-  angulart: {
-    width: 79,
-    height: 51,
-    left: 373,
-    top: 1501,
-
-    fontFamily: "Montserrat",
-    fontStyle: "normal",
-    fontWeight: "bold",
-    fontSize: 18,
-    lineHeight: "22px",
-
-    color: " #000000",
-    [theme.breakpoints.down("md")]: {
-      fontSize: 14,
-      width: 65,
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: 30,
+      marginTop: "7rem",
     },
-  },
-  androidt: {
-    width: 81,
-    height: 51,
-
-    fontFamily: " Montserrat",
-    fontStyle: "normal",
-    fontWeight: "bold",
-    fontSize: 18,
-    lineHeight: "22px",
-    color: "#000000",
-    [theme.breakpoints.down("md")]: {
-      fontSize: 14,
-      width: 65,
-    },
-  },
-  fluttert: {
-    width: 67,
-    height: 51,
-    fontFamily: "Montserrat",
-    fontStyle: "normal",
-    fontWeight: "bold",
-    fontSize: 18,
-    lineHeight: "22px",
-
-    color: "#000000",
-    [theme.breakpoints.down("md")]: {
-      fontSize: 14,
-      width: 65,
+    [theme.breakpoints.only("md")]: {
+      marginTop: "5rem",
     },
   },
 }));
@@ -160,27 +77,30 @@ export default function Fields() {
   const classes = useStyles();
 
   return (
-    <Box className={classes.root}>
-      <Box>
-        <img src={apple} alt="" className={classes.apple} />
-        <Box className={classes.applet}>Apple</Box>
+    <>
+      <Box className={classes.root}>
+        <Box style={{ height: 50 }}>
+          <img src={apple} alt="" className={classes.apple} />
+          <Box className={classes.applet}>Apple</Box>
+        </Box>
+        <Box style={{ height: 50 }}>
+          <img src={react} alt="" className={classes.apple} />
+          <Box className={classes.applet}>React Native</Box>
+        </Box>
+        <Box style={{ height: 50 }}>
+          <img src={angular} alt="" className={classes.apple} />
+          <Box className={classes.applet}>Angular</Box>
+        </Box>
+        <Box style={{ height: 50 }}>
+          <img src={android} alt="" className={classes.apple} />
+          <Box className={classes.applet}>Android</Box>
+        </Box>
+        <Box style={{ height: 50 }}>
+          <img src={flutter} alt="" className={classes.apple} />
+          <Box className={classes.applet}>Flutter</Box>
+        </Box>
       </Box>
-      <Box>
-        <img src={react} alt="" className={classes.react} />
-        <Box className={classes.reactt}>React Native</Box>
-      </Box>
-      <Box>
-        <img src={angular} alt="" className={classes.angular} />
-        <Box className={classes.angulart}>Angular</Box>
-      </Box>
-      <Box>
-        <img src={android} alt="" className={classes.android} />
-        <Box className={classes.androidt}>Android</Box>
-      </Box>
-      <Box>
-        <img src={flutter} alt="" className={classes.flutter} />
-        <Box className={classes.fluttert}>Flutter</Box>
-      </Box>
-    </Box>
+      <Button className={classes.btn}>Calculate App development Cost</Button>
+    </>
   );
 }
