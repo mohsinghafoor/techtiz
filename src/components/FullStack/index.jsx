@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#3B3E56",
     [theme.breakpoints.only("md")]: {
-      maxWidth: 150,
+      maxWidth: 200,
       fontSize: 30,
       height: 35,
     },
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#3B3E56",
     marginTop: 20,
     [theme.breakpoints.only("md")]: {
-      maxWidth: 300,
+      maxWidth: 400,
       fontSize: 30,
       height: 70,
     },

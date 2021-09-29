@@ -40,15 +40,6 @@ export default function TabValue() {
 
   return (
     <Container className={classes.root}>
-      {/* <Box className={classes.heading}>
-        Join the future of mobility with our expertise
-      </Box>
-      <Box className={classes.subheading}>
-        For close to a decade, Intelivita being a top mobile app development
-        company has produced apps for various industries and partners, from the
-        start-up Social Media app Chatagram, to the Art of Works Virtual Reality
-        app for tech giant’s Microsoft, we have worked with them all.
-      </Box> */}
       <Fields />
       <Button className={classes.btn}>Calculate App development Cost</Button>
     </Container>

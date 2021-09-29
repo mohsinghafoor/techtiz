@@ -14,9 +14,9 @@ const useStyles = makeStyles((theme) => ({
     height: 501.62,
     marginLeft: 100.13,
     [theme.breakpoints.only("md")]: {
-      marginLeft: -340,
+      marginLeft: "-25rem",
       marginTop: 100,
-      width: 320,
+      width: 340,
       height: 320,
     },
     [theme.breakpoints.up("lg")]: {
@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
     //transform: "rotate(17.78deg)",
   },
   heading: {
+    position: "absolute",
     display: "flex",
     maxWidth: 646,
     height: 47,
@@ -37,12 +38,15 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 28,
     // lineHeight: 47,
     textAlign: "left",
-
+    marginLeft: "-72rem",
+    marginTop: "7rem",
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       fontSize: 24,
-      width: 517,
+      maxWidth: 517,
       height: 70,
+      marginLeft: "-52rem",
+      marginTop: "5rem",
     },
     [theme.breakpoints.up("lg")]: {
       height: 70,
@@ -52,33 +56,36 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     maxWidth: 613,
     height: 140,
-
+    position: "absolute",
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: 22,
     // line-height: 35,
-
+    marginLeft: "-72rem",
+    marginTop: "12rem",
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       fontSize: 18,
       maxWidth: 480,
       height: 145,
+      marginLeft: "-52rem",
+      marginTop: "10rem",
     },
   },
-  txtbox: {
-    position: "absolute",
-    display: "flex",
-    flexDirection: "column",
-    [theme.breakpoints.only("md")]: {
-      marginLeft: "-50rem",
-      marginTop: "6rem",
-    },
-    [theme.breakpoints.up("lg")]: {
-      marginLeft: "-72rem",
-      marginTop: "8rem",
-    },
-  },
+  // txtbox: {
+  //   position: "absolute",
+  //   display: "flex",
+  //   flexDirection: "column",
+  //   [theme.breakpoints.only("md")]: {
+  //     marginLeft: "-60rem",
+  //     marginTop: "6rem",
+  //   },
+  //   [theme.breakpoints.up("lg")]: {
+  //     marginLeft: "-72rem",
+  //     marginTop: "8rem",
+  //   },
+  // },
 }));
 
 export default function PictureSide() {

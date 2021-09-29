@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     [theme.breakpoints.only("md")]: {
       marginLeft: 25,
+      maxWidth: 1100,
     },
     [theme.breakpoints.up("lg")]: {
       marginLeft: 25,

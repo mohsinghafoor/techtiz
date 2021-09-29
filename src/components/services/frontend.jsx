@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     height: 360.62,
     marginLeft: 100.13,
     [theme.breakpoints.only("md")]: {
-      marginLeft: -320,
+      marginLeft: "-22rem",
       marginTop: 100,
       width: 300,
       height: 320,
@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     [theme.breakpoints.only("md")]: {
-      marginLeft: "-50rem",
+      marginLeft: "-52rem",
       marginTop: "6rem",
     },
     [theme.breakpoints.up("lg")]: {

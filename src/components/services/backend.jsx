@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: "8rem",
     },
     [theme.breakpoints.only("md")]: {
-      marginLeft: "-50rem",
+      marginLeft: "-52rem",
       marginTop: "6rem",
     },
   },

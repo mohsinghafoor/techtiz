@@ -121,7 +121,7 @@ const useStyles = makeStyles((theme) => ({
     height: 485,
     position: "absolute",
     borderRadius: 30,
-    marginLeft: 370,
+    marginLeft: 340,
     marginTop: 20,
     border: "4px solid black",
     [theme.breakpoints.only("md")]: {
@@ -296,7 +296,7 @@ export const Projects = (props) => {
                   className={classes.mobilefront}
                 />
                 <img src={mobileback3} alt="" className={classes.mobileback} />
-                <Box className={classes.circle}></Box>
+                {/* <Box className={classes.circle}></Box> */}
                 <img src={qrat3} alt="" className={classes.qrat} />
               </Grid>
             </Grid>
