@@ -3,9 +3,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import a from "../../assets/a.svg";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
-import { Box, Button, Grid } from "@material-ui/core";
+import { Box, Button, Grid, IconButton } from "@material-ui/core";
 import { AppBarDrawer } from "./drawer";
 import logo from "../../assets/a.svg";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,17 +22,21 @@ const useStyles = makeStyles((theme) => ({
   buttonbox: {
     display: "flex",
     justifyContent: "space-between",
-    width: 550,
+    width: 560,
     height: 35,
   },
   a: {
     textDecoration: "none",
+    borderRadius: 0,
+    "&:hover": {
+      backgroundColor: "white",
+    },
   },
   buttons: {
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 22,
+    fontSize: 23,
     color: "#000000",
   },
   btn: {
@@ -111,7 +116,9 @@ export default function Header() {
             md={3}
             style={{ display: "flex", justifyContent: "center" }}
           >
-            <Button className={classes.btn}>Contact</Button>
+            <Link to="contact">
+              <Button className={classes.btn}>Contact</Button>
+            </Link>
           </Grid>
         </Grid>
       ) : (
@@ -127,22 +134,32 @@ export default function Header() {
           </Grid>
           <Grid item md={6}>
             <Box className={classes.buttonbox}>
-              <a href="#" className={classes.a}>
-                <Box className={classes.buttons}>Services</Box>
-              </a>
-              <a href="#" className={classes.a}>
-                <Box className={classes.buttons}>Expertise</Box>
-              </a>
-              <a href="#" className={classes.a}>
-                <Box className={classes.buttons}>About</Box>
-              </a>
-              <a href="#" className={classes.a}>
-                <Box className={classes.buttons}>Portfolio</Box>
-              </a>
+              <IconButton className={classes.a}>
+                <Link to="services">
+                  <Box className={classes.buttons}>Services</Box>
+                </Link>
+              </IconButton>
+              <IconButton className={classes.a}>
+                <Link to="expertise">
+                  <Box className={classes.buttons}>Expertise</Box>
+                </Link>
+              </IconButton>
+              <IconButton className={classes.a}>
+                <Link to="process">
+                  <Box className={classes.buttons}>Process</Box>
+                </Link>
+              </IconButton>
+              <IconButton className={classes.a}>
+                <Link to="process">
+                  <Box className={classes.buttons}>Portfolio</Box>
+                </Link>
+              </IconButton>
             </Box>
           </Grid>
           <Grid item md={1}>
-            <Button className={classes.btn}>Contact</Button>
+            <Link to="contact">
+              <Button className={classes.btn}>Contact</Button>
+            </Link>
           </Grid>
         </Grid>
       )}

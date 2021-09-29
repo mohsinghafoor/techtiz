@@ -4,6 +4,11 @@ import { Accordion, Box } from "@material-ui/core";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import food from "../../assets/food.png";
+import ecommerce from "../../assets/ecommercimg.png";
+import education from "../../assets/education.png";
+import market from "../../assets/market1.png";
+import socail from "../../assets/social.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -46,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center",
+    // justifyContent: "center",
   },
   detailsheading: {
     width: 500,
@@ -81,28 +86,6 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 14,
     },
   },
-  btn: {
-    width: 320,
-    height: 53,
-    background: "#7FC6DC",
-    boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
-    borderRadius: 72,
-    fontFamily: "Montserrat",
-    fontStyle: "normal",
-    fontWeight: 500,
-    fontSize: 14,
-    lineHeight: "17px",
-    display: "flex",
-    alignItems: "center",
-    textAlign: "center",
-    color: "#FFFFFF",
-    marginTop: 40,
-    [theme.breakpoints.down("xs")]: {
-      width: 290,
-      fontSize: 12,
-      height: 48,
-    },
-  },
   parent: {
     width: 350,
   },
@@ -113,6 +96,11 @@ const useStyles = makeStyles((theme) => ({
     "&.MuiAccordion-root:before": {
       backgroundColor: "white",
     },
+  },
+  img: {
+    width: 230.13,
+    marginBottom: 30,
+    borderRadius: 30,
   },
 }));
 
@@ -138,10 +126,12 @@ export default function IndustriesAccordion(props) {
             <Box className={classes.heading}>Food</Box>
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
+            <img src={food} alt="" className={classes.img} />
             <Box className={classes.details}>
-              Thank you again for the successful launch of the 3M and Converse
-              applications. Your dedication, hard-work, flexibility, patience
-              and professionalism is recognized and appreciated.
+              Techtiz offers food app development services to the clients .Our
+              developers have expertise to create interative , easy to manage
+              apps with latest technologies . Streamline the process of selling
+              your food online , with our mobile apps
             </Box>
           </AccordionDetails>
         </Accordion>
@@ -160,10 +150,13 @@ export default function IndustriesAccordion(props) {
             <Box className={classes.heading}>E-Commerce</Box>
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
+            <img src={ecommerce} alt="" className={classes.img} />
             <Box className={classes.details}>
-              Thank you again for the successful launch of the 3M and Converse
-              applications. Your dedication, hard-work, flexibility, patience
-              and professionalism is recognized and appreciated.
+              WE provides the best development services for E-Commerce with the
+              most suitable development strategies for all customers. To ensure
+              our clients receive a successful E-Commerce web design process, we
+              have a dedicated team of specialist consultants, developers, and
+              project managers
             </Box>
           </AccordionDetails>
         </Accordion>
@@ -182,10 +175,14 @@ export default function IndustriesAccordion(props) {
             <Box className={classes.heading}>Social</Box>
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
+            <img src={socail} alt="" className={classes.img} />
             <Box className={classes.details}>
-              Thank you again for the successful launch of the 3M and Converse
-              applications. Your dedication, hard-work, flexibility, patience
-              and professionalism is recognized and appreciated.
+              Techtiz is the ultimate smartphone application development
+              company. Our creative and hardworking team designs and develops
+              the best apps that you wish to possess. Be it iPad or iPhone,
+              android or Web, our expert team develop such inspiring apps that
+              are guaranteed to suit your taste, and yield profitable results
+              for you.
             </Box>
           </AccordionDetails>
         </Accordion>
@@ -204,10 +201,11 @@ export default function IndustriesAccordion(props) {
             <Box className={classes.heading}>Education</Box>
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
+            <img src={education} alt="" className={classes.img} />
             <Box className={classes.details}>
-              Thank you again for the successful launch of the 3M and Converse
-              applications. Your dedication, hard-work, flexibility, patience
-              and professionalism is recognized and appreciated.
+              We provides School website development , Education application
+              that will benefits both teacher and students . We built prefect
+              designs that are easy to use .
             </Box>
           </AccordionDetails>
         </Accordion>
@@ -226,10 +224,14 @@ export default function IndustriesAccordion(props) {
             <Box className={classes.heading}>MarketPlace</Box>
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
+            <img src={market} alt="" className={classes.img} />
             <Box className={classes.details}>
-              Thank you again for the successful launch of the 3M and Converse
-              applications. Your dedication, hard-work, flexibility, patience
-              and professionalism is recognized and appreciated.
+              Our team of developers has the expertise and experience to develop
+              full-fledged cutting-edge mobile and cross-platform applications
+              to cater to users’ growing demands in today’s competitive markets.
+              From developing full-scale product solutions for large enterprises
+              to need-specific solutions of different businesses, we offer
+              end-to-end Solution
             </Box>
           </AccordionDetails>
         </Accordion>

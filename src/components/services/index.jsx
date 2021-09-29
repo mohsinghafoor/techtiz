@@ -37,7 +37,7 @@ export default function Services() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <div className={classes.main}>
+    <div className={classes.main} id="services">
       {isMobile ? (
         <AccordionServices />
       ) : (

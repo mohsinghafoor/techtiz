@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Box } from "@material-ui/core";
-import market from "../../assets/market.png";
+import market from "../../assets/market1.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,13 +50,12 @@ const useStyles = makeStyles((theme) => ({
   },
   subheading: {
     display: "flex",
-    maxWidth: 584,
+    maxWidth: 684,
     height: 174,
-
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: 22,
-    lineHeight: "143.4%",
+    lineHeight: "123.4%",
     /* or 32px */
 
     color: "#000000",
@@ -76,9 +75,12 @@ export default function Market() {
       <img src={market} alt="" className={classes.img} />
       <Box className={classes.heading}>Marketplace </Box>
       <Box className={classes.subheading}>
-        Thank you again for the successful launch of the 3M and Converse
-        applications. Your dedication, hard-work, flexibility, patience and
-        professionalism is recognized and appreciated.
+        Our team of developers has the expertise and experience to develop
+        full-fledged cutting-edge mobile and cross-platform applications to
+        cater to users’ growing demands in today’s competitive markets. From
+        developing full-scale product solutions for large enterprises to
+        need-specific solutions of different businesses, we offer end-to-end
+        Solution
       </Box>
     </Container>
   );

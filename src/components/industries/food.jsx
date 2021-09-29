@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 34,
     [theme.breakpoints.only("md")]: {
       width: 290,
-      height: 440,
+      height: 470,
       marginLeft: "-21rem",
       marginTop: "-16.5rem",
     },
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     display: "flex",
     maxWidth: 729,
-    height: 52,
+    height: 45,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#000000",
     [theme.breakpoints.up("lg")]: {
-      marginTop: 40,
+      marginTop: 30,
     },
     [theme.breakpoints.only("md")]: {
       maxWidth: 484,
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subheading: {
     display: "flex",
-    maxWidth: 584,
+    maxWidth: 600,
     height: 174,
 
     // fontFamily: "Montserrat",
@@ -76,9 +76,10 @@ export default function Food() {
       <img src={food} alt="" className={classes.img} />
       <Box className={classes.heading}>Food </Box>
       <Box className={classes.subheading}>
-        Thank you again for the successful launch of the 3M and Converse
-        applications. Your dedication, hard-work, flexibility, patience and
-        professionalism is recognized and appreciated.
+        Techtiz offers food app development services to the clients. Our
+        developers have expertise to create interative , easy to manage apps
+        with latest technologies . Streamline the process of selling your food
+        online , with our mobile apps
       </Box>
     </Container>
   );

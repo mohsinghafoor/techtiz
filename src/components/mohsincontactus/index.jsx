@@ -115,7 +115,7 @@ export default function MyContactUs() {
 
   return (
     <Container className={classes.main}>
-      <Box className={classes.blue} />
+      <Box id="contact" className={classes.blue} />
       <Box className={classes.yellow} />
       <Box className={classes.sale}>
         <MySales />

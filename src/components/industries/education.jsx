@@ -75,9 +75,9 @@ export default function Education() {
       <img src={education} alt="" className={classes.img} />
       <Box className={classes.heading}>Education </Box>
       <Box className={classes.subheading}>
-        Thank you again for the successful launch of the 3M and Converse
-        applications. Your dedication, hard-work, flexibility, patience and
-        professionalism is recognized and appreciated.
+        We provides School website development , Education application that will
+        benefits both teacher and students . We built prefect designs that are
+        easy to use .
       </Box>
     </Container>
   );

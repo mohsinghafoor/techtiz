@@ -168,18 +168,24 @@ export const WebFooter = () => {
       <Box>
         <Box className={classes.title}>Contact Us</Box>
         <Box mt={4}>
-          <Box className={classes.dflex} mt={4}>
-            <MailIcon style={{ color: "red", fontSize: 30 }} />
-            <Box ml={1} className={classes.iconName}>
-              contact@techtiz.com
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            {" "}
+            <Box className={classes.dflex} mt={4}>
+              <MailIcon style={{ color: "red", fontSize: 30 }} />
+              <Box ml={1} className={classes.iconName}>
+                contact@techtiz.com
+              </Box>
             </Box>
-          </Box>
+          </a>
           <a
             href="https://web.whatsapp.com/"
             target="_blank"
             style={{ textDecoration: "none" }}
           >
-            {" "}
             <Box className={classes.dflex} mt={4}>
               <WhatsAppIcon style={{ color: "#0fa958", fontSize: 30 }} />
               <Box ml={1} className={classes.iconName}>

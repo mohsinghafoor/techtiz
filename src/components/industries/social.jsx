@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#000000",
     [theme.breakpoints.up("lg")]: {
-      marginTop: 40,
+      marginTop: 30,
     },
     [theme.breakpoints.only("md")]: {
       maxWidth: 484,
@@ -49,12 +49,12 @@ const useStyles = makeStyles((theme) => ({
   },
   subheading: {
     display: "flex",
-    maxWidth: 584,
-    height: 174,
+    maxWidth: 650,
+    height: 164,
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: 22,
-    lineHeight: "143.4%",
+    lineHeight: "123.4%",
     /* or 32px */
 
     color: "#000000",
@@ -74,9 +74,11 @@ export default function Social() {
       <img src={socail} alt="" className={classes.img} />
       <Box className={classes.heading}>Social </Box>
       <Box className={classes.subheading}>
-        Thank you again for the successful launch of the 3M and Converse
-        applications. Your dedication, hard-work, flexibility, patience and
-        professionalism is recognized and appreciated.
+        Techtiz is the ultimate smartphone application development company. Our
+        creative and hardworking team designs and develops the best apps that
+        you wish to possess. Be it iPad or iPhone, android or Web, our expert
+        team develop such inspiring apps that are guaranteed to suit your taste,
+        and yield profitable results for you.
       </Box>
     </Container>
   );

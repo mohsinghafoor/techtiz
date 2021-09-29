@@ -5,6 +5,9 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import mobile from "../../assets/big.png";
+import small1 from "../../assets/small1.png";
+import small2 from "../../assets/small2.png";
+import small3 from "../../assets/small3.png";
 import pic1 from "../../assets/frontend.png";
 import pic2 from "../../assets/backend.png";
 import pic3 from "../../assets/quality.png";
@@ -73,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
   },
   mobiledetails: {
     width: 531,
-    height: 140,
+    height: 200,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -124,8 +127,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   circle: {
-    width: 292.41,
-    height: 292.41,
+    width: 272.41,
+    height: 272.41,
     background: "#F0F0F0",
     transform: "rotate(5.76deg)",
     borderRadius: "10rem",
@@ -139,7 +142,8 @@ const useStyles = makeStyles((theme) => ({
     height: 309.22,
     filter: "drop-shadow(9px 0px 14px rgba(0, 0, 0, 0.25))",
     transform: "rotate(17.78deg)",
-    marginTop: 80,
+    marginTop: 180,
+    marginLeft: 10,
   },
   expandedPanel: {
     color: "#FFC107",
@@ -151,6 +155,36 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     justifyContent: "center",
+  },
+  pic1: {
+    position: "absolute",
+    width: 122.42,
+    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+    height: 79.56,
+    transform: "rotate(20.12deg)",
+    borderRadius: 21,
+    marginLeft: 20,
+    marginTop: 36,
+  },
+  pic2: {
+    width: 146.42,
+    filter: "drop-shadow( 4px 4px rgba(0, 0, 0, 0.25))",
+    height: 83.56,
+    position: "absolute",
+    transform: "rotate(18.12deg)",
+    marginTop: 212,
+    marginLeft: 41,
+    borderRadius: 21,
+  },
+  pic3: {
+    width: 146.42,
+    filter: "drop-shadow( 4px 4px rgba(0, 0, 0, 0.25))",
+    height: 83.56,
+    position: "absolute",
+    transform: "rotate(18.12deg)",
+    marginTop: 258,
+    marginLeft: -98,
+    borderRadius: 21,
   },
 }));
 
@@ -187,7 +221,11 @@ export default function AccordionServices(props) {
               functionally effective mobile apps.
             </Box>
             <Box className={classes.circle}></Box>
+
             <img src={mobile} alt="" className={classes.img} />
+            <img src={small1} alt="" className={classes.pic1} />
+            <img src={small2} alt="" className={classes.pic2} />
+            <img src={small3} alt="" className={classes.pic3} />
             <Button className={classes.btn}>
               Calculate App Devolopment Cast
             </Button>

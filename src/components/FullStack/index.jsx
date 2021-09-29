@@ -165,7 +165,7 @@ export default function FullStack() {
         <Grid container className={classes.main}>
           <Grid item xs={12} md={6} className={classes.dflex1}>
             <Box className={classes.full}>Full-Stack</Box>
-            <Box className={classes.app}>App Development Company​</Box>
+            <Box className={classes.app}>Web/App Development Company​</Box>
             <Box className={classes.techtiz}>
               At Techtiz, we build applications that click! With extraordinarily
               creative minds on board.

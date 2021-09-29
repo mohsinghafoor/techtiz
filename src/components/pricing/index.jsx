@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 55,
     lineHeight: "92px",
     color: "#3B3E56",
-    [theme.breakpoints.down("sm")]: { fontSize: 45 },
+    [theme.breakpoints.down("sm")]: { fontSize: 45, lineHeight: "70px" },
   },
 }));
 
@@ -37,7 +37,7 @@ export default function Pricing() {
       style={{ display: "flex", justifyContent: "center", marginTop: 150 }}
     >
       <Grid item xs={12} style={{ display: "flex", justifyContent: "center" }}>
-        <Box className={classes.heading}>Our Pricing model</Box>
+        <Box className={classes.heading}>Our Pricing Model</Box>
       </Grid>
       <Grid style={{ display: "flex", justifyContent: "center" }} item md={3}>
         <Card1 />

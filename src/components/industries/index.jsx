@@ -88,7 +88,7 @@ export default function Industries() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <div className={classes.main}>
+    <div className={classes.main} id="expertise">
       {isMobile ? (
         <IndustriesAccordion />
       ) : (

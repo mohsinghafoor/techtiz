@@ -118,7 +118,7 @@ export default function Process() {
   const theme = useTheme();
   const iPad = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <div>
+    <div id="process">
       {iPad ? (
         <Container className={classes.root}>
           <Box className={classes.heading}>Our development process</Box>

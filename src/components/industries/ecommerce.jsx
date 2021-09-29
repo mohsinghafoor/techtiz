@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#000000",
     [theme.breakpoints.up("lg")]: {
-      marginTop: 40,
+      marginTop: 30,
     },
     [theme.breakpoints.only("md")]: {
       maxWidth: 484,
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subheading: {
     display: "flex",
-    maxWidth: 584,
+    maxWidth: 650,
     height: 174,
 
     // fontFamily: "Montserrat",
@@ -76,9 +76,10 @@ export default function Ecommerce() {
       <img src={ecommerce} alt="" className={classes.img} />
       <Box className={classes.heading}>FoE-Commerce </Box>
       <Box className={classes.subheading}>
-        Thank you again for the successful launch of the 3M and Converse
-        applications. Your dedication, hard-work, flexibility, patience and
-        professionalism is recognized and appreciated.
+        WE provides the best development services for E-Commerce with the most
+        suitable development strategies for all customers. To ensure our clients
+        receive a successful E-Commerce web design process, we have a dedicated
+        team of specialist consultants, developers, and project managers
       </Box>
     </Container>
   );

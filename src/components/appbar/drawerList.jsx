@@ -1,7 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box } from "@material-ui/core";
+import { Box, IconButton } from "@material-ui/core";
 import logo from "../../assets/a.svg";
+import { Link } from "react-scroll";
 const useStyles = makeStyles((theme) => ({
   itembox: {
     marginTop: 100,
@@ -24,22 +25,24 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "35px",
     /* identical to box height */
     color: "#000000",
-    height: 50,
+    height: 20,
     [theme.breakpoints.only("md")]: {
-      fontSize: 20,
+      fontSize: 24,
+      height: 30,
     },
   },
-  atag: {
+  a: {
     textDecoration: "none",
+    color: "black",
   },
   logo: {
     [theme.breakpoints.only("md")]: {
       width: 200,
-      marginBottom: 50,
+      marginBottom: 30,
     },
     [theme.breakpoints.down("sm")]: {
       width: 150,
-      marginBottom: 50,
+      marginBottom: 20,
     },
   },
 }));
@@ -57,18 +60,32 @@ export default function DrawerList({ onClose }) {
   return (
     <Box className={classes.itembox}>
       <img src={logo} alt="" className={classes.logo} />
-      <a href="#" className={classes.atag}>
-        <Box className={classes.items}>Services</Box>
-      </a>
-      <a href="#" className={classes.atag}>
-        <Box className={classes.items}>Expertise</Box>
-      </a>
-      <a href="#" className={classes.atag}>
-        <Box className={classes.items}>About</Box>
-      </a>
-      <a href="#" className={classes.atag}>
-        <Box className={classes.items}>Porfolio</Box>
-      </a>
+      <IconButton className={classes.a}>
+        <Link to="services">
+          <Box className={classes.items}>About Us</Box>
+        </Link>
+      </IconButton>
+      <IconButton className={classes.a}>
+        <Link to="services">
+          <Box className={classes.items}>Services</Box>
+        </Link>
+      </IconButton>
+      <IconButton className={classes.a}>
+        <Link to="process">
+          <Box className={classes.items}>Process</Box>
+        </Link>
+      </IconButton>
+      <IconButton className={classes.a}>
+        <Link to="expertise">
+          <Box className={classes.items}>Expertise</Box>
+        </Link>
+      </IconButton>
+
+      <IconButton className={classes.a}>
+        <Link to="process">
+          <Box className={classes.items}>Portfolio</Box>
+        </Link>
+      </IconButton>
     </Box>
   );
 }
