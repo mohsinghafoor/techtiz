@@ -6,6 +6,7 @@ import Button from "@material-ui/core/Button";
 import laptopimg from "../../assets/img1.png";
 import { Container, Box, Grid } from "@material-ui/core";
 import MobileStack from "./mobile";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -172,7 +173,9 @@ export default function FullStack() {
               At Techtiz, we build applications that click! With extraordinarily
               creative minds on board.
             </Box>
-            <Button className={classes.btn}> Let’s Connect Today </Button>
+            <Link to="contact">
+              <Button className={classes.btn}> Let’s Connect Today </Button>
+            </Link>
           </Grid>
           <Grid
             item
