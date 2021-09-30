@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: -60,
     },
     [theme.breakpoints.down("sm")]: { width: 454, height: 490 },
-    [theme.breakpoints.down("xs")]: { width: 350, height: 490 },
+    [theme.breakpoints.down("xs")]: { width: 340, height: 490 },
   },
 
   heading: {

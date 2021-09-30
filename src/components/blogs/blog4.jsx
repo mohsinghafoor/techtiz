@@ -19,8 +19,8 @@ const useStyles = makeStyles((theme) => ({
       height: 480,
     },
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 350,
-      height: 480,
+      maxWidth: 340,
+      height: 440,
     },
   },
   img: {
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
       height: 200,
     },
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 330,
+      maxWidth: 340,
       height: 150,
     },
   },
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
       lineHeight: "40px",
     },
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 330,
+      maxWidth: 320,
       height: 80,
       fontSize: 20,
       lineHeight: "40px",
@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
       lineHeight: "30px",
     },
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 330,
+      maxWidth: 320,
       fontSize: 16,
       lineHeight: "28px",
       height: 43,
@@ -104,7 +104,7 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "-12rem",
     },
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "-10rem",
+      marginLeft: "-9rem",
     },
   },
 }));

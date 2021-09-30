@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: -90,
     },
     [theme.breakpoints.down("sm")]: { width: 454, height: 490 },
-    [theme.breakpoints.down("xs")]: { width: 350 },
+    [theme.breakpoints.down("xs")]: { width: 340 },
   },
   heading1: {
     height: 37,

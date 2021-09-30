@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
       height: 500,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 350.81,
+      width: 340.81,
       height: 500,
     },
 

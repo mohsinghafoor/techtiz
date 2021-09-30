@@ -1,13 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import { Typography, Grid, Box } from "@material-ui/core";
 import pic1 from "../../assets/backend.png";
 import pic2 from "../../assets/frontend.png";
-import pic3 from "../../assets/2.png";
+import pic3 from "../../assets/10.png";
 import pic4 from "../../assets/quality.png";
 import Fields from "./fields";
 

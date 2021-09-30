@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
       height: 480,
     },
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 350,
+      maxWidth: 340,
       height: 480,
     },
   },
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
       lineHeight: "40px",
     },
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 330,
+      maxWidth: 320,
       height: 60,
       fontSize: 20,
       lineHeight: "40px",
@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
       lineHeight: "30px",
     },
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 330,
+      maxWidth: 320,
       height: 250,
       fontSize: 16,
       lineHeight: "28px",

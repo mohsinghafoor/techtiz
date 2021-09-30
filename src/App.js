@@ -27,6 +27,17 @@ function App() {
       <Blogs />
       <MyContactUs />
       <ResponsiveFooter />
+      {/* <Header />
+      <FullStack />
+      <Services />
+      <Process />
+      <Projects />
+      <Industries />
+      <Feedback />
+      <Pricing />
+      <Blogs />
+      <MyContactUs />
+      <ResponsiveFooter /> */}
     </Container>
   );
 }

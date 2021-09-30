@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("lg")]: { marginLeft: -50 },
     [theme.breakpoints.only("md")]: { width: 300, height: 400 },
     [theme.breakpoints.down("sm")]: { width: 454, height: 490 },
-    [theme.breakpoints.down("xs")]: { width: 350 },
+    [theme.breakpoints.down("xs")]: { width: 340 },
   },
   heading: {
     height: 37,
