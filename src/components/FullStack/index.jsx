@@ -31,20 +31,20 @@ const useStyles = makeStyles((theme) => ({
   },
   full: {
     display: "flex",
-
-    height: 65,
+    height: 105,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
-    fontSize: 55,
+    fontSize: 45,
     lineHeight: "61px",
     // /* or 61px */
-
+    maxWidth: 631,
     color: "#3B3E56",
     [theme.breakpoints.only("md")]: {
-      maxWidth: 200,
+      maxWidth: 500,
       fontSize: 30,
-      height: 35,
+      lineHeight: "51px",
+      height: 85,
     },
   },
   app: {
@@ -164,8 +164,10 @@ export default function FullStack() {
       ) : (
         <Grid container className={classes.main}>
           <Grid item xs={12} md={6} className={classes.dflex1}>
-            <Box className={classes.full}>Full-Stack</Box>
-            <Box className={classes.app}>Web/App Development Company​</Box>
+            <Box className={classes.full}>
+              Full-Stack Web/App Development Company​
+            </Box>
+            {/* <Box className={classes.app}>Web/App Development Company​</Box> */}
             <Box className={classes.techtiz}>
               At Techtiz, we build applications that click! With extraordinarily
               creative minds on board.

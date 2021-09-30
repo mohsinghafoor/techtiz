@@ -6,7 +6,7 @@ import react from "../../../assets/react.png";
 import flutter from "../../../assets/flutter.png";
 import angular from "../../../assets/angular.png";
 import html from "../../../assets/html.png";
-import node from "../../../assets/node.png";
+import node from "../../../assets/node1.png";
 const useStyles = makeStyles({
   bulletPoint: {
     backgroundColor: "#C4C4C4",
@@ -23,8 +23,9 @@ const useStyles = makeStyles({
     height: 24,
   },
   node: {
-    width: 52,
+    width: 22,
     height: 22,
+    marginLeft: 4,
   },
   dflex: {
     display: "flex",

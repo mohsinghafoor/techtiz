@@ -24,12 +24,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    width: 530,
+    width: 562,
     height: 242,
     borderRadius: 27,
-    marginTop: 10,
     [theme.breakpoints.only("md")]: {
-      maxWidth: 370,
+      maxWidth: 380,
       height: 200,
     },
     [theme.breakpoints.down("xs")]: {
@@ -38,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    width: 489,
+    width: 520,
     height: 100,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -61,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   text: {
-    width: 482,
+    width: 520,
     height: 67,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -96,8 +95,8 @@ const useStyles = makeStyles((theme) => ({
     /* identical to box height */
 
     color: "#FFFFFF",
-    marginTop: 40,
-    marginLeft: "-20rem",
+    marginTop: 55,
+    marginLeft: "-22rem",
     "&:hover": {
       background: "#D3D3D3",
     },

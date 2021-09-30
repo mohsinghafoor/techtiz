@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Card, Box, Button } from "@material-ui/core";
 import clock from "../../assets/clock.png";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -175,7 +176,9 @@ export default function Card2() {
           This reduces the operational hassle and removes any unprecedented bug
           from the application.
         </Box>
-        <Button className={classes.btn}>Let’s Begin</Button>
+        <Link to="contact">
+          <Button className={classes.btn}>Let’s Begin</Button>
+        </Link>
       </Card>
     </Container>
   );

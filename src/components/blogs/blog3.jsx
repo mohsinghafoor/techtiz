@@ -24,12 +24,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    width: 530,
+    width: 560,
     height: 242,
     borderRadius: 27,
-    marginTop: 10,
     [theme.breakpoints.only("md")]: {
-      maxWidth: 370,
+      maxWidth: 380,
       height: 200,
     },
     [theme.breakpoints.down("xs")]: {
@@ -38,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    width: 489,
+    width: 520,
     height: 120,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -61,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   text: {
-    width: 482,
+    width: 520,
     height: 67,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -71,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       maxWidth: 350,
-      height: 10,
+      height: 30,
       fontSize: 18,
       lineHeight: "30px",
     },
@@ -83,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   btn: {
-    width: 157,
+    width: 167,
     height: 50,
     background: "#7FC6DC",
     boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
@@ -99,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
     },
     color: "#FFFFFF",
     marginTop: 40,
-    marginLeft: "-20rem",
+    marginLeft: "-22rem",
     [theme.breakpoints.only("md")]: {
       marginLeft: "-12rem",
     },

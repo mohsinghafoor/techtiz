@@ -19,6 +19,7 @@ import AccordionProjects from "./accordian";
 const useStyles = makeStyles((theme) => ({
   main: {
     marginTop: 100,
+    padding: 30,
   },
   contentStyle: {
     height: "660px",
@@ -41,6 +42,11 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 45,
       lineHeight: "52px",
     },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 35,
+      lineHeight: "40px",
+      height: 80,
+    },
   },
   subheading: {
     display: "flex",
@@ -55,6 +61,11 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     [theme.breakpoints.only("md")]: {
       fontSize: 24,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 20,
+      height: 50,
+      lineHeight: "40px",
     },
   },
   text: {
@@ -72,6 +83,10 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 18,
       maxWidth: 578,
       height: 160,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 16,
+      height: 190,
     },
   },
   androidimg: {
@@ -115,19 +130,28 @@ const useStyles = makeStyles((theme) => ({
       width: 234,
       height: 490,
     },
+    [theme.breakpoints.down("sm")]: {
+      width: 214,
+      height: 430,
+    },
   },
   mobileback: {
     width: 222,
     height: 485,
     position: "absolute",
     borderRadius: 30,
-    marginLeft: 340,
+    marginLeft: 320,
     marginTop: 20,
     border: "4px solid black",
     [theme.breakpoints.only("md")]: {
       width: 220,
       height: 450,
       marginLeft: 170,
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: 190,
+      height: 390,
+      marginLeft: "5rem",
     },
   },
   circle: {
@@ -144,6 +168,11 @@ const useStyles = makeStyles((theme) => ({
       height: 160,
       marginLeft: "-15rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      width: 123,
+      height: 120,
+      marginLeft: "-13rem",
+    },
   },
   qrat: {
     width: 160,
@@ -157,12 +186,17 @@ const useStyles = makeStyles((theme) => ({
       height: 153,
       marginLeft: "-15rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      width: 110,
+      height: 110,
+      marginLeft: "-13rem",
+    },
   },
 }));
 export const Projects = (props) => {
   const classes = useStyles();
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
   return (
     <div className={classes.main}>
       {isMobile ? (

@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Card, Box, Button } from "@material-ui/core";
 import dollar from "../../assets/dollar.png";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -183,7 +184,10 @@ export default function Card1() {
         <Box className={classes.text2}>
           You come to us with an idea, we provide a quick consultation.
         </Box>
-        <Button className={classes.btn}>Let’s Begin</Button>
+        <Link to="contact">
+          {" "}
+          <Button className={classes.btn}>Let’s Begin</Button>
+        </Link>
       </Card>
     </Container>
   );

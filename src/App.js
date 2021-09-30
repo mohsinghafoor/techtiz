@@ -11,6 +11,7 @@ import { Container } from "@material-ui/core";
 import Blogs from "./components/blogs";
 import MyContactUs from "./components/mohsincontactus";
 import { Projects } from "./components/projects";
+import IndustriesTest from "./components/practice/industriestest";
 
 function App() {
   return (

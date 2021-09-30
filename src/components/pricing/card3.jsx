@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Card, Box, Button } from "@material-ui/core";
 import dedicated from "../../assets/dedicated.png";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -188,7 +189,9 @@ export default function Card3() {
           We provide a detailed consultation about pricing and delivery schedule
           when you first approach us to ensure we’re on the same page.
         </Box>
-        <Button className={classes.btn}>Let’s Begin</Button>
+        <Link to="contact">
+          <Button className={classes.btn}>Let’s Begin</Button>
+        </Link>
       </Card>
     </Container>
   );

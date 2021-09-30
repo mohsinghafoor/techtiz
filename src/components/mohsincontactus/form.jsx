@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Container, Paper, Box } from "@material-ui/core";
-
+import emailjs from "emailjs-com";
 const useStyles = makeStyles((theme) => ({
   root: {
     // marginTop: "-15rem",
@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    justifyContent: "center",
     width: 635.81,
     height: 718,
     background: "#F6FDFF",
@@ -145,7 +146,7 @@ const useStyles = makeStyles((theme) => ({
     width: 255.69,
     height: 43.38,
     outline: "unset",
-    color: "#C6C6C6",
+    color: "black",
     fontWeight: 300,
     fontSize: 12,
     fontFamily: "Axiforma",
@@ -252,8 +253,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
     fontSize: 22,
     lineHeight: "35px",
-
+    border: 0,
     color: "#FFFFFF",
+    marginBottom: 10,
     "&:hover": {
       background: "#ADD8E6",
     },
@@ -271,63 +273,89 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ContactForm() {
   const classes = useStyles();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    alert("Form Submitted");
+    emailjs
+      .sendForm(
+        "service_bzsah6a",
+        "template_jwp5luo",
+        e.target,
+        "user_ANsS2m1U6X5tLv44aTOIp"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    // e.target.reset();
+  };
 
   return (
-    <Box className={classes.root}>
-      <Paper className={classes.paper}>
-        <Box className={classes.heading}>Contact Us About</Box>
-        <Box className={classes.btnbox1}>
-          <Button className={classes.upperbtn}>Web Development</Button>
-          <Button className={classes.upperbtn}>Front-end Development</Button>
-        </Box>
-        <Box className={classes.btnbox1}>
-          <Button className={classes.lowerbtn}>App Development</Button>
-          <Button className={classes.lowerbtn}>Quality assurance</Button>
-        </Box>
+    <form className={classes.paper} onSubmit={sendEmail}>
+      <Box className={classes.heading}>Contact Us About</Box>
+      <Box className={classes.btnbox1}>
+        <Button className={classes.upperbtn}>Web Development</Button>
+        <Button className={classes.upperbtn}>Front-end Development</Button>
+      </Box>
+      <Box className={classes.btnbox1}>
+        <Button className={classes.lowerbtn}>App Development</Button>
+        <Button className={classes.lowerbtn}>Quality assurance</Button>
+      </Box>
 
-        <Box className={classes.inputbox}>
-          <input
-            type="text"
-            className={classes.inputTitle}
-            placeholder="First Name*"
-          />
-          <input
-            type="text"
-            className={classes.inputTitle}
-            placeholder="Last Name*"
-          />
-        </Box>
-        <Box className={classes.inputbox}>
-          <input
-            type="text"
-            className={classes.inputTitle}
-            placeholder="(+92 )  301 5484 298"
-          />
+      <Box className={classes.inputbox}>
+        <input
+          type="text"
+          className={classes.inputTitle}
+          placeholder="First Name*"
+          name="name"
+        />
+        <input
+          type="text"
+          className={classes.inputTitle}
+          placeholder="Last Name*"
+          name="lname"
+        />
+      </Box>
+      <Box className={classes.inputbox}>
+        <input
+          type="text"
+          className={classes.inputTitle}
+          placeholder="(+92 )  301 5484 298"
+          name="mobile"
+        />
 
-          <input
-            type="text"
-            className={classes.inputTitle}
-            placeholder="Country* :"
-          />
-        </Box>
-        <Box className={classes.height}>
-          <input
-            type="email"
-            className={classes.email}
-            placeholder="Email* :"
-          />
-        </Box>
+        <input
+          type="text"
+          className={classes.inputTitle}
+          placeholder="Country* :"
+          name="country"
+        />
+      </Box>
+      <Box className={classes.height}>
         <input
           type="email"
-          className={classes.help}
-          placeholder="How Can We Help You?* :"
+          className={classes.email}
+          placeholder="Email* :"
+          name="user_email"
         />
-        <Box className={classes.msg}>
-          By sending this form I confirm that I have read and accept
-          Intellectsoft Privacy Policy
-        </Box>
-        <Button className={classes.sendbtn}>Send</Button>
-      </Paper>
-    </Box>
+      </Box>
+      <input
+        type="text"
+        name="message"
+        className={classes.help}
+        placeholder="How Can We Help You?* :"
+      />
+      <Box className={classes.msg}>
+        By sending this form I confirm that I have read and accept Intellectsoft
+        Privacy Policy
+      </Box>
+      <button type="submit" className={classes.sendbtn}>
+        Send
+      </button>
+    </form>
   );
 }

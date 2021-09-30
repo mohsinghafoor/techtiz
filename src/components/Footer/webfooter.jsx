@@ -6,7 +6,7 @@ import react from "../../assets/react.png";
 import flutter from "../../assets/flutter.png";
 import angular from "../../assets/angular.png";
 import html from "../../assets/html.png";
-import node from "../../assets/node.png";
+import node from "../../assets/node1.png";
 import MailIcon from "@material-ui/icons/Mail";
 import linkedin from "../../assets/linkedin.png";
 import clutch from "../../assets/clutchfooter.png";
@@ -28,8 +28,9 @@ const useStyles = makeStyles({
     height: 24,
   },
   node: {
-    width: 52,
+    width: 22,
     height: 22,
+    marginLeft: 4,
   },
   dflex: {
     display: "flex",
@@ -173,7 +174,6 @@ export const WebFooter = () => {
             target="_blank"
             style={{ textDecoration: "none" }}
           >
-            {" "}
             <Box className={classes.dflex} mt={4}>
               <MailIcon style={{ color: "red", fontSize: 30 }} />
               <Box ml={1} className={classes.iconName}>

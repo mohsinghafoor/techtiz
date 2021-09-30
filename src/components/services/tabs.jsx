@@ -7,7 +7,7 @@ import Tab from "@material-ui/core/Tab";
 import { Typography, Grid, Box } from "@material-ui/core";
 import pic1 from "../../assets/backend.png";
 import pic2 from "../../assets/frontend.png";
-import pic3 from "../../assets/backend1.png";
+// import pic3 from "../../assets/backend1.png";
 import pic4 from "../../assets/quality.png";
 import Fields from "./fields";
 
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     textAlign: "left",
-    marginLeft: 40,
+    marginLeft: 30,
     height: 94,
     fontWeight: 300,
     fontSize: 26,
@@ -120,17 +120,9 @@ const useStyles = makeStyles((theme) => ({
       height: 360,
     },
   },
-  img1: {
-    width: 443.92,
-    height: 401.62,
-    [theme.breakpoints.only("md")]: {
-      width: 400,
-      height: 320,
-    },
-  },
 }));
 
-export default function IndustriesTab() {
+export default function ServicesTab() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -143,6 +135,7 @@ export default function IndustriesTab() {
       <Tabs
         value={value}
         onChange={handleChange}
+        variant="fullWidth"
         classes={{
           indicator: classes.indicator,
         }}
@@ -239,7 +232,7 @@ export default function IndustriesTab() {
             </Box>
           </Grid>
           <Grid item md={5}>
-            <img src={pic3} alt="" className={classes.img1} />
+            <img src={pic1} alt="" className={classes.img} />
           </Grid>
         </Grid>
       </TabPanel>

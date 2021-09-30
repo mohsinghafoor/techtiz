@@ -76,6 +76,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("md")]: {
       width: 230,
       height: 70,
+      marginLeft: -50,
     },
     [theme.breakpoints.only("sm")]: {
       width: 180,
@@ -101,12 +102,12 @@ export default function Header() {
             item
             xs={3}
             sm={2}
-            md={1}
+            md={2}
             style={{ display: "flex", justifyContent: "center" }}
           >
             <AppBarDrawer />
           </Grid>
-          <Grid item xs={5} sm={7} md={8}>
+          <Grid item xs={5} sm={7} md={7}>
             <img src={logo} alt="" className={classes.img} />
           </Grid>
           <Grid

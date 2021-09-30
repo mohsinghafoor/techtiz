@@ -64,10 +64,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 22,
     lineHeight: "35px",
     /* identical to box height */
-
-    // textAlign: "center",
+    textAlign: "center",
 
     color: "#000000",
+    [theme.breakpoints.down("sm")]: {
+      width: 600,
+      fontSize: 20,
+      height: 50,
+    },
     [theme.breakpoints.down("xs")]: {
       width: 320,
       fontSize: 16,
@@ -82,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
     fontSize: 18,
     lineHeight: "28px",
-
+    textAlign: "center",
     color: "#000000",
     [theme.breakpoints.down("xs")]: {
       width: 320,

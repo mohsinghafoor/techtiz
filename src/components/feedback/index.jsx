@@ -56,15 +56,16 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: 30,
       width: 420,
-      height: 30,
+      height: 40,
       lineHeight: "130.1%",
+      marginTop: 50,
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: 25,
       maxWidth: 330,
       height: 20,
       lineHeight: "130.1%",
-      marginTop: 40,
+      marginTop: 30,
     },
   },
   subheading: {
@@ -88,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: 18,
       width: 524,
-      height: 15,
+      height: 30,
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: 14,
@@ -141,7 +142,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: 18,
       width: 220,
-      height: 0,
+      height: 20,
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: 14,
@@ -154,7 +155,7 @@ const useStyles = makeStyles((theme) => ({
     width: 550,
     marginTop: 70,
     height: 141,
-    background: "#FAFCFF",
+    background: "#E6E6FA",
     boxShadow: "0px 5px 8px rgba(0, 0, 0, 0.1)",
     borderRadius: 25,
     [theme.breakpoints.only("md")]: {
@@ -171,8 +172,8 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 30,
     },
     [theme.breakpoints.down("xs")]: {
-      width: 340,
-      height: 120,
+      width: 320,
+      height: 100,
       marginTop: 30,
     },
   },
@@ -180,11 +181,20 @@ const useStyles = makeStyles((theme) => ({
     width: 149,
     height: 40,
     marginTop: 30,
+    [theme.breakpoints.down("xs")]: {
+      width: 120,
+      height: 35,
+      marginTop: 20,
+    },
   },
   starbox: {
     display: "flex",
     justifyContent: "space-between",
     width: 160,
+    marginTop: -10,
+    [theme.breakpoints.down("xs")]: {
+      marginTop: -20,
+    },
   },
   star: {
     color: "#FFC107",
@@ -211,45 +221,6 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 10,
       width: 200,
     },
-  },
-  leftarrow: {
-    position: "absolute",
-    color: "black",
-    marginTop: 400,
-    marginLeft: "-40rem",
-    fontSize: 40,
-    transform: "rotate(-135.12deg)",
-    [theme.breakpoints.only("md")]: {
-      marginTop: 330,
-      fontSize: 30,
-      marginLeft: "-28rem",
-    },
-    [theme.breakpoints.down("sm")]: {
-      marginTop: 0,
-      fontSize: 0,
-      marginLeft: 0,
-    },
-  },
-  rightarrow: {
-    position: "absolute",
-    fontSize: 40,
-    marginTop: 400,
-    marginLeft: "40rem",
-    transform: "rotate(44deg)",
-    [theme.breakpoints.only("md")]: {
-      marginTop: 330,
-      fontSize: 30,
-      marginLeft: "28rem",
-    },
-    [theme.breakpoints.down("sm")]: {
-      marginTop: 0,
-      fontSize: 0,
-      marginLeft: 0,
-    },
-  },
-  inactiveLink: {
-    pointerEvents: "none",
-    cursor: "default",
   },
 }));
 
