@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
     width: 560,
     height: 242,
-    borderRadius: 27,
+
     [theme.breakpoints.only("md")]: {
       maxWidth: 380,
       height: 200,

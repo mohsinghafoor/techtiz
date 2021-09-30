@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 export const ReviewAccordian = () => {
   const classes = useStyles();
   return (
-    <Container style={{ display: "flex", justifyContent: "space-around" }}>
+    <Container style={{ display: "flex" }}>
       <Box>
         <Box mt={5}>
           <Box className={classes.dflex} mt={4}>

@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   parent: {
-    width: 350,
+    width: 300,
     [theme.breakpoints.only("sm")]: {
       width: 550,
     },

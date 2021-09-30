@@ -46,7 +46,7 @@ const useStyles = makeStyles({
 export const StackAccordian = () => {
   const classes = useStyles();
   return (
-    <Container style={{ display: "flex", justifyContent: "space-around" }}>
+    <Container style={{ display: "flex" }}>
       <Box>
         <Box display="flex">
           <Box>

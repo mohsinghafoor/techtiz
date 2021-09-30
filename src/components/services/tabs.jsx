@@ -7,7 +7,7 @@ import Tab from "@material-ui/core/Tab";
 import { Typography, Grid, Box } from "@material-ui/core";
 import pic1 from "../../assets/backend.png";
 import pic2 from "../../assets/frontend.png";
-// import pic3 from "../../assets/backend1.png";
+import pic3 from "../../assets/2.png";
 import pic4 from "../../assets/quality.png";
 import Fields from "./fields";
 
@@ -184,7 +184,7 @@ export default function ServicesTab() {
             </Box>
           </Grid>
           <Grid item item md={5}>
-            <img src={pic1} alt="" className={classes.img} />
+            <img src={pic3} alt="" className={classes.img} />
           </Grid>
         </Grid>
       </TabPanel>
