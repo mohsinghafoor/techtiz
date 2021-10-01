@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/techtiz/static/css/main.eb01c660.chunk.css",
-    "main.js": "/techtiz/static/js/main.7d023a41.chunk.js",
-    "main.js.map": "/techtiz/static/js/main.7d023a41.chunk.js.map",
+    "main.js": "/techtiz/static/js/main.2ca6c5af.chunk.js",
+    "main.js.map": "/techtiz/static/js/main.2ca6c5af.chunk.js.map",
     "runtime-main.js": "/techtiz/static/js/runtime-main.a60b2ff1.js",
     "runtime-main.js.map": "/techtiz/static/js/runtime-main.a60b2ff1.js.map",
     "static/js/2.8a9565b2.chunk.js": "/techtiz/static/js/2.8a9565b2.chunk.js",
@@ -45,6 +45,6 @@
     "static/js/runtime-main.a60b2ff1.js",
     "static/js/2.8a9565b2.chunk.js",
     "static/css/main.eb01c660.chunk.css",
-    "static/js/main.7d023a41.chunk.js"
+    "static/js/main.2ca6c5af.chunk.js"
   ]
 }
