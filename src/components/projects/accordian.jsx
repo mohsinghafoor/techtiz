@@ -267,10 +267,10 @@ export default function ProjectsMobile(props) {
             reality.
           </Box>
           <Box className={classes.circle} />
-          <img src={mobilefront} alt="" className={classes.mobilefront} />
-          <img src={mobileback} alt="" className={classes.mobileback} />
+          <img src={mobilefront3} alt="" className={classes.mobilefront} />
+          <img src={mobileback3} alt="" className={classes.mobileback} />
           <Box className={classes.smallcircle} />
-          <img src={qrat} alt="" className={classes.logo} />
+          <img src={qrat3} alt="" className={classes.logo} />
           <Box className={classes.fields}>
             <Box>
               <img src={android} alt="" className={classes.androidimg} />
