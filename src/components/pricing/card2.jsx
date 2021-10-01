@@ -129,7 +129,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       maxWidth: 320,
       fontSize: 16,
-      height: 170,
+      height: 160,
     },
   },
   btn: {
