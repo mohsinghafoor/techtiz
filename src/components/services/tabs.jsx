@@ -6,7 +6,7 @@ import Tab from "@material-ui/core/Tab";
 import { Typography, Grid, Box } from "@material-ui/core";
 import pic1 from "../../assets/backend.png";
 import pic2 from "../../assets/frontend.png";
-import pic3 from "../../assets/13.png";
+import pic3 from "../../assets/21.png";
 import pic4 from "../../assets/quality.png";
 import Fields from "./fields";
 
