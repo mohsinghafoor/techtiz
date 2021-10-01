@@ -6,7 +6,7 @@ import Tab from "@material-ui/core/Tab";
 import { Typography, Grid, Box } from "@material-ui/core";
 import pic1 from "../../assets/backend.png";
 import pic2 from "../../assets/frontend.png";
-import pic3 from "../../assets/10.png";
+import pic3 from "../../assets/13.png";
 import pic4 from "../../assets/quality.png";
 import Fields from "./fields";
 
@@ -54,10 +54,10 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     textAlign: "left",
-    marginLeft: 30,
+    marginLeft: 40,
     height: 94,
     fontWeight: 300,
-    fontSize: 26,
+    fontSize: 22,
     lineHeight: "47px",
     [theme.breakpoints.only("md")]: {
       fontSize: 24,
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
   },
   indicator: {
     height: 3,
-    background: "yellow",
+    background: "#FFC107",
     color: "black",
   },
   heading: {
@@ -156,7 +156,7 @@ export default function ServicesTab() {
           {...a11yProps(2)}
         />
         <Tab
-          label="Quality Assurance"
+          label="Quality- Assurance"
           className={classes.name}
           {...a11yProps(3)}
         />

@@ -21,8 +21,8 @@ const useStyles = makeStyles((theme) => ({
   },
   mainheading: {
     display: "flex",
-    justifyContent: "center",
-    width: "100%",
+    width: 300,
+    marginLeft: "-5rem",
     height: 100,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
     /* identical to box height, or 35px */
     alignItems: "center",
     color: "#3B3E56",
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: "0rem",
+    },
   },
   heading: {
     width: 284,
@@ -81,8 +84,9 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "28px",
 
     color: "#000000",
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down("sm")]: {
       width: 360,
+      height: 180,
       fontSize: 14,
     },
   },

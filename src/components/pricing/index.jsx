@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     width: "100%",
+    [theme.breakpoints.down("xs")]: {
+      marginTop: 50,
+    },
   },
   heading: {
     textAlign: "center",
@@ -34,7 +37,7 @@ export default function Pricing() {
   return (
     <Grid
       container
-      style={{ display: "flex", justifyContent: "center", marginTop: 150 }}
+      style={{ display: "flex", justifyContent: "center", marginTop: 100 }}
     >
       <Grid item xs={12} style={{ display: "flex", justifyContent: "center" }}>
         <Box className={classes.heading}>Our Pricing Model</Box>

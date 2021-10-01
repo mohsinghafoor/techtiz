@@ -164,17 +164,13 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("sm")]: {
       width: 400,
-      height: 120,
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: 350,
-      height: 120,
-      marginTop: 30,
+      height: 100,
+      marginTop: 50,
     },
     [theme.breakpoints.down("xs")]: {
-      width: 320,
-      height: 100,
-      marginTop: 30,
+      width: 290,
+      height: 90,
+      marginTop: 50,
     },
   },
   clutchimg: {
@@ -182,8 +178,8 @@ const useStyles = makeStyles((theme) => ({
     height: 40,
     marginTop: 30,
     [theme.breakpoints.down("xs")]: {
-      width: 120,
-      height: 35,
+      width: 90,
+      height: 30,
       marginTop: 20,
     },
   },
@@ -191,9 +187,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     width: 160,
-    marginTop: -10,
-    [theme.breakpoints.down("xs")]: {
-      marginTop: -20,
+    [theme.breakpoints.down("xs")]: { marginTop: 10 },
+    [theme.breakpoints.down("sm")]: {
+      marginTop: -25,
+      width: 120,
     },
   },
   star: {
@@ -217,8 +214,9 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 13,
       width: 250,
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       fontSize: 10,
+      lineHeight: "18px",
       width: 200,
     },
   },

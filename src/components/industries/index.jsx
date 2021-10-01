@@ -8,7 +8,7 @@ import IndustriesTab from "./industriestab";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    marginTop: 100,
+    marginTop: 20,
     [theme.breakpoints.only("md")]: {
       marginLeft: 20,
     },

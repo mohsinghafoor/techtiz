@@ -136,7 +136,7 @@ const useStyles = makeStyles((theme) => ({
   },
   indicator: {
     height: 3,
-    background: "yellow",
+    background: "#FFC107",
     width: 100,
   },
   name: {

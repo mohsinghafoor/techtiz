@@ -16,9 +16,12 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 380,
       height: 480,
     },
+    [theme.breakpoints.down("sm")]: {
+      height: 500,
+    },
     [theme.breakpoints.down("xs")]: {
       maxWidth: 340,
-      height: 480,
+      height: 440,
     },
   },
   heading: {
@@ -38,9 +41,12 @@ const useStyles = makeStyles((theme) => ({
       lineHeight: "40px",
       paddingTop: 10,
     },
+    [theme.breakpoints.down("sm")]: {
+      height: 55,
+    },
     [theme.breakpoints.down("xs")]: {
       maxWidth: 320,
-      height: 80,
+      height: 55,
       fontSize: 20,
       lineHeight: "40px",
     },
@@ -69,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   btn: {
-    width: 191,
+    width: 185,
     height: 50,
     background: "#7FC6DC",
     boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
@@ -79,12 +85,23 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 500,
     fontSize: 18,
     lineHeight: 22,
-    /* identical to box height */
+
     "&:hover": {
       background: "#D3D3D3",
     },
+    /* identical to box height */
+
     color: "#FFFFFF",
-    [theme.breakpoints.only("md")]: {},
+    [theme.breakpoints.down("sm")]: {
+      width: 160,
+      fontSize: 16,
+      height: 50,
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: 130,
+      fontSize: 12,
+      height: 40,
+    },
   },
   line: {
     position: "absolute",

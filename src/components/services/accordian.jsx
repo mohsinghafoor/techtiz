@@ -21,10 +21,10 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   mainheading: {
-    width: "100%",
+    width: 300,
     height: 100,
     display: "flex",
-    justifyContent: "center",
+    marginLeft: "-5rem",
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
     /* or 34px */
 
     color: "#3B3E56",
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: "0rem",
+    },
   },
   heading: {
     width: 284,

@@ -1,14 +1,14 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import Carousel from "react-material-ui-carousel";
 import { Accordion, Box, Button } from "@material-ui/core";
-import AccordionSummary from "@material-ui/core/AccordionSummary";
-import AccordionDetails from "@material-ui/core/AccordionDetails";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import android from "../../assets/android.png";
+import flutter from "../../assets/flutter.png";
 import qrat from "../../assets/qrat.png";
 import mobilefront from "../../assets/mobilefront.png";
 import mobileback from "../../assets/mobileback.png";
 import qrat2 from "../../assets/qrat2.png";
-import mobilefront2 from "../../assets/mobilefront2.png";
+import mobilefront2 from "../../assets/loanzify.png";
 import mobileback2 from "../../assets/mobileback2.png";
 import qrat3 from "../../assets/qrat3.png";
 import mobilefront3 from "../../assets/mobilefront3.png";
@@ -23,302 +23,266 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   mainheading: {
-    width: "100%",
-    height: 100,
+    height: 50,
+    maxWidth: 320,
     display: "flex",
     justifyContent: "center",
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
-    fontSize: 30,
+    fontSize: 28,
     lineHeight: "113.6%",
     /* or 34px */
 
     color: "#3B3E56",
   },
-  heading: {
-    width: 300,
-    height: 29,
+  subheading: {
+    display: "flex",
+    maxWidth: 320,
+    height: 40,
     fontFamily: "Axiforma",
     fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 24,
-    lineHeight: "133%",
-    /* or 29px */
-
-    [theme.breakpoints.down("xs")]: {
-      width: 250,
-      fontSize: 18,
-    },
+    fontWeight: 800,
+    fontSize: 20,
+    lineHeight: "30px",
+    color: "#000000",
   },
-  summary: {
+  text: {
     display: "flex",
-    flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-  },
-  detailsheading: {
-    width: 400,
-    height: 50,
+    maxWidth: 330,
+    height: 142,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 24,
-    lineHeight: "35px",
+    fontSize: 15,
+    lineHeight: "20px",
+    /* or  */
     color: "#000000",
-    [theme.breakpoints.down("xs")]: {
-      width: 320,
-      fontSize: 18,
-      height: 40,
-    },
   },
-  details: {
-    width: 451,
-    height: 150,
+  lzsubheading: {
+    display: "flex",
+    maxWidth: 320,
+    height: 40,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 800,
+    fontSize: 19,
+    lineHeight: "30px",
+    color: "#000000",
+  },
+  lztext: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    maxWidth: 330,
+    height: 142,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 18,
-    lineHeight: "28px",
-
+    fontSize: 15,
+    lineHeight: "20px",
+    /* or  */
     color: "#000000",
-    [theme.breakpoints.down("xs")]: {
-      width: 320,
-      fontSize: 12,
-    },
   },
-  bigcircle: {
-    width: 316.41,
-    height: 316.41,
+  circle: {
+    width: 300.41,
+    height: 300.41,
     background: "#F0F0F0",
     transform: "rotate(5.76deg)",
     borderRadius: "10rem",
   },
   smallcircle: {
-    width: 111,
-    height: 112,
+    width: 90,
+    height: 90,
     position: "absolute",
     borderRadius: "20rem",
     background: "#FFFFFF",
     boxShadow: "5px 4px 8px -2px rgba(0, 0, 0, 0.25)",
-    marginLeft: "-14rem",
-    marginTop: 0,
+    marginLeft: "-10rem",
+    marginTop: "12rem",
   },
   logo: {
-    width: 100,
-    height: 100,
+    width: 80,
+    height: 80,
     position: "absolute",
     borderRadius: "20rem",
     background: "#FFFFFF",
     boxShadow: "5px 4px 8px -2px rgba(0, 0, 0, 0.25)",
-    marginLeft: "-14rem",
-    marginTop: 0,
+    marginLeft: "-10rem",
+    marginTop: "12.3rem",
   },
-  parent: {
-    width: 350,
+  lzcircle: {
+    width: 200.41,
+    height: 300.41,
+    background: "#F0F0F0",
+    transform: "rotate(5.76deg)",
+    borderRadius: "10rem",
+  },
+  loanzify: {
+    position: "absolute",
+    width: 270,
+    height: 320,
+    borderRadius: 28,
+    marginLeft: "-3rem",
+    marginTop: "11rem",
   },
   mobilefront: {
     position: "absolute",
     width: 156,
-    height: 341,
+    height: 300,
     borderRadius: 28,
-    border: "4px solid black",
+    border: "2px solid black",
     marginLeft: "-3rem",
     marginTop: "11rem",
   },
   mobileback: {
     position: "absolute",
-    width: 143,
-    height: 315,
+    width: 140,
+    height: 280,
     borderRadius: 30,
     marginLeft: "3rem",
-    marginTop: "12rem",
-    border: "4px solid black",
+    marginTop: "11.7rem",
+    border: "2px solid black",
   },
-  expandedPanel: {
-    color: "#FFC107",
+
+  androidimg: {
+    width: 50.56,
+    height: 60.82,
   },
-  MuiAccordionroot: {
-    "&.MuiAccordion-root:before": {
-      backgroundColor: "white",
-    },
+  flutterimg: {
+    width: 60.08,
+    height: 60.82,
+    left: 284,
   },
-  content: {
-    justifyContent: "center",
+  androidtext: {
+    width: 80.6,
+    height: 13.19,
+
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 800,
+    fontSize: 18,
+    lineHeight: "30px",
+
+    color: "#000000",
+  },
+  fluttertext: {
+    width: 66.68,
+    height: 13.19,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 800,
+    fontSize: 18,
+    lineHeight: "30px",
+
+    color: "#000000",
+  },
+  fields: {
+    display: "flex",
+    justifyContent: "space-between",
+    width: 170,
+    marginTop: 50,
+    marginBottom: 50,
   },
 }));
 
-export default function AccordionProjects(props) {
+export default function ProjectsMobile(props) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Box className={classes.mainheading}>Our Recent Projects</Box>
-      <Box className={classes.parent}>
-        <Accordion
-          elevation={0}
-          classes={{
-            expanded: classes.expandedPanel,
-            root: classes.MuiAccordionroot,
+      <Carousel effect="fade" dataInterval="false">
+        <Box
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-            classes={{ content: classes.content }}
-          >
-            <Box className={classes.heading}>Qartt</Box>
-          </AccordionSummary>
-          <AccordionDetails className={classes.summary}>
-            <Box className={classes.detailsheading}>
-              Packing has never been easier.
+          <Box className={classes.subheading}>qart</Box>
+          <Box className={classes.text}>
+            qartt will allow you to focus on your product, making life easier
+            and saving you the hassle and expense of managing your own delivery
+            team
+          </Box>
+          <Box className={classes.circle} />
+          <img src={mobilefront} alt="" className={classes.mobilefront} />
+          <img src={mobileback} alt="" className={classes.mobileback} />
+          <Box className={classes.smallcircle} />
+          <img src={qrat} alt="" className={classes.logo} />
+          <Box className={classes.fields}>
+            <Box>
+              <img src={android} alt="" className={classes.androidimg} />
+              <Box className={classes.androidtext}>Android</Box>
             </Box>
-            <Box className={classes.details}>
-              Thank you again for the successful launch of the 3M and Converse
-              applications. Your dedication, hard-work, flexibility, patience
-              and professionalism is recognized and appreciated.
+            <Box>
+              <img src={flutter} alt="" className={classes.flutterimg} />
+              <Box className={classes.fluttertext}>Flutter</Box>
             </Box>
-            <Box className={classes.bigcircle}></Box>
-            <img src={mobilefront} alt="" className={classes.mobilefront} />
-            <img src={mobileback} alt="" className={classes.mobileback} />
-            <Box className={classes.smallcircle}></Box>
-            <img src={qrat} alt="" className={classes.logo} />
+          </Box>
+        </Box>
 
-            {/* 
-            <img src={qrat} alt="" className={classes.qrat} /> */}
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          elevation={0}
-          classes={{
-            expanded: classes.expandedPanel,
-            root: classes.MuiAccordionroot,
+        <Box
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-            classes={{ content: classes.content }}
-          >
-            <Box className={classes.heading}>Loanzify</Box>
-          </AccordionSummary>
-          <AccordionDetails className={classes.summary}>
-            <Box className={classes.detailsheading}>
-              Packing has never been easier.
+          <Box className={classes.lzsubheading}>loanzify</Box>
+          <Box className={classes.lztext}>
+            Loanzify will do the work for you with a suite of robust mortgage
+            calculators, educational and interactive mortgage content, and
+            instant access to your loan officer.
+          </Box>
+          <Box className={classes.lzcircle} />
+          <img src={mobilefront2} alt="" className={classes.loanzify} />
+          <Box className={classes.fields}>
+            <Box>
+              <img src={android} alt="" className={classes.androidimg} />
+              <Box className={classes.androidtext}>Android</Box>
             </Box>
-            <Box className={classes.details}>
-              Thank you again for the successful launch of the 3M and Converse
-              applications. Your dedication, hard-work, flexibility, patience
-              and professionalism is recognized and appreciated.
+            <Box>
+              <img src={flutter} alt="" className={classes.flutterimg} />
+              <Box className={classes.fluttertext}>Flutter</Box>
             </Box>
-            <Box className={classes.bigcircle}></Box>
-            <img src={mobilefront2} alt="" className={classes.mobilefront} />
-            <img src={mobileback2} alt="" className={classes.mobileback} />
-            <Box className={classes.smallcircle}></Box>
-            <img src={qrat2} alt="" className={classes.logo} />
+          </Box>
+        </Box>
 
-            {/* 
-            <img src={qrat} alt="" className={classes.qrat} /> */}
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          elevation={0}
-          classes={{
-            expanded: classes.expandedPanel,
-            root: classes.MuiAccordionroot,
+        <Box
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-            classes={{ content: classes.content }}
-          >
-            <Box className={classes.heading}>Earth</Box>
-          </AccordionSummary>
-          <AccordionDetails className={classes.summary}>
-            <Box className={classes.detailsheading}>
-              Packing has never been easier.
+          <Box className={classes.subheading}>dashboard.earth</Box>
+          <Box className={classes.text}>
+            Dashboard.Earth connects you to the actions necessary to thrive in
+            the face of climate change. We deliver meaningful actions you can
+            take towards making your city’s most audacious environmental goals a
+            reality.
+          </Box>
+          <Box className={classes.circle} />
+          <img src={mobilefront} alt="" className={classes.mobilefront} />
+          <img src={mobileback} alt="" className={classes.mobileback} />
+          <Box className={classes.smallcircle} />
+          <img src={qrat} alt="" className={classes.logo} />
+          <Box className={classes.fields}>
+            <Box>
+              <img src={android} alt="" className={classes.androidimg} />
+              <Box className={classes.androidtext}>Android</Box>
             </Box>
-            <Box className={classes.details}>
-              Thank you again for the successful launch of the 3M and Converse
-              applications. Your dedication, hard-work, flexibility, patience
-              and professionalism is recognized and appreciated.
+            <Box>
+              <img src={flutter} alt="" className={classes.flutterimg} />
+              <Box className={classes.fluttertext}>Flutter</Box>
             </Box>
-            <Box className={classes.bigcircle}></Box>
-            <img src={mobilefront3} alt="" className={classes.mobilefront} />
-            <img src={mobileback3} alt="" className={classes.mobileback} />
-            <Box className={classes.smallcircle}></Box>
-            <img src={qrat3} alt="" className={classes.logo} />
-
-            {/* 
-            <img src={qrat} alt="" className={classes.qrat} /> */}
-          </AccordionDetails>
-        </Accordion>
-        {/* <Accordion
-          elevation={0}
-          classes={{
-            expanded: classes.expandedPanel,
-            root: classes.MuiAccordionroot,
-          }}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-            classes={{ content: classes.content }}
-          >
-            <Box className={classes.heading}>Back-end Development</Box>
-          </AccordionSummary>
-          <AccordionDetails className={classes.summary}>
-            <Box className={classes.detailsheading}>
-              Get Services of Our Experienced Backend Team
-            </Box>
-            <Box className={classes.details}>
-              Top class Backend development services to create interative custom
-              web and mobile applications to deliver pixel perfect ,stunning
-              user experience.
-            </Box>
-            <img src={pic2} alt="" style={{ width: 300 }} />
-            <Button className={classes.btn}>
-              Calculate App Devolopment Cast
-            </Button>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          elevation={0}
-          classes={{
-            expanded: classes.expandedPanel,
-            root: classes.MuiAccordionroot,
-          }}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-            classes={{ content: classes.content }}
-          >
-            <Box className={classes.heading}>Quality assurance</Box>
-          </AccordionSummary>
-          <AccordionDetails className={classes.summary}>
-            <Box className={classes.detailsheading}>
-              Satsifaction of Customer is Our First Priority
-            </Box>
-            <Box className={classes.details}>
-              We have a team of professional experts having years of experience
-              in this field. Our specialized team can provide custom web
-              solutions to establish your business online.
-            </Box>
-            <img src={pic3} alt="" style={{ width: 300 }} />
-            <Button className={classes.btn}>
-              Calculate App Devolopment Cast
-            </Button>
-          </AccordionDetails>
-        </Accordion>{" "}
-        */}
-      </Box>
+          </Box>
+        </Box>
+      </Carousel>
     </div>
   );
 }

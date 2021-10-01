@@ -8,14 +8,14 @@ import qrat from "../../assets/qrat.png";
 import mobilefront from "../../assets/mobilefront.png";
 import mobileback from "../../assets/mobileback.png";
 import qrat2 from "../../assets/qrat2.png";
-import mobilefront2 from "../../assets/mobilefront2.png";
+import mobilefront2 from "../../assets/loanzify.png";
 import mobileback2 from "../../assets/mobileback2.png";
 import qrat3 from "../../assets/qrat3.png";
 import mobilefront3 from "../../assets/mobilefront3.png";
 import mobileback3 from "../../assets/mobileback3.png";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
-import AccordionProjects from "./accordian";
+import ProjectsMobile from "./accordian";
 const useStyles = makeStyles((theme) => ({
   main: {
     marginTop: 100,
@@ -125,7 +125,6 @@ const useStyles = makeStyles((theme) => ({
     width: 242,
     height: 524,
     borderRadius: 28,
-    border: "4px solid black",
     [theme.breakpoints.only("md")]: {
       width: 234,
       height: 490,
@@ -133,6 +132,22 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: 214,
       height: 430,
+    },
+  },
+  lonzifying: {
+    width: 452,
+    height: 544,
+    borderRadius: 28,
+    marginTop: -20,
+    [theme.breakpoints.only("md")]: {
+      width: 394,
+      height: 490,
+      marginTop: 0,
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: 314,
+      height: 430,
+      marginTop: 0,
     },
   },
   mobileback: {
@@ -200,21 +215,19 @@ export const Projects = (props) => {
   return (
     <div className={classes.main}>
       {isMobile ? (
-        <AccordionProjects />
+        <ProjectsMobile />
       ) : (
         <Container>
           <Carousel effect="fade">
             <Grid container className={classes.root}>
+              {/* First Component */}
               <Grid item xs={6}>
                 <Box className={classes.heading}>Recent Projects Include</Box>
-                <Box className={classes.subheading}>
-                  Packing has never been easier.
-                </Box>
+                <Box className={classes.subheading}>qart</Box>
                 <Box className={classes.text}>
-                  Thank you again for the successful launch of the 3M and
-                  Converse applications. Your dedication, hard-work,
-                  flexibility, patience and professionalism is recognized and
-                  appreciated.
+                  qartt will allow you to focus on your product, making life
+                  easier and saving you the hassle and expense of managing your
+                  own delivery team
                 </Box>
                 <Box
                   style={{
@@ -245,17 +258,15 @@ export const Projects = (props) => {
               </Grid>
             </Grid>
 
+            {/* Second Component */}
             <Grid container className={classes.root}>
               <Grid item xs={6}>
                 <Box className={classes.heading}>Recent Projects Include</Box>
-                <Box className={classes.subheading}>
-                  Packing has never been easier.
-                </Box>
+                <Box className={classes.subheading}>loanzify</Box>
                 <Box className={classes.text}>
-                  Thank you again for the successful launch of the 3M and
-                  Converse applications. Your dedication, hard-work,
-                  flexibility, patience and professionalism is recognized and
-                  appreciated.
+                  Loanzify will do the work for you with a suite of robust
+                  mortgage calculators, educational and interactive mortgage
+                  content, and instant access to your loan officer.
                 </Box>
                 <Box
                   style={{
@@ -279,28 +290,23 @@ export const Projects = (props) => {
                 xs={6}
                 style={{ display: "flex", justifyContent: "center" }}
               >
-                <img
-                  src={mobilefront2}
-                  alt=""
-                  className={classes.mobilefront}
-                />
-                <img src={mobileback2} alt="" className={classes.mobileback} />
+                <img src={mobilefront2} alt="" className={classes.lonzifying} />
+                {/* <img src={mobileback2} alt="" className={classes.mobileback} />
                 <Box className={classes.circle}></Box>
-                <img src={qrat2} alt="" className={classes.qrat} />
+                <img src={qrat2} alt="" className={classes.qrat} /> */}
               </Grid>
             </Grid>
 
+            {/* Third Component */}
             <Grid container className={classes.root}>
               <Grid item xs={6}>
                 <Box className={classes.heading}>Recent Projects Include</Box>
-                <Box className={classes.subheading}>
-                  Packing has never been easier.
-                </Box>
+                <Box className={classes.subheading}>dashboard.earth</Box>
                 <Box className={classes.text}>
-                  Thank you again for the successful launch of the 3M and
-                  Converse applications. Your dedication, hard-work,
-                  flexibility, patience and professionalism is recognized and
-                  appreciated.
+                  Dashboard.Earth connects you to the actions necessary to
+                  thrive in the face of climate change. We deliver meaningful
+                  actions you can take towards making your city’s most audacious
+                  environmental goals a reality.
                 </Box>
                 <Box
                   style={{

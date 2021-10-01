@@ -12,6 +12,7 @@ import Blogs from "./components/blogs";
 import MyContactUs from "./components/mohsincontactus";
 import { Projects } from "./components/projects";
 import IndustriesTest from "./components/practice/industriestest";
+import AccordionProjects from "./components/projects/accordian";
 
 function App() {
   return (
@@ -27,17 +28,6 @@ function App() {
       <Blogs />
       <MyContactUs />
       <ResponsiveFooter />
-      {/* <Header />
-      <FullStack />
-      <Services />
-      <Process />
-      <Projects />
-      <Industries />
-      <Feedback />
-      <Pricing />
-      <Blogs />
-      <MyContactUs />
-      <ResponsiveFooter /> */}
     </Container>
   );
 }

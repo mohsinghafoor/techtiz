@@ -40,10 +40,10 @@ export default function Services() {
       {isMobile ? (
         <AccordionServices />
       ) : (
-        <Container className={classes.root}>
+        <div className={classes.root}>
           <Box className={classes.services}>Our Valued Services</Box>
           <ServicesTab />
-        </Container>
+        </div>
       )}
     </div>
   );

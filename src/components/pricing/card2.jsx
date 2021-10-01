@@ -71,6 +71,9 @@ const useStyles = makeStyles((theme) => ({
       width: 10,
       height: 10,
     },
+    [theme.breakpoints.down("sm")]: {
+      marginTop: 165,
+    },
   },
   text: {
     display: "flex",
@@ -96,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
       height: 70,
     },
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 330,
+      maxWidth: 320,
       fontSize: 16,
       height: 70,
     },
@@ -123,7 +126,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 18,
     },
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 330,
+      maxWidth: 320,
       fontSize: 16,
       height: 170,
     },
