@@ -1,260 +1,256 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import { Container, Box } from "@material-ui/core";
-import StarIcon from "@material-ui/icons/Star";
-import clutch from "../../assets/clutch.png";
-import { Link } from "react-scroll";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import { Typography, Box, Grid } from "@material-ui/core";
+import food from "../../assets/food.png";
+import social from "../../assets/social.png";
+import ecommerce from "../../assets/ecommercimg.png";
+import market from "../../assets/market.png";
+import education from "../../assets/education.png";
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`full-width-tabpanel-${index}`}
+      aria-labelledby={`full-width-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box p={3}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `full-width-tab-${index}`,
+    "aria-controls": `full-width-tabpanel-${index}`,
+  };
+}
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
-    alignItems: "center",
-    flexDirection: "column",
-    marginTop: 100,
-    [theme.breakpoints.down("sm")]: {
-      marginTop: 100,
-    },
-  },
-  eclipse: {
-    position: "absolute",
-    width: 873,
-    height: 873,
-    borderRadius: "30rem",
-    border: " 100px solid rgba(127, 198, 220, 0.1)",
-    boxSizing: "border-box",
+    backgroundColor: theme.palette.background.paper,
+    width: 800,
     [theme.breakpoints.only("md")]: {
-      width: 730.58,
-      height: 730.58,
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: 454,
-      height: 454,
-      border: " 62px solid rgba(127, 198, 220, 0.1)",
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: 334,
-      height: 344,
-      border: " 42px solid rgba(127, 198, 220, 0.1)",
+      width: 600,
     },
   },
-  heading: {
-    width: 852,
-    marginTop: 100,
+  mainheading: {
+    width: 780,
+    height: 78,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
     fontSize: 55,
-    lineHeight: "72px",
-    textAlign: "center",
+    lineHeight: "64px",
     color: "#3B3E56",
     [theme.breakpoints.only("md")]: {
       fontSize: 45,
-      lineHeight: "130.1%",
-      width: 713,
-      height: 100,
-    },
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 30,
-      width: 420,
-      height: 40,
-      lineHeight: "130.1%",
-      marginTop: 50,
-    },
-    [theme.breakpoints.down("xs")]: {
-      fontSize: 25,
-      maxWidth: 330,
-      height: 20,
-      lineHeight: "130.1%",
-      marginTop: 30,
+      width: 580,
+      height: 78,
     },
   },
   subheading: {
-    width: 949,
-    marginTop: 50,
-    fontFamily: " Axiforma",
+    width: 780,
+    height: 110,
+    // fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 30,
-    lineHeight: "143.4%",
-    /* or 43 */
-
-    textAlign: "center",
-
-    color: "#777777",
+    fontSize: 28,
+    lineHeight: "37px",
+    color: "#000000",
     [theme.breakpoints.only("md")]: {
       fontSize: 24,
-      width: 764,
-      height: 60,
-    },
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 18,
-      width: 524,
-      height: 30,
-    },
-    [theme.breakpoints.down("xs")]: {
-      fontSize: 14,
-      maxWidth: 330,
-      height: 15,
+      width: 580,
+      height: 100,
     },
   },
-  name: {
-    width: 427,
+  heading: {
+    display: "flex",
+    maxWidth: 729,
+    height: 45,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
     fontSize: 30,
-    lineHeight: "50px",
-    textAlign: " center",
+    lineHeight: "143.4%",
+    /* or 43px */
+
     color: "#000000",
-    marginTop: 30,
+    [theme.breakpoints.up("lg")]: {
+      marginTop: 30,
+    },
     [theme.breakpoints.only("md")]: {
-      width: 290,
-      height: 50,
+      maxWidth: 484,
       fontSize: 24,
     },
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 18,
-      width: 290,
-      height: 10,
-    },
-    [theme.breakpoints.down("xs")]: {
-      fontSize: 14,
-      width: 290,
-      height: 10,
-    },
-  },
-  company: {
-    width: 200,
-    height: 40,
-    marginTop: 20,
-    fontFamily: "Montserrat",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    fontSize: 30,
-    lineHeight: "37px",
-    textAlign: "center",
-    color: "#1840CF",
-    [theme.breakpoints.only("md")]: {
-      width: 200.49,
-      height: 33.47,
-      fontSize: 24,
-    },
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 18,
-      width: 220,
-      height: 20,
-    },
-    [theme.breakpoints.down("xs")]: {
-      fontSize: 14,
-      width: 220,
-      height: 0,
-    },
-  },
-  dflex: {
-    display: "flex",
-    width: 550,
-    marginTop: 70,
-    height: 141,
-    background: "#E6E6FA",
-    boxShadow: "0px 5px 8px rgba(0, 0, 0, 0.1)",
-    borderRadius: 25,
-    [theme.breakpoints.only("md")]: {
-      width: 446,
-      height: 125,
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: 400,
-      height: 120,
-      marginTop: 50,
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: 290,
-      height: 90,
-      marginTop: 50,
-    },
-  },
-  clutchimg: {
-    width: 149,
-    height: 40,
-    marginTop: 30,
-    [theme.breakpoints.down("xs")]: {
-      width: 90,
-      height: 30,
-      marginTop: 20,
-    },
-  },
-  starbox: {
-    display: "flex",
-    justifyContent: "space-between",
-    width: 160,
-    marginTop: -10,
-    [theme.breakpoints.down("xs")]: {
-      marginTop: -25,
-      width: 120,
-    },
-  },
-  star: {
-    color: "#FFC107",
   },
   text: {
-    width: 368,
-    height: 41,
-    fontFamily: " Montserrat",
+    display: "flex",
+    maxWidth: 600,
+    height: 174,
+
+    // fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: 16,
-    lineHeight: "20px",
-    textDecoration: "none",
+    fontSize: 22,
+    lineHeight: "143.4%",
+    /* or 32px */
+
     color: "#000000",
     [theme.breakpoints.only("md")]: {
-      fontSize: 14,
-      width: 300,
+      fontSize: 18,
+      maxWidth: 584,
+      height: 178,
     },
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 13,
-      width: 250,
+  },
+  img: {
+    width: 380,
+    height: 540,
+    position: "absolute",
+    marginLeft: "-28.5rem",
+    marginTop: "-20.5rem",
+    borderRadius: 34,
+    [theme.breakpoints.only("md")]: {
+      width: 320,
+      height: 450,
+      marginLeft: "-23rem",
+      marginTop: "-16.5rem",
     },
-    [theme.breakpoints.down("xs")]: {
-      fontSize: 10,
-      lineHeight: "18px",
-      width: 200,
+  },
+  indicator: {
+    height: 3,
+    background: "#FFC107",
+    width: 100,
+  },
+  name: {
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 18,
+    textAlign: "left",
+    lineHeight: "32px",
+    marginLeft: -10,
+    [theme.breakpoints.only("md")]: {
+      fontSize: 16,
     },
   },
 }));
 
-export default function FeedbackTest() {
+export default function TestIndustriesTab() {
   const classes = useStyles();
+  const theme = useTheme();
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const handleChangeIndex = (index) => {
+    setValue(index);
+  };
+
   return (
-    <Container className={classes.root}>
-      <Box className={classes.eclipse} />
-      <Box className={classes.heading}>
-        Valuable Feedbacks from our Satisfied Clients
-      </Box>
+    <Grid
+      container
+      style={{
+        display: "flex",
+        justifyContent: "flex-end",
+        alignItems: "flex-end",
+        flexDirection: "column",
+      }}
+    >
+      <Box className={classes.mainheading}>Industries We Work</Box>
       <Box className={classes.subheading}>
-        "They have gone above and beyond to make very tight deadlines and exceed
-        my expectations."
+        We Help a diverse clientele build result-driven mobile apps for
+        different industries
       </Box>
-      <Box className={classes.name}>Norbu Snow-Shiva, COO</Box>
-      <Box className={classes.company}>World Tree Consulting</Box>
-      <Link to="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
-        <Box className={classes.dflex}>
-          <img src={clutch} alt="" className={classes.clutchimg} />
-          <Box style={{ marginTop: 40, marginLeft: 10 }}>
-            <Box className={classes.starbox}>
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-            </Box>
-            <Box className={classes.text}>
-              Rated 5.0/5.0 for web development, mobile development and design
-              services
-            </Box>
+      <div className={classes.root}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          variant="fullWidth"
+          classes={{
+            indicator: classes.indicator,
+          }}
+        >
+          <Tab label="Food" {...a11yProps(0)} className={classes.name} />
+          <Tab label="E-Commerce" {...a11yProps(1)} className={classes.name} />
+          <Tab label="Social" {...a11yProps(2)} className={classes.name} />
+          <Tab label="Education" {...a11yProps(3)} className={classes.name} />
+          <Tab label="Marketplace" {...a11yProps(4)} className={classes.name} />
+        </Tabs>
+
+        <TabPanel value={value} index={0} dir={theme.direction}>
+          <img src={food} alt="" className={classes.img} />
+          <Box className={classes.heading}>Food</Box>
+          <Box className={classes.text}>
+            Techtiz offers food app development services to the clients. Our
+            developers have expertise to create interative , easy to manage apps
+            with latest technologies . Streamline the process of selling your
+            food online , with our mobile apps
           </Box>
-        </Box>
-      </Link>
-    </Container>
+        </TabPanel>
+        <TabPanel value={value} index={1} dir={theme.direction}>
+          <img src={ecommerce} alt="" className={classes.img} />
+          <Box className={classes.heading}>E-Commerce</Box>
+          <Box className={classes.text}>
+            WE provides the best development services for E-Commerce with the
+            most suitable development strategies for all customers. To ensure
+            our clients receive a successful E-Commerce web design process, we
+            have a dedicated team of specialist consultants, developers, and
+            project managers
+          </Box>
+        </TabPanel>
+        <TabPanel value={value} index={2} dir={theme.direction}>
+          <img src={social} alt="" className={classes.img} />
+          <Box className={classes.heading}>Social</Box>
+          <Box className={classes.text}>
+            Techtiz is the ultimate smartphone application development company.
+            Our creative and hardworking team designs and develops the best apps
+            that you wish to possess. Be it iPad or iPhone, android or Web, our
+            expert team develop such inspiring apps that are guaranteed to suit
+            your taste, and yield profitable results for you.
+          </Box>
+        </TabPanel>
+        <TabPanel value={value} index={3} dir={theme.direction}>
+          <img src={education} alt="" className={classes.img} />
+          <Box className={classes.heading}>Social</Box>
+          <Box className={classes.text}>
+            We provides School website development , Education application that
+            will benefits both teacher and students . We built prefect designs
+            that are easy to use .
+          </Box>
+        </TabPanel>
+        <TabPanel value={value} index={4} dir={theme.direction}>
+          <img src={market} alt="" className={classes.img} />
+          <Box className={classes.heading}>Marketplace</Box>
+          <Box className={classes.text}>
+            Our team of developers has the expertise and experience to develop
+            full-fledged cutting-edge mobile and cross-platform applications to
+            cater to users’ growing demands in today’s competitive markets. From
+            developing full-scale product solutions for large enterprises to
+            need-specific solutions of different businesses, we offer end-to-end
+            Solution
+          </Box>
+        </TabPanel>
+      </div>
+    </Grid>
   );
 }

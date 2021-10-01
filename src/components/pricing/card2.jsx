@@ -70,6 +70,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("md")]: {
       width: 10,
       height: 10,
+      marginTop: 165,
     },
     [theme.breakpoints.down("sm")]: {
       marginTop: 165,
