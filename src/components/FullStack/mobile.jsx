@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import img1 from "../../assets/img1.png";
 import { Container, Box, Button } from "@material-ui/core";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -120,7 +121,9 @@ export default function MobileStack() {
         At Techtiz, we build applications that click! With extraordinarily
         creative minds on board.
       </Box>
-      <Button className={classes.btn}>Let’s Connect Today </Button>
+      <Link to="contact">
+        <Button className={classes.btn}> Let’s Connect Today </Button>
+      </Link>
     </Container>
   );
 }
