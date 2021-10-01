@@ -27,8 +27,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 22,
     lineHeight: "133%",
     /* or 29px */
-
-    color: "#000000",
   },
   expandedPanel: {
     color: "#FFC107",

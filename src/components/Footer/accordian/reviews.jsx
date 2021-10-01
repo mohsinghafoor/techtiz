@@ -32,36 +32,67 @@ export const ReviewAccordian = () => {
     <Container style={{ display: "flex" }}>
       <Box>
         <Box mt={5}>
-          <Box className={classes.dflex} mt={4}>
-            <MailIcon style={{ color: "red", fontSize: 30 }} />
-            <Box ml={1} className={classes.iconName}>
-              contact@techtiz.com
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Box className={classes.dflex} mt={4}>
+              <MailIcon style={{ color: "red", fontSize: 30 }} />
+              <Box ml={1} className={classes.iconName}>
+                contact@techtiz.com
+              </Box>
             </Box>
-          </Box>
-          <Box className={classes.dflex} mt={4}>
-            <FacebookIcon style={{ color: "blue", fontSize: 30 }} />
-            <Box ml={1} className={classes.iconName}>
-              Facebook
+          </a>
+          <a
+            href="https://www.facebook.com/techtiz"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Box className={classes.dflex} mt={4}>
+              <FacebookIcon style={{ color: "blue", fontSize: 30 }} />
+              <Box ml={1} className={classes.iconName}>
+                Facebook
+              </Box>
             </Box>
-          </Box>
-          <Box className={classes.dflex} mt={4}>
-            <img className={classes.cnticon} src={linkedin} alt="" />
-            <Box ml={1} className={classes.iconName}>
-              Linkedin
+          </a>
+          <a
+            href="https://www.linkedin.com/company/techtiz/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            {" "}
+            <Box className={classes.dflex} mt={4}>
+              <img className={classes.cnticon} src={linkedin} alt="" />
+              <Box ml={1} className={classes.iconName}>
+                Linkedin
+              </Box>
             </Box>
-          </Box>
-          <Box className={classes.dflex} mt={4}>
-            <img className={classes.cnticon} src={clutch} alt="" />
-            <Box ml={1} className={classes.iconName}>
-              Clutch
+          </a>
+          <a
+            href="https://clutch.co/profile/techtiz-0#summary"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Box className={classes.dflex} mt={4}>
+              <img className={classes.cnticon} src={clutch} alt="" />
+              <Box ml={1} className={classes.iconName}>
+                Clutch
+              </Box>
             </Box>
-          </Box>
-          <Box className={classes.dflex} mt={4}>
-            <WhatsAppIcon style={{ color: "#0fa958", fontSize: 30 }} />
-            <Box ml={1} className={classes.iconName}>
-              +92 334 4265883
+          </a>
+          <a
+            href="https://web.whatsapp.com/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Box className={classes.dflex} mt={4}>
+              <WhatsAppIcon style={{ color: "#0fa958", fontSize: 30 }} />
+              <Box ml={1} className={classes.iconName}>
+                +92 334 4265883
+              </Box>
             </Box>
-          </Box>
+          </a>
         </Box>
       </Box>
     </Container>
