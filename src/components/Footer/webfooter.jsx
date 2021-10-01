@@ -15,9 +15,9 @@ import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 const useStyles = makeStyles({
   bulletPoint: {
     backgroundColor: "#C4C4C4",
-    width: "9.64px",
+    width: "7.64px",
     height: "7.7px",
-    borderRadius: 10,
+    borderRadius: 20,
   },
   iconStyles: {
     width: 18,
