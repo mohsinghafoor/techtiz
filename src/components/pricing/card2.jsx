@@ -70,10 +70,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("md")]: {
       width: 10,
       height: 10,
-      marginTop: 165,
+      marginTop: 162,
     },
     [theme.breakpoints.down("sm")]: {
-      marginTop: 165,
+      marginTop: 163,
     },
   },
   text: {
@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("md")]: {
       maxWidth: 262,
       fontSize: 14,
-      height: 80,
+      height: 60,
     },
     [theme.breakpoints.down("sm")]: {
       maxWidth: 373,
@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("md")]: {
       maxWidth: 252,
       fontSize: 14,
-      height: 66,
+      height: 85,
     },
     [theme.breakpoints.down("sm")]: {
       maxWidth: 373,

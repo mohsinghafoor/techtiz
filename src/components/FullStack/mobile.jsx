@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     width: 230,
-    height: 56,
+    height: 50,
     background: "#7FC6DC",
     boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
     borderRadius: 72,
@@ -96,8 +96,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16,
     lineHeight: "28px",
     textAlign: "center",
-
+    marginTop: 10,
     color: "#FFFFFF",
+    [theme.breakpoints.down("xs")]: {
+      width: 200,
+      fontSize: 14,
+      height: 50,
+      marginTop: 20,
+    },
   },
 }));
 

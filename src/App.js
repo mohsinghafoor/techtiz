@@ -23,8 +23,15 @@ function App() {
       <Process />
       <Projects />
       <Industries />
-      <Feedback />
-      <Pricing />
+      <div
+        style={{
+          background:
+            "linear-gradient(360deg, rgba(255, 255, 255, 0.32) 10.53%, rgba(212, 244, 255, 0.32) 35.97%, rgba(255, 255, 255, 0.32) 85.83%)",
+        }}
+      >
+        <Feedback />
+        <Pricing />
+      </div>
       <Blogs />
       <MyContactUs />
       <ResponsiveFooter />

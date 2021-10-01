@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     maxWidth: 482,
-    height: 315,
+    height: 330,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,

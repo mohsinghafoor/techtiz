@@ -103,7 +103,11 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "-12rem",
     },
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "-9rem",
+      width: 130,
+      fontSize: 12,
+      height: 40,
+      marginTop: 60,
+      marginLeft: "-11rem",
     },
   },
 }));

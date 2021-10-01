@@ -86,9 +86,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("md")]: {
       maxWidth: 10,
       height: 10,
-      marginTop: -90,
+      marginTop: -84,
       [theme.breakpoints.only("sm")]: {
         marginTop: -105,
+      },
+      [theme.breakpoints.down("xs")]: {
+        marginTop: -90,
       },
     },
   },
@@ -161,7 +164,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#7FC6DC",
     [theme.breakpoints.only("md")]: {
       maxWidth: 176,
-      height: 47,
+      height: 43,
       fontSize: 18,
     },
     [theme.breakpoints.down("sm")]: {

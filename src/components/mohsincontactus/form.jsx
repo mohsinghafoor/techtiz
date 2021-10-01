@@ -258,6 +258,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 10,
     "&:hover": {
       background: "#ADD8E6",
+      cursor: "pointer",
     },
     [theme.breakpoints.down("sm")]: {
       width: 148,
