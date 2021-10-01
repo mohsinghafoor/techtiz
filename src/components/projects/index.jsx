@@ -18,7 +18,7 @@ import { useTheme } from "@material-ui/core/styles";
 import ProjectsMobile from "./accordian";
 const useStyles = makeStyles((theme) => ({
   main: {
-    marginTop: 100,
+    marginTop: -10,
     padding: 30,
   },
   contentStyle: {

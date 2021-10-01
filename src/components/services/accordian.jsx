@@ -141,7 +141,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "10rem",
   },
   parent: {
-    width: 350,
+    width: 300,
   },
   img: {
     position: "absolute",

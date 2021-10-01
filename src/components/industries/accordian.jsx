@@ -91,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   parent: {
-    width: 350,
+    width: 300,
   },
   expandedPanel: {
     color: "#FFC107",
