@@ -89,6 +89,11 @@ const useStyles = makeStyles((theme) => ({
     /* identical to box height */
 
     color: "#FFFFFF",
+    [theme.breakpoints.down("md")]: {
+      width: 150,
+      fontSize: 17,
+      height: 45,
+    },
     [theme.breakpoints.down("sm")]: {
       width: 160,
       fontSize: 16,
