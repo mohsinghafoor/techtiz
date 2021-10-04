@@ -117,6 +117,18 @@ export const WebFooter = () => {
         <Box display="flex">
           <Box>
             <Box className={classes.dflex} mt={5}>
+              <img className={classes.icon} src={flutter} alt="" />
+              <Box ml={1} className={classes.iconName}>
+                Flutter
+              </Box>
+            </Box>
+            <Box className={classes.dflex} mt={4}>
+              <img className={classes.icon} src={react} alt="" />
+              <Box ml={1} className={classes.iconName}>
+                React native
+              </Box>
+            </Box>
+            <Box className={classes.dflex} mt={4}>
               <Box>
                 <img className={classes.iconStyles} src={apple} alt="" />
               </Box>
@@ -128,18 +140,6 @@ export const WebFooter = () => {
               <img className={classes.iconStyles} src={android} alt="" />
               <Box ml={1} className={classes.iconName}>
                 Android
-              </Box>
-            </Box>
-            <Box className={classes.dflex} mt={4}>
-              <img className={classes.icon} src={react} alt="" />
-              <Box ml={1} className={classes.iconName}>
-                React native
-              </Box>
-            </Box>
-            <Box className={classes.dflex} mt={4}>
-              <img className={classes.icon} src={flutter} alt="" />
-              <Box ml={1} className={classes.iconName}>
-                Flutter
               </Box>
             </Box>
           </Box>
