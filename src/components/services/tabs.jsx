@@ -168,6 +168,18 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 30,
     },
   },
+  backimg: {
+    width: 600.92,
+    height: 364.62,
+    marginTop: 30,
+    borderRadius: 10,
+    marginLeft: -80,
+    [theme.breakpoints.only("md")]: {
+      width: 300,
+      height: 200,
+      marginLeft: 20,
+    },
+  },
 }));
 
 export default function ServicesTab() {
@@ -332,7 +344,7 @@ export default function ServicesTab() {
             </Box>
           </Grid>
           <Grid item md={5} style={{ display: "flex", alignItems: "center" }}>
-            <img src={pic1} alt="" className={classes.img} />
+            <img src={pic1} alt="" className={classes.backimg} />
           </Grid>
         </Grid>
       </TabPanel>

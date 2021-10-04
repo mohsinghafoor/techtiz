@@ -93,12 +93,9 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 72,
     fontFamily: "Axiforma",
     fontStyle: "normal",
-    fontWeight: 300,
+    fontWeight: 500,
     fontSize: 14,
     lineHeight: "25px",
-    display: "flex",
-    alignItems: "center",
-    textAlign: "center",
     "&:hover": {
       background: "#D3D3D3",
     },
