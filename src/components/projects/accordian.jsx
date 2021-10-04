@@ -144,7 +144,6 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 30,
     marginLeft: "3rem",
     marginTop: "11.7rem",
-    border: "2px solid black",
   },
 
   androidimg: {
