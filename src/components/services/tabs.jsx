@@ -156,38 +156,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    width: 403.92,
-    height: 320.62,
-    [theme.breakpoints.only("md")]: {
-      width: 300,
-      height: 240,
-      marginLeft: 10,
-    },
-  },
-  mobileimg: {
-    width: 403.92,
-    height: 320.62,
-    marginTop: 30,
-    borderRadius: 20,
-    [theme.breakpoints.only("md")]: {
-      width: 330,
-      height: 250,
-      marginLeft: 10,
-    },
-  },
-  imgback: {
-    width: 463.92,
-    height: 320.62,
-    [theme.breakpoints.only("md")]: {
-      width: 350,
-      height: 260,
-      marginLeft: 20,
-    },
-  },
-  qualityimg: {
     width: 453.92,
     height: 340.62,
     marginTop: 30,
+    borderRadius: 10,
     [theme.breakpoints.only("md")]: {
       width: 350,
       height: 300,
@@ -282,7 +254,7 @@ export default function ServicesTab() {
             md={5}
             style={{ display: "flex", alignItems: "center" }}
           >
-            <img src={pic3} alt="" className={classes.mobileimg} />
+            <img src={pic3} alt="" className={classes.img} />
           </Grid>
         </Grid>
       </TabPanel>
@@ -355,7 +327,7 @@ export default function ServicesTab() {
             </Box>
           </Grid>
           <Grid item md={5} style={{ display: "flex", alignItems: "center" }}>
-            <img src={pic1} alt="" className={classes.imgback} />
+            <img src={pic1} alt="" className={classes.img} />
           </Grid>
         </Grid>
       </TabPanel>
@@ -393,7 +365,7 @@ export default function ServicesTab() {
             </Box>
           </Grid>
           <Grid item md={5} style={{ display: "flex", alignItems: "center" }}>
-            <img src={pic4} alt="" className={classes.qualityimg} />
+            <img src={pic4} alt="" className={classes.img} />
           </Grid>
         </Grid>
       </TabPanel>
