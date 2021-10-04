@@ -4,13 +4,10 @@ import { Accordion, Box, Button } from "@material-ui/core";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import mobile from "../../assets/big.png";
-import small1 from "../../assets/small1.png";
-import small2 from "../../assets/small2.png";
-import small3 from "../../assets/small3.png";
-import pic1 from "../../assets/frontend.png";
-import pic2 from "../../assets/backend.png";
-import pic3 from "../../assets/quality.png";
+import mobile from "../../assets/new.jpg";
+import pic1 from "../../assets/what.png";
+import pic2 from "../../assets/backend1.png";
+import pic3 from "../../assets/quality1.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -144,13 +141,8 @@ const useStyles = makeStyles((theme) => ({
     width: 300,
   },
   img: {
-    position: "absolute",
-    width: 211.13,
-    height: 309.22,
-    filter: "drop-shadow(9px 0px 14px rgba(0, 0, 0, 0.25))",
-    transform: "rotate(17.78deg)",
-    marginTop: 180,
-    marginLeft: 10,
+    width: 270.13,
+    height: 190.22,
   },
   expandedPanel: {
     color: "#FFC107",
@@ -227,12 +219,8 @@ export default function AccordionServices(props) {
               lookout for challenges that ask for creating visually stunning &
               functionally effective mobile apps.
             </Box>
-            <Box className={classes.circle}></Box>
 
             <img src={mobile} alt="" className={classes.img} />
-            <img src={small1} alt="" className={classes.pic1} />
-            <img src={small2} alt="" className={classes.pic2} />
-            <img src={small3} alt="" className={classes.pic3} />
             <Button className={classes.btn}>
               Calculate App Devolopment Cast
             </Button>

@@ -141,13 +141,13 @@ export default function Header() {
                 </Link>
               </IconButton>
               <IconButton className={classes.a}>
-                <Link to="expertise">
-                  <Box className={classes.buttons}>Expertise</Box>
+                <Link to="process">
+                  <Box className={classes.buttons}>Process</Box>
                 </Link>
               </IconButton>
               <IconButton className={classes.a}>
-                <Link to="process">
-                  <Box className={classes.buttons}>Process</Box>
+                <Link to="expertise">
+                  <Box className={classes.buttons}>Expertise</Box>
                 </Link>
               </IconButton>
               <IconButton className={classes.a}>

@@ -8,14 +8,11 @@ import Card3 from "./card3";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    marginTop: 200,
-    marginBottom: 40,
     display: "flex",
     justifyContent: "center",
-    width: "100%",
-    [theme.breakpoints.down("xs")]: {
-      marginTop: 50,
+    marginTop: 100,
+    [theme.breakpoints.up("lg")]: {
+      marginTop: 200,
     },
   },
   heading: {
@@ -35,10 +32,7 @@ export default function Pricing() {
   const classes = useStyles();
 
   return (
-    <Grid
-      container
-      style={{ display: "flex", justifyContent: "center", marginTop: 100 }}
-    >
+    <Grid container className={classes.root}>
       <Grid item xs={12} style={{ display: "flex", justifyContent: "center" }}>
         <Box className={classes.heading}>Our Pricing Model</Box>
       </Grid>

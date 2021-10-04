@@ -4,11 +4,21 @@ import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import { Typography, Grid, Box } from "@material-ui/core";
-import pic1 from "../../assets/backend.png";
-import pic2 from "../../assets/frontend.png";
-import pic3 from "../../assets/21.png";
-import pic4 from "../../assets/quality.png";
+import pic1 from "../../assets/backend1.png";
+import pic2 from "../../assets/what.png";
+import pic3 from "../../assets/new.jpg";
+import pic4 from "../../assets/quality1.png";
 import Fields from "./fields";
+import apple from "../../assets/apple.png";
+import react from "../../assets/react.png";
+import angular from "../../assets/angular.png";
+import android from "../../assets/android.png";
+import flutter from "../../assets/flutter.png";
+import node from "../../assets/node gray.png";
+import html from "../../assets/html gray.png";
+import selinium from "../../assets/selenium.png";
+import katolon from "../../assets/katalon.png";
+import appium from "../../assets/appium.png";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -47,6 +57,40 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
     [theme.breakpoints.only("md")]: {},
+  },
+  fieldroot: {
+    display: "flex",
+    justifyContent: "space-between",
+    flexGrow: 1,
+    maxWidth: 450,
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: 10,
+    },
+    [theme.breakpoints.down("md")]: {
+      marginTop: "-5rem",
+    },
+  },
+  apple: {
+    width: 55.09,
+    height: 58.82,
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 30,
+    },
+  },
+
+  applet: {
+    width: 74,
+    height: 51,
+    fontFamily: "Montserrat",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: 17,
+    lineHeight: "22px",
+    color: "#000000",
+    [theme.breakpoints.down("md")]: {
+      fontSize: 16,
+      width: 65,
+    },
   },
   name: {
     display: "flex",
@@ -94,7 +138,7 @@ const useStyles = makeStyles((theme) => ({
   text: {
     display: "flex",
     maxWidth: 600,
-    height: 100,
+    height: 200,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -104,7 +148,7 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: 10,
     },
     [theme.breakpoints.only("md")]: {
-      height: 90,
+      height: 290,
       lineHeight: "40px",
       fontSize: 18,
       maxWidth: 550,
@@ -113,10 +157,30 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     width: 403.92,
-    height: 401.62,
+    height: 320.62,
     [theme.breakpoints.only("md")]: {
-      width: 360,
-      height: 360,
+      width: 300,
+      height: 240,
+      marginLeft: 10,
+    },
+  },
+  mobileimg: {
+    width: 403.92,
+    height: 320.62,
+    marginTop: 30,
+    [theme.breakpoints.only("md")]: {
+      width: 300,
+      height: 240,
+      marginLeft: 10,
+    },
+  },
+  imgback: {
+    width: 463.92,
+    height: 320.62,
+    [theme.breakpoints.only("md")]: {
+      width: 350,
+      height: 260,
+      marginLeft: 20,
     },
   },
 }));
@@ -181,9 +245,32 @@ export default function ServicesTab() {
               lookout for challenges that ask for creating visually stunning &
               functionally effective mobile apps.
             </Box>
+            <Box className={classes.fieldroot}>
+              <Box style={{ height: 50 }}>
+                <img src={react} alt="" className={classes.apple} />
+                <Box className={classes.applet}>React Native</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={flutter} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Flutter</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={apple} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Apple</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={android} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Android</Box>
+              </Box>
+            </Box>
           </Grid>
-          <Grid item item md={5}>
-            <img src={pic3} alt="" className={classes.img} />
+          <Grid
+            item
+            item
+            md={5}
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <img src={pic3} alt="" className={classes.mobileimg} />
           </Grid>
         </Grid>
       </TabPanel>
@@ -201,12 +288,26 @@ export default function ServicesTab() {
               What We Offer as Front End Team
             </Box>
             <Box className={classes.text}>
-              Top class front end development services to create interative
-              custom web and mobile applications to deliver pixel perfect
-              ,stunning user experience.
+              Get Services of our highly qualified front end development team to
+              create interative custom web and mobile applications to deliver
+              pixel perfect ,stunning user experience.
+            </Box>
+            <Box className={classes.fieldroot} style={{ width: 300 }}>
+              <Box style={{ height: 50 }}>
+                <img src={react} alt="" className={classes.apple} />
+                <Box className={classes.applet}>React js</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={flutter} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Flutter</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={html} alt="" className={classes.apple} />
+                <Box className={classes.applet}>HTML5</Box>
+              </Box>
             </Box>
           </Grid>
-          <Grid item md={5}>
+          <Grid item md={5} style={{ display: "flex", alignItems: "center" }}>
             <img src={pic2} alt="" className={classes.img} />
           </Grid>
         </Grid>
@@ -225,13 +326,24 @@ export default function ServicesTab() {
               Get Services of our Experienced Back End Team
             </Box>
             <Box className={classes.text}>
-              Top class Backend development services to create interative custom
-              web and mobile applications to deliver pixel perfect ,stunning
-              user experience.
+              Our Backend development team will help you to create interative
+              custom web and mobile applications backends to smoothly run your
+              online business , and to provide stunning user experience to both
+              Customer and Users.
+            </Box>
+            <Box className={classes.fieldroot} style={{ width: 180 }}>
+              <Box style={{ height: 50 }}>
+                <img src={angular} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Angular</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={node} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Node js</Box>
+              </Box>
             </Box>
           </Grid>
-          <Grid item md={5}>
-            <img src={pic1} alt="" className={classes.img} />
+          <Grid item md={5} style={{ display: "flex", alignItems: "center" }}>
+            <img src={pic1} alt="" className={classes.imgback} />
           </Grid>
         </Grid>
       </TabPanel>
@@ -253,8 +365,22 @@ export default function ServicesTab() {
               in this field. Our specialized team can provide custom web
               solutions to establish your business online.
             </Box>
+            <Box className={classes.fieldroot} style={{ width: 300 }}>
+              <Box style={{ height: 50 }}>
+                <img src={selinium} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Selenium</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={katolon} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Katalon</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={appium} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Appium</Box>
+              </Box>
+            </Box>
           </Grid>
-          <Grid item md={5}>
+          <Grid item md={5} style={{ display: "flex", alignItems: "center" }}>
             <img src={pic4} alt="" className={classes.img} />
           </Grid>
         </Grid>
