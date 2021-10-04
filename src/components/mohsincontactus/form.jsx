@@ -261,9 +261,15 @@ const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
     [theme.breakpoints.down("sm")]: {
-      width: 148,
+      width: 138,
       height: 34,
       marginBottom: 20,
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: 100,
+      height: 30,
+      marginBottom: 20,
+      fontSize: 18,
     },
   },
 
