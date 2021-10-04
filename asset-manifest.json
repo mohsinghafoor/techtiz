@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/techtiz/static/css/main.eb01c660.chunk.css",
-    "main.js": "/techtiz/static/js/main.d48d680c.chunk.js",
-    "main.js.map": "/techtiz/static/js/main.d48d680c.chunk.js.map",
+    "main.js": "/techtiz/static/js/main.370a295c.chunk.js",
+    "main.js.map": "/techtiz/static/js/main.370a295c.chunk.js.map",
     "runtime-main.js": "/techtiz/static/js/runtime-main.a60b2ff1.js",
     "runtime-main.js.map": "/techtiz/static/js/runtime-main.a60b2ff1.js.map",
     "static/js/2.b931dc5d.chunk.js": "/techtiz/static/js/2.b931dc5d.chunk.js",
@@ -18,6 +18,7 @@
     "static/media/backend1.8d0558c3.png": "/techtiz/static/media/backend1.8d0558c3.png",
     "static/media/blog1.1bbb8631.png": "/techtiz/static/media/blog1.1bbb8631.png",
     "static/media/blog2.3338824d.png": "/techtiz/static/media/blog2.3338824d.png",
+    "static/media/css3.5ae55957.svg": "/techtiz/static/media/css3.5ae55957.svg",
     "static/media/ecommercimg.c3c55b05.png": "/techtiz/static/media/ecommercimg.c3c55b05.png",
     "static/media/education.01111ce4.png": "/techtiz/static/media/education.01111ce4.png",
     "static/media/food.2b157e54.png": "/techtiz/static/media/food.2b157e54.png",
@@ -43,6 +44,6 @@
     "static/js/runtime-main.a60b2ff1.js",
     "static/js/2.b931dc5d.chunk.js",
     "static/css/main.eb01c660.chunk.css",
-    "static/js/main.d48d680c.chunk.js"
+    "static/js/main.370a295c.chunk.js"
   ]
 }
