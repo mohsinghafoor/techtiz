@@ -104,21 +104,43 @@ export default function MySales() {
         <Box className={classes.heading}>Sales</Box>
         <Box className={classes.subheading}>
           Let us show you what Techtiz can do for your team. Get in touch at
-          contact@techtiz.com
+          <span style={{ fontWeight: "bold", fontSize: 17, marginLeft: 5 }}>
+            contact@techtiz.com
+          </span>
         </Box>
       </Box>
       <Box className={classes.dflex}>
         <Box className={classes.heading}>Customer Support</Box>
         <Box className={classes.subheading}>
           For any product or technical questions, reach us at
-          contact@techtiz.com Or, check out our Help Center.
+          <span
+            style={{
+              fontWeight: "bold",
+              fontSize: 17,
+              marginLeft: 5,
+              marginRight: 5,
+            }}
+          >
+            contact@techtiz.com
+          </span>
+          Or, check out our Help Center.
         </Box>
       </Box>
       <Box className={classes.dflex}>
         <Box className={classes.heading}>Genral Inquiries</Box>
         <Box className={classes.subheading}>
           For anything else on your mind, including partnership ideas, say
-          hello: contact@techtiz.com
+          hello:{" "}
+          <span
+            style={{
+              fontWeight: "bold",
+              fontSize: 17,
+              marginLeft: 5,
+              marginRight: 5,
+            }}
+          >
+            contact@techtiz.com
+          </span>
         </Box>
       </Box>
     </Box>
