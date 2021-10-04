@@ -213,7 +213,7 @@ export const Projects = (props) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
   return (
-    <div className={classes.main}>
+    <div className={classes.main} id="portfolio">
       {isMobile ? (
         <ProjectsMobile />
       ) : (

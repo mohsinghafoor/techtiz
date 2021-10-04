@@ -76,14 +76,13 @@ export default function DrawerList({ onClose }) {
         </Link>
       </IconButton>
       <IconButton className={classes.a}>
-        <Link to="expertise">
-          <Box className={classes.items}>Expertise</Box>
+        <Link to="portfolio">
+          <Box className={classes.items}>Portfolio</Box>
         </Link>
       </IconButton>
-
       <IconButton className={classes.a}>
-        <Link to="process">
-          <Box className={classes.items}>Portfolio</Box>
+        <Link to="expertise">
+          <Box className={classes.items}>Expertise</Box>
         </Link>
       </IconButton>
     </Box>
