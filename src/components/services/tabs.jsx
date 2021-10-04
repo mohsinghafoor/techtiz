@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import { Typography, Grid, Box } from "@material-ui/core";
-import pic1 from "../../assets/backend1.png";
+import pic1 from "../../assets/backend.png";
 import pic2 from "../../assets/what.png";
 import pic3 from "../../assets/new.jpg";
 import pic4 from "../../assets/quality1.png";
@@ -14,12 +14,11 @@ import react from "../../assets/react.png";
 import angular from "../../assets/angular.png";
 import android from "../../assets/android.png";
 import flutter from "../../assets/flutter.png";
-import node from "../../assets/node gray.png";
+import node from "../../assets/node1.png";
 import html from "../../assets/html gray.png";
-import selinium from "../../assets/selenium.png";
-import katolon from "../../assets/katalon.png";
-import appium from "../../assets/appium.png";
+import ruby from "../../assets/ruby.png";
 import css from "../../assets/css3.svg";
+import exp from "../../assets/exp.png";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -169,11 +168,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   backimg: {
-    width: 560.92,
+    width: 400.92,
     height: 340.62,
     marginTop: 30,
     borderRadius: 10,
-    marginLeft: -60,
     [theme.breakpoints.only("md")]: {
       width: 340,
       height: 220,
@@ -289,14 +287,10 @@ export default function ServicesTab() {
               create interative custom web and mobile applications to deliver
               pixel perfect ,stunning user experience.
             </Box>
-            <Box className={classes.fieldroot} style={{ width: 400 }}>
+            <Box className={classes.fieldroot} style={{ width: 300 }}>
               <Box style={{ height: 50 }}>
                 <img src={react} alt="" className={classes.apple} />
                 <Box className={classes.applet}>React js</Box>
-              </Box>
-              <Box style={{ height: 50 }}>
-                <img src={flutter} alt="" className={classes.apple} />
-                <Box className={classes.applet}>Flutter</Box>
               </Box>
               <Box style={{ height: 50 }}>
                 <img src={html} alt="" className={classes.apple} />
@@ -332,14 +326,18 @@ export default function ServicesTab() {
               online business , and to provide stunning user experience to both
               Customer and Users.
             </Box>
-            <Box className={classes.fieldroot} style={{ width: 180 }}>
+            <Box className={classes.fieldroot} style={{ width: 300 }}>
               <Box style={{ height: 50 }}>
-                <img src={angular} alt="" className={classes.apple} />
-                <Box className={classes.applet}>Angular</Box>
+                <img src={ruby} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Ruby Js</Box>
               </Box>
               <Box style={{ height: 50 }}>
                 <img src={node} alt="" className={classes.apple} />
                 <Box className={classes.applet}>Node js</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={exp} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Firebase</Box>
               </Box>
             </Box>
           </Grid>
