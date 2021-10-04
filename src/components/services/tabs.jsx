@@ -168,6 +168,7 @@ const useStyles = makeStyles((theme) => ({
     width: 403.92,
     height: 320.62,
     marginTop: 30,
+    borderRadius: 50,
     [theme.breakpoints.only("md")]: {
       width: 300,
       height: 240,

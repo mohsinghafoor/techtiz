@@ -1,11 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Button } from "@material-ui/core";
-import apple from "../../assets/apple.png";
-import react from "../../assets/react.png";
-import angular from "../../assets/angular.png";
-import android from "../../assets/android.png";
-import flutter from "../../assets/flutter.png";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   btn: {
@@ -39,7 +35,9 @@ export default function Fields() {
 
   return (
     <>
-      <Button className={classes.btn}>Get Quote</Button>
+      <Link to="contact">
+        <Button className={classes.btn}>Get Quote</Button>
+      </Link>
     </>
   );
 }

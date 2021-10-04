@@ -4,6 +4,7 @@ import { Accordion, Box, Button } from "@material-ui/core";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Link } from "react-scroll";
 import mobile from "../../assets/new.jpg";
 import pic1 from "../../assets/what.png";
 import pic2 from "../../assets/backend1.png";
@@ -109,15 +110,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   btn: {
-    width: 320,
-    height: 53,
+    width: 180,
+    height: 56,
     background: "#7FC6DC",
     boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
     borderRadius: 72,
     fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: 500,
-    fontSize: 14,
+    fontSize: 17,
     lineHeight: "17px",
     display: "flex",
     alignItems: "center",
@@ -221,9 +222,9 @@ export default function AccordionServices(props) {
             </Box>
 
             <img src={mobile} alt="" className={classes.img} />
-            <Button className={classes.btn}>
-              Calculate App Devolopment Cast
-            </Button>
+            <Link to="contact">
+              <Button className={classes.btn}>Get Quote</Button>
+            </Link>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -251,9 +252,9 @@ export default function AccordionServices(props) {
               ,stunning user experience.
             </Box>
             <img src={pic1} alt="" style={{ width: 300 }} />
-            <Button className={classes.btn}>
-              Calculate App Devolopment Cast
-            </Button>
+            <Link to="contact">
+              <Button className={classes.btn}>Get Quote</Button>
+            </Link>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -281,9 +282,9 @@ export default function AccordionServices(props) {
               user experience.
             </Box>
             <img src={pic2} alt="" style={{ width: 300 }} />
-            <Button className={classes.btn}>
-              Calculate App Devolopment Cast
-            </Button>
+            <Link to="contact">
+              <Button className={classes.btn}>Get Quote</Button>
+            </Link>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -311,9 +312,9 @@ export default function AccordionServices(props) {
               solutions to establish your business online.
             </Box>
             <img src={pic3} alt="" style={{ width: 300 }} />
-            <Button className={classes.btn}>
-              Calculate App Devolopment Cast
-            </Button>
+            <Link to="contact">
+              <Button className={classes.btn}>Get Quote</Button>
+            </Link>
           </AccordionDetails>
         </Accordion>
       </Box>

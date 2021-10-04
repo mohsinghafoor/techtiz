@@ -355,7 +355,7 @@ export default function ContactForm() {
         Privacy Policy
       </Box>
       <button type="submit" className={classes.sendbtn}>
-        Send
+        SEND
       </button>
     </form>
   );

@@ -49,7 +49,7 @@ export default function Blogs() {
       >
         <Blog2 />
       </Grid>
-      <Grid item md={6} style={{ display: "flex", justifyContent: "flex-end" }}>
+      {/* <Grid item md={6} style={{ display: "flex", justifyContent: "flex-end" }}>
         <Blog3 />
       </Grid>
       <Grid
@@ -58,7 +58,7 @@ export default function Blogs() {
         style={{ display: "flex", justifyContent: "flex-start" }}
       >
         <Blog4 />
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 }
