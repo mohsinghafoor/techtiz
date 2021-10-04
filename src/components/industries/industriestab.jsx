@@ -51,6 +51,12 @@ const useStyles = makeStyles((theme) => ({
       width: 600,
     },
   },
+  main: {
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+    flexDirection: "column",
+  },
   mainheading: {
     width: 780,
     height: 78,
@@ -167,15 +173,7 @@ export default function IndustriesTab() {
   };
 
   return (
-    <Grid
-      container
-      style={{
-        display: "flex",
-        justifyContent: "flex-end",
-        alignItems: "flex-end",
-        flexDirection: "column",
-      }}
-    >
+    <Grid container className={classes.main}>
       <Box className={classes.mainheading}>Industries We Work</Box>
       <Box className={classes.subheading}>
         We Help a diverse clientele build result-driven mobile apps for

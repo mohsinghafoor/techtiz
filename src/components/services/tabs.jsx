@@ -168,10 +168,10 @@ const useStyles = makeStyles((theme) => ({
     width: 403.92,
     height: 320.62,
     marginTop: 30,
-    borderRadius: 50,
+    borderRadius: 20,
     [theme.breakpoints.only("md")]: {
-      width: 300,
-      height: 240,
+      width: 330,
+      height: 250,
       marginLeft: 10,
     },
   },
@@ -182,6 +182,17 @@ const useStyles = makeStyles((theme) => ({
       width: 350,
       height: 260,
       marginLeft: 20,
+    },
+  },
+  qualityimg: {
+    width: 453.92,
+    height: 340.62,
+    marginTop: 30,
+    [theme.breakpoints.only("md")]: {
+      width: 350,
+      height: 300,
+      marginLeft: 20,
+      marginTop: 30,
     },
   },
 }));
@@ -382,7 +393,7 @@ export default function ServicesTab() {
             </Box>
           </Grid>
           <Grid item md={5} style={{ display: "flex", alignItems: "center" }}>
-            <img src={pic4} alt="" className={classes.img} />
+            <img src={pic4} alt="" className={classes.qualityimg} />
           </Grid>
         </Grid>
       </TabPanel>

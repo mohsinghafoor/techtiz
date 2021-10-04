@@ -126,8 +126,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     marginTop: 40,
     [theme.breakpoints.down("xs")]: {
-      width: 290,
-      fontSize: 12,
+      width: 180,
+      fontSize: 14,
       height: 48,
     },
   },
