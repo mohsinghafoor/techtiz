@@ -19,6 +19,7 @@ import html from "../../assets/html gray.png";
 import selinium from "../../assets/selenium.png";
 import katolon from "../../assets/katalon.png";
 import appium from "../../assets/appium.png";
+import css from "../../assets/css3.svg";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -62,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     flexGrow: 1,
-    maxWidth: 450,
+    maxWidth: 400,
     [theme.breakpoints.up("lg")]: {
       marginLeft: 10,
     },
@@ -276,7 +277,7 @@ export default function ServicesTab() {
               create interative custom web and mobile applications to deliver
               pixel perfect ,stunning user experience.
             </Box>
-            <Box className={classes.fieldroot} style={{ width: 300 }}>
+            <Box className={classes.fieldroot} style={{ width: 400 }}>
               <Box style={{ height: 50 }}>
                 <img src={react} alt="" className={classes.apple} />
                 <Box className={classes.applet}>React js</Box>
@@ -288,6 +289,10 @@ export default function ServicesTab() {
               <Box style={{ height: 50 }}>
                 <img src={html} alt="" className={classes.apple} />
                 <Box className={classes.applet}>HTML5</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={css} alt="" className={classes.apple} />
+                <Box className={classes.applet}>CCS3</Box>
               </Box>
             </Box>
           </Grid>
