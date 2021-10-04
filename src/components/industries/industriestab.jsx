@@ -209,7 +209,7 @@ export default function IndustriesTab() {
           <img src={ecommerce} alt="" className={classes.img} />
           <Box className={classes.heading}>E-Commerce</Box>
           <Box className={classes.text}>
-            WE provides the best development services for E-Commerce with the
+            We provide the best development services for E-Commerce with the
             most suitable development strategies for all customers. To ensure
             our clients receive a successful E-Commerce web design process, we
             have a dedicated team of specialist consultants, developers, and
@@ -231,7 +231,7 @@ export default function IndustriesTab() {
           <img src={education} alt="" className={classes.img} />
           <Box className={classes.heading}>Social</Box>
           <Box className={classes.text}>
-            We provides School website development , Education application that
+            We provide School website development , Education application that
             will benefits both teacher and students . We built prefect designs
             that are easy to use .
           </Box>

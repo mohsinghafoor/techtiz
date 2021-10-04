@@ -169,14 +169,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   backimg: {
-    width: 600.92,
-    height: 364.62,
+    width: 560.92,
+    height: 340.62,
     marginTop: 30,
     borderRadius: 10,
-    marginLeft: -80,
+    marginLeft: -60,
     [theme.breakpoints.only("md")]: {
-      width: 300,
-      height: 200,
+      width: 340,
+      height: 220,
       marginLeft: 20,
     },
   },
@@ -362,11 +362,15 @@ export default function ServicesTab() {
               Satsifaction of Client is Our First Priority
             </Box>
             <Box className={classes.text}>
-              We have a team of professional experts having years of experience
-              in this field. Our specialized team can provide custom web
-              solutions to establish your business online.
+              we have compiled a team of highly professional and talented QA
+              engineers who reshapes project processes to ensure that our
+              clients enjoy a competitive edge in the customer experience
+              market! With our years of expertise and credibility, we have
+              crafted a client-centric methodology that aligns us with our
+              customer’s goals efficiently. Our quality assurance services are
+              fast, scalable, and adaptive towards our client’s needs!
             </Box>
-            <Box className={classes.fieldroot} style={{ width: 300 }}>
+            {/* <Box className={classes.fieldroot} style={{ width: 300 }}>
               <Box style={{ height: 50 }}>
                 <img src={selinium} alt="" className={classes.apple} />
                 <Box className={classes.applet}>Selenium</Box>
@@ -379,7 +383,7 @@ export default function ServicesTab() {
                 <img src={appium} alt="" className={classes.apple} />
                 <Box className={classes.applet}>Appium</Box>
               </Box>
-            </Box>
+            </Box> */}
           </Grid>
           <Grid item md={5} style={{ display: "flex", alignItems: "center" }}>
             <img src={pic4} alt="" className={classes.img} />
