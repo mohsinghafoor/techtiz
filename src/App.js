@@ -11,12 +11,17 @@ import { Container } from "@material-ui/core";
 import Blogs from "./components/blogs";
 import MyContactUs from "./components/mohsincontactus";
 import { Projects } from "./components/projects";
-import IndustriesTest from "./components/practice/industriestest";
-import AccordionProjects from "./components/projects/accordian";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <Container>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title style={{ fontWeight: "bold" }}>Techtiz</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+        <meta name="description" content="Techtiz" />
+      </Helmet>
       <Header />
       <FullStack />
       <Services />

@@ -215,10 +215,10 @@ export default function AccordionServices(props) {
               Join the future of mobility with our expertise
             </Box>
             <Box className={classes.mobiledetails}>
-              At techtiz , the best mobile app development company in pakistan,
-              an apt pt and efficient cross-functional team is always on a
-              lookout for challenges that ask for creating visually stunning &
-              functionally effective mobile apps.
+              At techtiz , the best mobile app development company in Pakistan,
+              We provide the best-in-class Mobile Application Development
+              services using the latest tools, frameworks and pre-defined
+              methodology.
             </Box>
 
             <img src={mobile} alt="" className={classes.img} />
@@ -307,9 +307,10 @@ export default function AccordionServices(props) {
               Satsifaction of Customer is Our First Priority
             </Box>
             <Box className={classes.details}>
-              We have a team of professional experts having years of experience
-              in this field. Our specialized team can provide custom web
-              solutions to establish your business online.
+              We have compiled a team of highly professional and talented QA
+              engineers who reshapes project processes to ensure that our
+              clients enjoy a competitive edge in the customer experience
+              market.
             </Box>
             <img src={pic3} alt="" style={{ width: 300 }} />
             <Link to="contact">

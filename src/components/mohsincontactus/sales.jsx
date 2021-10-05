@@ -135,7 +135,6 @@ export default function MySales() {
             style={{
               fontWeight: "bold",
               fontSize: 17,
-              marginLeft: 5,
               marginRight: 5,
             }}
           >

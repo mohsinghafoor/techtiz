@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, Container } from "@material-ui/core";
+import { Box, Container, IconButton } from "@material-ui/core";
 import clutch from "../../assets/clutch.png";
 import { Link } from "react-scroll";
 import StarIcon from "@material-ui/icons/Star";
@@ -16,9 +16,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   eclipse: {
-    position: "absolute",
     width: 873,
     height: 873,
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
     borderRadius: "30rem",
     border: " 100px solid rgba(127, 198, 220, 0.1)",
     boxSizing: "border-box",
@@ -39,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     width: 852,
-    marginTop: 100,
+    marginTop: 40,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
@@ -58,14 +60,14 @@ const useStyles = makeStyles((theme) => ({
       width: 420,
       height: 40,
       lineHeight: "130.1%",
-      marginTop: 50,
+      marginTop: 0,
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: 25,
       maxWidth: 330,
       height: 20,
       lineHeight: "130.1%",
-      marginTop: 30,
+      marginTop: 0,
     },
   },
   subheading: {
@@ -170,7 +172,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       width: 290,
       height: 90,
-      marginTop: 50,
+      marginTop: 40,
     },
   },
   clutchimg: {
@@ -228,36 +230,39 @@ export default function Feedback() {
   return (
     <Container className={classes.root}>
       {/* <CallMadeIcon className={classes.leftarrow} /> */}
-      <Box className={classes.eclipse}></Box>
-      <Box className={classes.heading}>
-        Valuable Feedbacks from our Satisfied Clients
-      </Box>
-      <Box className={classes.subheading}>
-        "They have gone above and beyond to make very tight deadlines and exceed
-        my expectations."
-      </Box>
-      <Box className={classes.name}>Norbu Snow-Shiva, COO</Box>
-      <Box className={classes.company}>World Tree Consulting</Box>
-
-      <Link to="https://clutch.co/profile/techtiz-0#reviews">
-        <Box className={classes.dflex}>
-          <img src={clutch} alt="" className={classes.clutchimg} />
-          <Box style={{ marginTop: 40, marginLeft: 10 }}>
-            <Box className={classes.starbox}>
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-              <StarIcon className={classes.star} />
-            </Box>
-            <Box className={classes.text}>
-              Rated 5.0/5.0 for web development, mobile development and design
-              services
+      <Box className={classes.eclipse}>
+        <Box className={classes.heading}>
+          Valuable Feedbacks from our Satisfied Clients
+        </Box>
+        <Box className={classes.subheading}>
+          "They have gone above and beyond to make very tight deadlines and
+          exceed my expectations."
+        </Box>
+        <Box className={classes.name}>Norbu Snow-Shiva, COO</Box>
+        <Box className={classes.company}>World Tree Consulting</Box>
+        <a
+          href="https://clutch.co/profile/techtiz-0#summary"
+          style={{ textDecoration: "none" }}
+        >
+          <Box className={classes.dflex}>
+            <img src={clutch} alt="" className={classes.clutchimg} />
+            <Box style={{ marginTop: 40, marginLeft: 10 }}>
+              <Box className={classes.starbox}>
+                <StarIcon className={classes.star} />
+                <StarIcon className={classes.star} />
+                <StarIcon className={classes.star} />
+                <StarIcon className={classes.star} />
+                <StarIcon className={classes.star} />
+              </Box>
+              <Box className={classes.text}>
+                Rated 5.0/5.0 for web development, mobile development and design
+                services
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </Link>
-      {/* <CallMadeIcon className={classes.rightarrow} /> */}
+        </a>
+        {/* <CallMadeIcon className={classes.rightarrow} /> */}
+      </Box>
     </Container>
   );
 }
