@@ -242,6 +242,7 @@ export default function Feedback() {
         <Box className={classes.company}>World Tree Consulting</Box>
         <a
           href="https://clutch.co/profile/techtiz-0#summary"
+          target="blank"
           style={{ textDecoration: "none" }}
         >
           <Box className={classes.dflex}>
