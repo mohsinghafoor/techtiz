@@ -8,17 +8,17 @@ import { Box } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: 562,
-    height: 531,
+    height: 538,
     background: "#FFFFFF",
     boxShadow: "2px -2px 21px 6px rgba(0, 0, 0, 0.1)",
     borderRadius: 33,
     [theme.breakpoints.only("md")]: {
       maxWidth: 380,
-      height: 480,
+      height: 535,
     },
     [theme.breakpoints.down("xs")]: {
       maxWidth: 340,
-      height: 480,
+      height: 490,
     },
   },
   heading: {
@@ -130,9 +130,11 @@ export default function Blog1() {
           codebase only. In other words, Flutter app development is worth
           considering because it builds intuitive , fast and responsive
           applications that function on multiple platforms effortlessly . it has
-          pre-written codes with customizable and easy to use widgets
+          pre-written codes with customizable and easy to use widgets. You’d
+          never experience lag or glitches when using Flutter apps.Flutter’s UI
+          ensures a lightning-fast delivery of 60fps.
         </Box>
-        <Button className={classes.btn}>Read More</Button>
+        {/* <Button className={classes.btn}>Read More</Button> */}
       </CardContent>
     </Card>
   );

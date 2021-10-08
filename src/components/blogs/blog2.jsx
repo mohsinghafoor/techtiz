@@ -8,20 +8,20 @@ import { Box } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: 562,
-    height: 531,
+    height: 538,
     background: "#FFFFFF",
     boxShadow: "2px -2px 21px 6px rgba(0, 0, 0, 0.1)",
     borderRadius: 33,
     [theme.breakpoints.only("md")]: {
       maxWidth: 380,
-      height: 480,
+      height: 535,
     },
     [theme.breakpoints.down("sm")]: {
-      height: 500,
+      height: 510,
     },
     [theme.breakpoints.down("xs")]: {
       maxWidth: 340,
-      height: 440,
+      height: 520,
     },
   },
   heading: {
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#3B3E56",
     [theme.breakpoints.only("md")]: {
       maxWidth: 330,
-      height: 60,
+      height: 50,
       fontSize: 24,
       lineHeight: "40px",
       paddingTop: 10,
@@ -131,9 +131,12 @@ export default function Blog2() {
           crypto as legal trading currencies. And many people daily invest in
           cryptocurrencies believing in the myth that it has a promising future.
           The USA and Canada have very positive opinions towards Bitcoin and try
-          to make some regulations about it.
+          to make some regulations about it. Lawmakers in Washington, D.C., and
+          around the world are trying to find out how to make cryptocurrency
+          safer for investors and less appealing to hackers by creating
+          regulations and guidelines.
         </Box>
-        <Button className={classes.btn}>Read More</Button>
+        {/* <Button className={classes.btn}>Read More</Button> */}
       </CardContent>
     </Card>
   );
