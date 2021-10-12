@@ -200,9 +200,9 @@ export default function IndustriesTab() {
           <Box className={classes.heading}>Food</Box>
           <Box className={classes.text}>
             Techtiz offers food app development services to the clients. Our
-            developers have expertise to create interative , easy to manage apps
-            with latest technologies . Streamline the process of selling your
-            food online , with our mobile apps
+            developers have expertise to create interactive , easy to manage
+            apps with latest technologies . Streamline the process of selling
+            your food online , with our mobile apps
           </Box>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>

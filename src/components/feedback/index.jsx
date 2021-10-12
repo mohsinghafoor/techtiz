@@ -224,9 +224,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Feedback() {
+export default function Feedback(props) {
   const classes = useStyles();
-
   return (
     <Container className={classes.root}>
       {/* <CallMadeIcon className={classes.leftarrow} /> */}

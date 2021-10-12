@@ -5,11 +5,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import flutter from "../../assets/flutter.png";
 import android from "../../assets/android.png";
 import qrat from "../../assets/qrat.png";
+import qrat2 from "../../assets/qrat2.png";
 import mobilefront from "../../assets/mobilefront.png";
 import mobileback from "../../assets/mobileback.png";
-import qrat2 from "../../assets/qrat2.png";
-import mobilefront2 from "../../assets/loanzify.png";
-import mobileback2 from "../../assets/mobileback2.png";
+import qratpartnerfront from "../../assets/qartfront2.png";
+import mobilefront2 from "../../assets/image3.png";
+import qratpartnerback from "../../assets/qartback2.png";
 import qrat3 from "../../assets/qrat3.png";
 import mobilefront3 from "../../assets/mobilefront3.png";
 import mobileback3 from "../../assets/mobileback3.png";
@@ -125,6 +126,7 @@ const useStyles = makeStyles((theme) => ({
     width: 242,
     height: 524,
     borderRadius: 28,
+    border: "2px solid black",
     [theme.breakpoints.only("md")]: {
       width: 234,
       height: 490,
@@ -135,10 +137,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   lonzifying: {
-    width: 452,
+    width: 302,
     height: 544,
     borderRadius: 28,
-    marginTop: -20,
+
     [theme.breakpoints.only("md")]: {
       width: 394,
       height: 490,
@@ -157,6 +159,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 30,
     marginLeft: 320,
     marginTop: 20,
+    border: "2px solid black",
     [theme.breakpoints.only("md")]: {
       width: 220,
       height: 450,
@@ -222,7 +225,7 @@ export const Projects = (props) => {
               {/* First Component */}
               <Grid item xs={6}>
                 <Box className={classes.heading}>Recent Projects Include</Box>
-                <Box className={classes.subheading}>qart</Box>
+                <Box className={classes.subheading}>qartt</Box>
                 <Box className={classes.text}>
                   qartt will allow you to focus on your product, making life
                   easier and saving you the hassle and expense of managing your
@@ -261,11 +264,12 @@ export const Projects = (props) => {
             <Grid container className={classes.root}>
               <Grid item xs={6}>
                 <Box className={classes.heading}>Recent Projects Include</Box>
-                <Box className={classes.subheading}>loanzify</Box>
+                <Box className={classes.subheading}>qartt partner</Box>
                 <Box className={classes.text}>
-                  Loanzify will do the work for you with a suite of robust
-                  mortgage calculators, educational and interactive mortgage
-                  content, and instant access to your loan officer.
+                  By joining us you will make great money on your own schedule.
+                  And you will be able to see how much you earned after each
+                  delivery and exactly how your earnings were calculated.Your
+                  money is deposited on a weekly basis with no delays.
                 </Box>
                 <Box
                   style={{
@@ -289,10 +293,18 @@ export const Projects = (props) => {
                 xs={6}
                 style={{ display: "flex", justifyContent: "center" }}
               >
-                <img src={mobilefront2} alt="" className={classes.lonzifying} />
-                {/* <img src={mobileback2} alt="" className={classes.mobileback} />
+                <img
+                  src={qratpartnerfront}
+                  alt=""
+                  className={classes.mobilefront}
+                />
+                <img
+                  src={qratpartnerback}
+                  alt=""
+                  className={classes.mobileback}
+                />
                 <Box className={classes.circle}></Box>
-                <img src={qrat2} alt="" className={classes.qrat} /> */}
+                <img src={qrat2} alt="" className={classes.qrat} />
               </Grid>
             </Grid>
 
