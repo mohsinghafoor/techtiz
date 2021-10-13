@@ -132,10 +132,10 @@ export default function IndustriesAccordion(props) {
           <AccordionDetails className={classes.summary}>
             <img src={food} alt="" className={classes.img} />
             <Box className={classes.details}>
-              Techtiz offers food app development services to the clients .Our
-              developers have expertise to create interative , easy to manage
-              apps with latest technologies . Streamline the process of selling
-              your food online , with our mobile apps
+              We build intelligent and efficient apps for food services that
+              assist businesses in new and existing ventures. Our food apps
+              include order-tracking, user-friendly experiences, secure payment
+              options, and easy-to-manage interfaces.
             </Box>
           </AccordionDetails>
         </Accordion>
@@ -156,11 +156,10 @@ export default function IndustriesAccordion(props) {
           <AccordionDetails className={classes.summary}>
             <img src={ecommerce} alt="" className={classes.img} />
             <Box className={classes.details}>
-              WE provides the best development services for E-Commerce with the
-              most suitable development strategies for all customers. To ensure
-              our clients receive a successful E-Commerce web design process, we
-              have a dedicated team of specialist consultants, developers, and
-              project managers
+              Kickstart your eCommerce venture with a TechTiz custom mobile
+              application. We assemble modern features, fast-loading pages, and
+              manageable interfaces into eCommerce applications to make them
+              more effective and appealing.
             </Box>
           </AccordionDetails>
         </Accordion>
@@ -181,12 +180,9 @@ export default function IndustriesAccordion(props) {
           <AccordionDetails className={classes.summary}>
             <img src={socail} alt="" className={classes.img} />
             <Box className={classes.details}>
-              Techtiz is the ultimate smartphone application development
-              company. Our creative and hardworking team designs and develops
-              the best apps that you wish to possess. Be it iPad or iPhone,
-              android or Web, our expert team develop such inspiring apps that
-              are guaranteed to suit your taste, and yield profitable results
-              for you.
+              Engagement and growth can make or break a social app. TechTiz
+              specializes in making matchless, captivating social apps that keep
+              the user invested in experiencing more.
             </Box>
           </AccordionDetails>
         </Accordion>
@@ -207,9 +203,10 @@ export default function IndustriesAccordion(props) {
           <AccordionDetails className={classes.summary}>
             <img src={education} alt="" className={classes.img} />
             <Box className={classes.details}>
-              We provides School website development , Education application
-              that will benefits both teacher and students . We built prefect
-              designs that are easy to use .
+              E-Learning has taken the world by storm. We help you join this
+              exciting space with a bespoke teaching app that is simple and
+              sleek and helps you teach the next generation from the comfort of
+              your home.
             </Box>
           </AccordionDetails>
         </Accordion>

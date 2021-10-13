@@ -3,16 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import Carousel from "react-material-ui-carousel";
 import { Accordion, Box, Button } from "@material-ui/core";
 import android from "../../assets/android.png";
+import react from "../../assets/react.png";
 import flutter from "../../assets/flutter.png";
-import qrat from "../../assets/qrat.png";
-import mobilefront from "../../assets/mobilefront.png";
-import mobileback from "../../assets/mobileback.png";
-import qrat2 from "../../assets/qrat2.png";
-import qratpartnerback from "../../assets/qartback2.png";
-import qratpartnerfront from "../../assets/qartfront2.png";
-import qrat3 from "../../assets/qrat3.png";
-import mobilefront3 from "../../assets/mobilefront3.png";
-import mobileback3 from "../../assets/mobileback3.png";
+import qart2 from "../../assets/qart2.png";
+import qart1 from "../../assets/qart1.png";
+import dashimg from "../../assets/dashboard3.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -130,21 +125,10 @@ const useStyles = makeStyles((theme) => ({
   },
   mobilefront: {
     position: "absolute",
-    width: 156,
+    width: 256,
     height: 300,
-    borderRadius: 28,
-    border: "2px solid black",
     marginLeft: "-3rem",
     marginTop: "11rem",
-  },
-  mobileback: {
-    position: "absolute",
-    width: 140,
-    height: 280,
-    borderRadius: 30,
-    marginLeft: "3rem",
-    border: "2px solid black",
-    marginTop: "11.7rem",
   },
 
   androidimg: {
@@ -164,7 +148,7 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: 800,
     fontSize: 18,
-    lineHeight: "30px",
+    lineHeight: "24px",
 
     color: "#000000",
   },
@@ -209,14 +193,12 @@ export default function ProjectsMobile(props) {
             team
           </Box>
           <Box className={classes.circle} />
-          <img src={mobilefront} alt="" className={classes.mobilefront} />
-          <img src={mobileback} alt="" className={classes.mobileback} />
-          <Box className={classes.smallcircle} />
-          <img src={qrat} alt="" className={classes.logo} />
+          <img src={qart1} alt="" className={classes.mobilefront} />
+
           <Box className={classes.fields}>
             <Box>
-              <img src={android} alt="" className={classes.androidimg} />
-              <Box className={classes.androidtext}>Android</Box>
+              <img src={react} alt="" className={classes.flutterimg} />
+              <Box className={classes.androidtext}>React Native</Box>
             </Box>
             <Box>
               <img src={flutter} alt="" className={classes.flutterimg} />
@@ -240,14 +222,12 @@ export default function ProjectsMobile(props) {
             a weekly basis with no delays.
           </Box>
           <Box className={classes.circle} />
-          <img src={qratpartnerfront} alt="" className={classes.mobilefront} />
-          <img src={qratpartnerback} alt="" className={classes.mobileback} />
-          <Box className={classes.smallcircle} />
-          <img src={qrat2} alt="" className={classes.logo} />
+          <img src={qart2} alt="" className={classes.mobilefront} />
+
           <Box className={classes.fields}>
             <Box>
-              <img src={android} alt="" className={classes.androidimg} />
-              <Box className={classes.androidtext}>Android</Box>
+              <img src={react} alt="" className={classes.flutterimg} />
+              <Box className={classes.androidtext}>React Native</Box>
             </Box>
             <Box>
               <img src={flutter} alt="" className={classes.flutterimg} />
@@ -271,14 +251,12 @@ export default function ProjectsMobile(props) {
             reality.
           </Box>
           <Box className={classes.circle} />
-          <img src={mobilefront3} alt="" className={classes.mobilefront} />
-          <img src={mobileback3} alt="" className={classes.mobileback} />
-          <Box className={classes.smallcircle} />
-          <img src={qrat3} alt="" className={classes.logo} />
+          <img src={dashimg} alt="" className={classes.mobilefront} />
+
           <Box className={classes.fields}>
             <Box>
-              <img src={android} alt="" className={classes.androidimg} />
-              <Box className={classes.androidtext}>Android</Box>
+              <img src={react} alt="" className={classes.flutterimg} />
+              <Box className={classes.androidtext}>React Native</Box>
             </Box>
             <Box>
               <img src={flutter} alt="" className={classes.flutterimg} />

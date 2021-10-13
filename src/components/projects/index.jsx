@@ -4,16 +4,11 @@ import { Grid, Box, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import flutter from "../../assets/flutter.png";
 import android from "../../assets/android.png";
-import qrat from "../../assets/qrat.png";
-import qrat2 from "../../assets/qrat2.png";
-import mobilefront from "../../assets/mobilefront.png";
-import mobileback from "../../assets/mobileback.png";
-import qratpartnerfront from "../../assets/qartfront2.png";
-import mobilefront2 from "../../assets/image3.png";
-import qratpartnerback from "../../assets/qartback2.png";
-import qrat3 from "../../assets/qrat3.png";
-import mobilefront3 from "../../assets/mobilefront3.png";
-import mobileback3 from "../../assets/mobileback3.png";
+import react from "../../assets/react.png";
+import ios from "../../assets/apple.png";
+import qart2 from "../../assets/qart2.png";
+import qart1 from "../../assets/qart1.png";
+import dashimg from "../../assets/dashboard3.png";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import ProjectsMobile from "./accordian";
@@ -90,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
       height: 190,
     },
   },
-  androidimg: {
+  reactimg: {
     width: 50.56,
     height: 60.82,
   },
@@ -102,12 +97,11 @@ const useStyles = makeStyles((theme) => ({
   androidtext: {
     width: 80.6,
     height: 13.19,
-
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
     fontSize: 18,
-    lineHeight: "30px",
+    lineHeight: "24px",
 
     color: "#000000",
   },
@@ -123,90 +117,17 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
   },
   mobilefront: {
-    width: 242,
+    width: 442,
     height: 524,
     borderRadius: 28,
-    border: "2px solid black",
-    [theme.breakpoints.only("md")]: {
-      width: 234,
-      height: 490,
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: 214,
-      height: 430,
-    },
-  },
-  lonzifying: {
-    width: 302,
-    height: 544,
-    borderRadius: 28,
-
     [theme.breakpoints.only("md")]: {
       width: 394,
       height: 490,
-      marginTop: 0,
     },
     [theme.breakpoints.down("sm")]: {
       width: 314,
       height: 430,
-      marginTop: 0,
-    },
-  },
-  mobileback: {
-    width: 222,
-    height: 485,
-    position: "absolute",
-    borderRadius: 30,
-    marginLeft: 320,
-    marginTop: 20,
-    border: "2px solid black",
-    [theme.breakpoints.only("md")]: {
-      width: 220,
-      height: 450,
-      marginLeft: 170,
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: 190,
-      height: 390,
-      marginLeft: "5rem",
-    },
-  },
-  circle: {
-    width: 178,
-    height: 173,
-    position: "absolute",
-    borderRadius: "20rem",
-    background: "#FFFFFF",
-    boxShadow: "5px 4px 8px -2px rgba(0, 0, 0, 0.25)",
-    marginLeft: "-16rem",
-    marginTop: 20,
-    [theme.breakpoints.only("md")]: {
-      width: 163,
-      height: 160,
-      marginLeft: "-15rem",
-    },
-    [theme.breakpoints.only("sm")]: {
-      width: 123,
-      height: 120,
-      marginLeft: "-13rem",
-    },
-  },
-  qrat: {
-    width: 160,
-    height: 161,
-    position: "absolute",
-    borderRadius: "10rem",
-    marginLeft: "-16rem",
-    marginTop: 25,
-    [theme.breakpoints.only("md")]: {
-      width: 153,
-      height: 153,
-      marginLeft: "-15rem",
-    },
-    [theme.breakpoints.only("sm")]: {
-      width: 110,
-      height: 110,
-      marginLeft: "-13rem",
+      marginLeft: -30,
     },
   },
 }));
@@ -239,8 +160,8 @@ export const Projects = (props) => {
                   }}
                 >
                   <Box>
-                    <img src={android} alt="" className={classes.androidimg} />
-                    <Box className={classes.androidtext}>Android</Box>
+                    <img src={react} alt="" className={classes.flutterimg} />
+                    <Box className={classes.androidtext}>React Native</Box>
                   </Box>
                   <Box>
                     <img src={flutter} alt="" className={classes.flutterimg} />
@@ -253,10 +174,7 @@ export const Projects = (props) => {
                 xs={6}
                 style={{ display: "flex", justifyContent: "center" }}
               >
-                <img src={mobilefront} alt="" className={classes.mobilefront} />
-                <img src={mobileback} alt="" className={classes.mobileback} />
-                <Box className={classes.circle}></Box>
-                <img src={qrat} alt="" className={classes.qrat} />
+                <img src={qart1} alt="" className={classes.mobilefront} />
               </Grid>
             </Grid>
 
@@ -279,8 +197,8 @@ export const Projects = (props) => {
                   }}
                 >
                   <Box>
-                    <img src={android} alt="" className={classes.androidimg} />
-                    <Box className={classes.androidtext}>Android</Box>
+                    <img src={react} alt="" className={classes.flutterimg} />
+                    <Box className={classes.androidtext}>React Native</Box>
                   </Box>
                   <Box>
                     <img src={flutter} alt="" className={classes.flutterimg} />
@@ -293,18 +211,7 @@ export const Projects = (props) => {
                 xs={6}
                 style={{ display: "flex", justifyContent: "center" }}
               >
-                <img
-                  src={qratpartnerfront}
-                  alt=""
-                  className={classes.mobilefront}
-                />
-                <img
-                  src={qratpartnerback}
-                  alt=""
-                  className={classes.mobileback}
-                />
-                <Box className={classes.circle}></Box>
-                <img src={qrat2} alt="" className={classes.qrat} />
+                <img src={qart2} alt="" className={classes.mobilefront} />
               </Grid>
             </Grid>
 
@@ -327,8 +234,8 @@ export const Projects = (props) => {
                   }}
                 >
                   <Box>
-                    <img src={android} alt="" className={classes.androidimg} />
-                    <Box className={classes.androidtext}>Android</Box>
+                    <img src={react} alt="" className={classes.flutterimg} />
+                    <Box className={classes.androidtext}>React Native</Box>
                   </Box>
                   <Box>
                     <img src={flutter} alt="" className={classes.flutterimg} />
@@ -341,14 +248,7 @@ export const Projects = (props) => {
                 xs={6}
                 style={{ display: "flex", justifyContent: "center" }}
               >
-                <img
-                  src={mobilefront3}
-                  alt=""
-                  className={classes.mobilefront}
-                />
-                <img src={mobileback3} alt="" className={classes.mobileback} />
-                {/* <Box className={classes.circle}></Box> */}
-                <img src={qrat3} alt="" className={classes.qrat} />
+                <img src={dashimg} alt="" className={classes.mobilefront} />
               </Grid>
             </Grid>
           </Carousel>
