@@ -31,7 +31,7 @@ function App() {
         <Feedback />
         <Pricing />
       </div>
-      <Blogs />
+      {/* <Blogs /> */}
       <MyContactUs />
       <ResponsiveFooter />
     </Container>

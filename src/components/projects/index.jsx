@@ -160,10 +160,6 @@ export const Projects = (props) => {
                   }}
                 >
                   <Box>
-                    <img src={react} alt="" className={classes.flutterimg} />
-                    <Box className={classes.androidtext}>React Native</Box>
-                  </Box>
-                  <Box>
                     <img src={flutter} alt="" className={classes.flutterimg} />
                     <Box className={classes.fluttertext}>Flutter</Box>
                   </Box>
@@ -196,10 +192,6 @@ export const Projects = (props) => {
                     width: 170,
                   }}
                 >
-                  <Box>
-                    <img src={react} alt="" className={classes.flutterimg} />
-                    <Box className={classes.androidtext}>React Native</Box>
-                  </Box>
                   <Box>
                     <img src={flutter} alt="" className={classes.flutterimg} />
                     <Box className={classes.fluttertext}>Flutter</Box>
@@ -236,10 +228,6 @@ export const Projects = (props) => {
                   <Box>
                     <img src={react} alt="" className={classes.flutterimg} />
                     <Box className={classes.androidtext}>React Native</Box>
-                  </Box>
-                  <Box>
-                    <img src={flutter} alt="" className={classes.flutterimg} />
-                    <Box className={classes.fluttertext}>Flutter</Box>
                   </Box>
                 </Box>
               </Grid>

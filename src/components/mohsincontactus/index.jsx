@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-
+    // [theme.breakpoints.up("lg")]: { marginTop: "30rem" },
     [theme.breakpoints.up("xs")]: { marginTop: "30rem" },
     [theme.breakpoints.only("md")]: { marginTop: "45rem" },
   },
