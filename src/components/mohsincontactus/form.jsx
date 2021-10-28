@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Container, Paper, Box } from "@material-ui/core";
 import emailjs from "emailjs-com";
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
 
   btnbox1: {
     height: 70,
-    width: 500,
+    width: 510,
     [theme.breakpoints.only("md")]: {
       width: 600,
     },
@@ -82,6 +82,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 14,
     lineHeight: "22px",
     color: "#000000",
+    marginRight: 10,
     [theme.breakpoints.only("md")]: {
       width: 245,
       fontSize: 15,
@@ -95,6 +96,7 @@ const useStyles = makeStyles((theme) => ({
       width: 150,
       height: 30,
       fontSize: 9,
+      marginRight: 2,
     },
   },
   lowerbtn: {
@@ -109,6 +111,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 14,
     lineHeight: "22px",
     color: "#000000",
+    marginRight: 10,
     [theme.breakpoints.only("md")]: {
       width: 220,
       fontSize: 15,
@@ -126,6 +129,7 @@ const useStyles = makeStyles((theme) => ({
   },
   inputbox: {
     display: "flex",
+    flexDirection: "column",
     width: 550,
     height: 70,
     justifyContent: "space-between",
@@ -143,7 +147,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   inputTitle: {
-    width: 255.69,
+    width: 550,
     height: 43.38,
     outline: "unset",
     color: "black",
@@ -276,10 +280,20 @@ const useStyles = makeStyles((theme) => ({
   height: {
     height: 70,
   },
+  massage: {
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 10,
+  },
 }));
 
 export default function ContactForm() {
   const classes = useStyles();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [msg, setMsg] = useState("");
   const sendEmail = (e) => {
     e.preventDefault();
     alert("Form Submitted");
@@ -316,29 +330,25 @@ export default function ContactForm() {
       <Box className={classes.inputbox}>
         <input
           type="text"
-          className={classes.inputTitle}
-          placeholder="First Name*"
+          className={classes.email}
+          placeholder="Name*"
           name="name"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
         />
-        <input
-          type="text"
-          className={classes.inputTitle}
-          placeholder="Last Name*"
-          name="lname"
-        />
+        {name.length > 0 && name.length < 3 && (
+          <Box className={classes.massage}>
+            Name must have minimum three characters
+          </Box>
+        )}
       </Box>
       <Box className={classes.inputbox}>
         <input
           type="text"
-          className={classes.inputTitle}
-          placeholder="(+92 )  301 5484 298"
-          name="mobile"
-        />
-
-        <input
-          type="text"
-          className={classes.inputTitle}
-          placeholder="Country* :"
+          className={classes.email}
+          placeholder="Country :"
           name="country"
         />
       </Box>
@@ -348,7 +358,14 @@ export default function ContactForm() {
           className={classes.email}
           placeholder="Email* :"
           name="user_email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
         />
+        {email.length > 0 && !email.includes("@") && (
+          <Box className={classes.massage}>Please enter valid email</Box>
+        )}
       </Box>
       <input
         type="text"
