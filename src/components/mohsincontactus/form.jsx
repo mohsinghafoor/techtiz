@@ -179,6 +179,7 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid #7FC6DC",
     boxSizing: " border-box",
     borderRadius: 6,
+    fontFamily: "Axiforma",
     outline: 0,
     paddingLeft: 10,
     [theme.breakpoints.only("md")]: {
@@ -203,6 +204,7 @@ const useStyles = makeStyles((theme) => ({
     boxSizing: "border-box",
     borderRadius: 6,
     outline: 0,
+    fontFamily: "Axiforma",
     paddingBottom: 70,
     paddingLeft: 10,
     marginBottom: 30,
@@ -367,7 +369,7 @@ export default function ContactForm() {
           <Box className={classes.massage}>Please enter valid email</Box>
         )}
       </Box>
-      <input
+      <textarea
         type="text"
         name="message"
         className={classes.help}
