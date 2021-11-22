@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     display: "flex",
     maxWidth: 729,
-    height: 45,
+    height: 55,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,

@@ -32,14 +32,14 @@ const useStyles = makeStyles((theme) => ({
   },
   full: {
     display: "flex",
-    height: 115,
+    height: 140,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
     fontSize: 40,
-    lineHeight: "61px",
+    lineHeight: "55px",
     // /* or 61px */
-    maxWidth: 631,
+    width: 500,
     color: "#3B3E56",
     [theme.breakpoints.only("md")]: {
       maxWidth: 500,
@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 
   techtiz: {
     display: "flex",
-    maxWidth: 588,
+    width: 558,
     height: 144,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -164,6 +164,7 @@ export default function FullStack() {
             md={6}
             xs={12}
             className={classes.dflex}
+
             // style={{ alignItems: "center" }}
           >
             <Box className={classes.blue}></Box>

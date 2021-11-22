@@ -188,7 +188,7 @@ export default function ProjectsMobile(props) {
         >
           <Box className={classes.subheading}>qartt</Box>
           <Box className={classes.text}>
-            Qartt provides an intuitive and seamless delivery service, allowing
+            qartt provides an intuitive and seamless delivery service, allowing
             you to focus on your core product and services. Without the
             complication of coordinating an entire in-house delivery team, your
             resources are free to be utilized where they are needed the most.

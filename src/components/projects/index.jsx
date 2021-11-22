@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     /* or 32px */
     color: "#000000",
     [theme.breakpoints.up("lg")]: {
-      lineHeight: "125.4%",
+      lineHeight: "135.4%",
     },
     [theme.breakpoints.only("md")]: {
       fontSize: 18,

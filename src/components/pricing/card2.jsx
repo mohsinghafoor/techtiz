@@ -80,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     marginTop: 20,
     maxWidth: 297,
-    height: 70,
+    height: 100,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -108,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
   text2: {
     display: "flex",
     maxWidth: 297,
-    height: 135,
+    height: 100,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,

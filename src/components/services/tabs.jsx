@@ -115,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     display: "flex",
-    maxWidth: 700,
+    width: 600,
     height: 47,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -126,6 +126,29 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     [theme.breakpoints.up("lg")]: {
       height: 80,
+      marginLeft: 10,
+      lineHeight: "35px",
+    },
+    [theme.breakpoints.only("md")]: {
+      height: 105,
+      fontSize: 25,
+      marginLeft: -20,
+      maxWidth: 500,
+    },
+  },
+  heading1: {
+    display: "flex",
+    width: 600,
+    height: 97,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 28,
+    lineHeight: "30px",
+    textAlign: "left",
+    color: "#000000",
+    [theme.breakpoints.up("lg")]: {
+      height: 110,
       marginLeft: 10,
       lineHeight: "35px",
     },
@@ -232,7 +255,7 @@ export default function ServicesTab() {
               flexDirection: "column",
             }}
           >
-            <Box className={classes.heading}>
+            <Box className={classes.heading1}>
               As more customers move exclusively to mobile, we will ensure that
               you’re there waiting for them.
             </Box>

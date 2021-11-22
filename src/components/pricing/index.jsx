@@ -34,7 +34,7 @@ export default function Pricing() {
   return (
     <Grid container className={classes.root}>
       <Grid item xs={12} style={{ display: "flex", justifyContent: "center" }}>
-        <Box className={classes.heading}>Our Pricing Model</Box>
+        <Box className={classes.heading}>Our Pricing Approach</Box>
       </Grid>
       <Grid style={{ display: "flex", justifyContent: "center" }} item md={3}>
         <Card1 />
