@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     justifyContent: "center",
+    alignItems: "center",
   },
   heading: {
     display: "flex",
@@ -144,11 +145,11 @@ export const Projects = (props) => {
       {isMobile ? (
         <ProjectsMobile />
       ) : (
-        <Container>
+        <div>
           <Carousel effect="fade" autoPlay="flase">
             <Grid container className={classes.root}>
               {/* First Component */}
-              <Grid item xs={6}>
+              <Grid item xs={5}>
                 <Box className={classes.heading}>Recent Projects Include</Box>
                 <Box className={classes.subheading}>qartt</Box>
                 <Box className={classes.text}>
@@ -173,8 +174,12 @@ export const Projects = (props) => {
               </Grid>
               <Grid
                 item
-                xs={6}
-                style={{ display: "flex", justifyContent: "center" }}
+                xs={5}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
               >
                 <img src={qart1} alt="" className={classes.mobilefront} />
               </Grid>
@@ -182,7 +187,7 @@ export const Projects = (props) => {
 
             {/* Second Component */}
             <Grid container className={classes.root}>
-              <Grid item xs={6}>
+              <Grid item xs={5}>
                 <Box className={classes.heading}>Recent Projects Include</Box>
                 <Box className={classes.subheading}>qartt partner</Box>
                 <Box className={classes.text}>
@@ -206,8 +211,12 @@ export const Projects = (props) => {
               </Grid>
               <Grid
                 item
-                xs={6}
-                style={{ display: "flex", justifyContent: "center" }}
+                xs={5}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
               >
                 <img src={qart2} alt="" className={classes.mobilefront} />
               </Grid>
@@ -241,14 +250,18 @@ export const Projects = (props) => {
               </Grid>
               <Grid
                 item
-                xs={6}
-                style={{ display: "flex", justifyContent: "center" }}
+                xs={5}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
               >
                 <img src={dashimg} alt="" className={classes.mobilefront} />
               </Grid>
             </Grid>
           </Carousel>
-        </Container>
+        </div>
       )}
     </div>
   );

@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import a from "../../assets/a.svg";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
-import { Box, Button, Grid, IconButton } from "@material-ui/core";
+import { Box, Button, Grid, IconButton, Container } from "@material-ui/core";
 import { AppBarDrawer } from "./drawer";
 import logo from "../../assets/a.svg";
 import { Link } from "react-scroll";
@@ -95,7 +95,7 @@ export default function Header() {
   const isTab = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <div className={classes.root}>
+    <Container className={classes.root}>
       {isTab ? (
         <Grid container style={{ display: "flex", alignItems: "center" }}>
           <Grid
@@ -164,6 +164,6 @@ export default function Header() {
           </Grid>
         </Grid>
       )}
-    </div>
+    </Container>
   );
 }

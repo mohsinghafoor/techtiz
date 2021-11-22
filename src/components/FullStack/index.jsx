@@ -15,19 +15,19 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
-  dflex: {
+  rightgrid: {
     display: "flex",
     justifyContent: "center",
-    // alignItems: "flex-start",
+    alignItems: "center",
     flexDirection: "column",
   },
-  dflex1: {
+  leftgrid: {
     display: "flex",
     justifyContent: "center",
-    // alignItems: "flex-start",
+    alignItems: "center",
     flexDirection: "column",
     [theme.breakpoints.up("lg")]: {
-      marginLeft: -200,
+      marginLeft: 0,
     },
   },
   full: {
@@ -36,13 +36,13 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
-    fontSize: 40,
+    fontSize: 44,
     lineHeight: "55px",
     // /* or 61px */
-    width: 500,
+    width: 600,
     color: "#3B3E56",
     [theme.breakpoints.only("md")]: {
-      maxWidth: 500,
+      width: 450,
       fontSize: 30,
       lineHeight: "41px",
       height: 65,
@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 
   techtiz: {
     display: "flex",
-    width: 558,
+    width: 600,
     height: 144,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -65,6 +65,14 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 22,
       height: 120,
       lineHeight: "30px",
+    },
+  },
+  btnbox: {
+    display: "flex",
+    alignItems: "flex-start",
+    width: 600,
+    [theme.breakpoints.only("md")]: {
+      width: 450,
     },
   },
   btn: {
@@ -96,7 +104,8 @@ const useStyles = makeStyles((theme) => ({
     width: 560,
     borderRadius: 20,
     [theme.breakpoints.only("md")]: {
-      width: 460,
+      width: 450,
+      marginLeft: -20,
     },
   },
   blue: {
@@ -104,15 +113,15 @@ const useStyles = makeStyles((theme) => ({
     width: 125.4,
     height: 421.45,
     marginTop: -316,
-    marginLeft: 135,
+    marginLeft: -160,
     background: "#7FC6DC",
     borderRadius: 275,
     transform: "matrix(-0.27, 0.97, -0.95, -0.29, 0, 0)",
     [theme.breakpoints.only("md")]: {
-      width: 125.4,
+      width: 90.4,
       height: 421.45,
-      marginTop: -168,
-      marginLeft: 137,
+      marginTop: -222,
+      marginLeft: -97,
     },
   },
   yellow: {
@@ -120,7 +129,7 @@ const useStyles = makeStyles((theme) => ({
     width: 122.16,
     height: 441.45,
     marginTop: 300,
-    marginLeft: 290,
+    marginLeft: 130,
     background: "#FFC107",
     borderRadius: 275,
     transform: "matrix(-0.27, 0.97, -0.95, -0.29, 0, 0)",
@@ -128,7 +137,7 @@ const useStyles = makeStyles((theme) => ({
       width: 97.16,
       height: 441.45,
       marginTop: 215,
-      marginLeft: 198,
+      marginLeft: 0,
     },
   },
 }));
@@ -139,12 +148,12 @@ export default function FullStack() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Container>
+    <div>
       {isMobile ? (
         <MobileStack />
       ) : (
         <Grid container className={classes.main}>
-          <Grid item xs={12} md={6} className={classes.dflex1}>
+          <Grid item xs={12} md={6} className={classes.leftgrid}>
             <Box className={classes.full}>
               A Full-Stack Web and Mobile App Development Company​
             </Box>
@@ -154,16 +163,21 @@ export default function FullStack() {
               digital life to your business. Techtiz, building applications that
               connect!
             </Box>
-            <Link to="contact">
-              <Button className={classes.btn}> Connect with Us Today! </Button>
-            </Link>
+            <Box className={classes.btnbox}>
+              <Link to="contact">
+                <Button className={classes.btn}>
+                  {" "}
+                  Connect with Us Today!{" "}
+                </Button>
+              </Link>
+            </Box>
           </Grid>
           <Grid
             item
-            lg={4}
+            lg={6}
             md={6}
             xs={12}
-            className={classes.dflex}
+            className={classes.rightgrid}
 
             // style={{ alignItems: "center" }}
           >
@@ -173,6 +187,6 @@ export default function FullStack() {
           </Grid>
         </Grid>
       )}
-    </Container>
+    </div>
   );
 }

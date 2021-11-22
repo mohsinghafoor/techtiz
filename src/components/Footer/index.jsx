@@ -37,12 +37,12 @@ export default function ResponsiveFooter() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <div className={classes.root}>
+    <Container className={classes.root}>
       {isMobile ? <FooterAccordion /> : <WebFooter />}
       <Divider style={{ marginTop: 30 }} />
       <Box className={classes.copy}>
         © 2021 Techtiz All Rights Reserved. Terms & Conditions | Privacy policy
       </Box>
-    </div>
+    </Container>
   );
 }
