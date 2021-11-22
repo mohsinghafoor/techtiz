@@ -1,6 +1,8 @@
 {
   "name": "material-ui",
-  "homepage": "https://techtiz.com/",
+  // "homepage": "https://techtiz.com/",
+  "homepage": "https://mohsinghafoor.github.io/techtiz",
+
   "version": "0.1.0",
   "private": true,
   "dependencies": {
