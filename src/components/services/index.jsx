@@ -41,7 +41,9 @@ export default function Services() {
         <AccordionServices />
       ) : (
         <div className={classes.root}>
-          <Box className={classes.services}>Our Valued Services</Box>
+          <Box className={classes.services}>
+            Establishing Your Digital Platform
+          </Box>
           <ServicesTab />
         </div>
       )}

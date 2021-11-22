@@ -178,7 +178,7 @@ export default function ProjectsMobile(props) {
   return (
     <div className={classes.root}>
       <Box className={classes.mainheading}>Our Recent Projects</Box>
-      <Carousel effect="fade" dataInterval="false">
+      <Carousel effect="fade" dataInterval="false" autoPlay="false">
         <Box
           style={{
             display: "flex",
@@ -188,9 +188,10 @@ export default function ProjectsMobile(props) {
         >
           <Box className={classes.subheading}>qartt</Box>
           <Box className={classes.text}>
-            qartt will allow you to focus on your product, making life easier
-            and saving you the hassle and expense of managing your own delivery
-            team
+            Qartt provides an intuitive and seamless delivery service, allowing
+            you to focus on your core product and services. Without the
+            complication of coordinating an entire in-house delivery team, your
+            resources are free to be utilized where they are needed the most.
           </Box>
           <Box className={classes.circle} />
           <img src={qart1} alt="" className={classes.mobilefront} />
@@ -216,10 +217,10 @@ export default function ProjectsMobile(props) {
         >
           <Box className={classes.lzsubheading}>qartt partner</Box>
           <Box className={classes.lztext}>
-            By joining us you will make great money on your own schedule. And
-            you will be able to see how much you earned after each delivery and
-            exactly how your earnings were calculated.Your money is deposited on
-            a weekly basis with no delays.
+            By joining qartt, you can pick up a great side-hustle with flexible
+            hours and great pay. You will see your earnings in real-time, and
+            see precisely how they are calculated. Your money is deposited
+            weekly with zero delays.
           </Box>
           <Box className={classes.circle} />
           <img src={qart2} alt="" className={classes.mobilefront} />
@@ -245,10 +246,11 @@ export default function ProjectsMobile(props) {
         >
           <Box className={classes.subheading}>dashboard.earth</Box>
           <Box className={classes.text}>
-            Dashboard.Earth connects you to the actions necessary to thrive in
-            the face of climate change. We deliver meaningful actions you can
-            take towards making your city’s most audacious environmental goals a
-            reality.
+            Dashboard.Earth provides you with the actions needed to thrive in
+            the face of climate change and the steps required to achieve them.
+            The platform offers meaningful actions you can take to turn your
+            city’s most audacious environmental goals into reality. One act is
+            all it takes to start to turn the tides of climate change.
           </Box>
           <Box className={classes.circle} />
           <img src={dashimg} alt="" className={classes.mobilefront} />

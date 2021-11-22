@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       maxWidth: 320,
       fontSize: 16,
-      height: 70,
+      height: 90,
     },
   },
   text2: {
@@ -129,7 +129,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       maxWidth: 320,
       fontSize: 16,
-      height: 160,
+      height: 150,
     },
   },
   btn: {
@@ -169,16 +169,16 @@ export default function Card2() {
     <Container className={classes.root}>
       <Card className={classes.card}>
         <img src={clock} alt="" className={classes.img} />
-        <Box className={classes.heading}>Hourly Basis</Box>
+        <Box className={classes.heading}>Follow-Up</Box>
         <Box className={classes.line} />
         <Box className={classes.circle} />
         <Box className={classes.text}>
-          TechTiz offers a maintenance follow-up after launching your
-          application.
+          TechTiz offers a maintenance follow-up and premium QA services after
+          launching your application.
         </Box>
         <Box className={classes.text2}>
-          This reduces the operational hassle and removes any unprecedented bug
-          from the application.
+          This process reduces the operational hassle and removes any
+          unprecedented bug from the application.
         </Box>
         <Link to="contact">
           <Button className={classes.btn}>Let’s Begin</Button>

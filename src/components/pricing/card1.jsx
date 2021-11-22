@@ -182,11 +182,12 @@ export default function Card1() {
         <Box className={classes.line1} />
         <Box className={classes.circle1} />
         <Box className={classes.text1}>
-          Time is money. TechTiz saves your time and energy with its
-          collaborative, easy-to-follow onboarding process.
+          Time is money. TechTiz saves your time and energy with a thorough
+          preproduction process.
         </Box>
         <Box className={classes.text2}>
-          You come to us with an idea, we provide a quick consultation.
+          You come to us with an idea, and we provide a quick consultation to
+          map out the entire process according to your desired timeline.
         </Box>
         <Link to="contact">
           {" "}

@@ -66,8 +66,8 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     display: "flex",
-    maxWidth: 584,
-    height: 174,
+    maxWidth: 684,
+    height: 214,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -75,9 +75,13 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "143.4%",
     /* or 32px */
     color: "#000000",
+    [theme.breakpoints.up("lg")]: {
+      lineHeight: "125.4%",
+    },
     [theme.breakpoints.only("md")]: {
       fontSize: 18,
-      maxWidth: 578,
+      maxWidth: 600,
+      marginBottom: 30,
       height: 160,
     },
     [theme.breakpoints.down("sm")]: {
@@ -141,16 +145,18 @@ export const Projects = (props) => {
         <ProjectsMobile />
       ) : (
         <Container>
-          <Carousel effect="fade">
+          <Carousel effect="fade" autoPlay="flase">
             <Grid container className={classes.root}>
               {/* First Component */}
               <Grid item xs={6}>
                 <Box className={classes.heading}>Recent Projects Include</Box>
                 <Box className={classes.subheading}>qartt</Box>
                 <Box className={classes.text}>
-                  qartt will allow you to focus on your product, making life
-                  easier and saving you the hassle and expense of managing your
-                  own delivery team
+                  qartt provides an intuitive and seamless delivery service,
+                  allowing you to focus on your core product and services.
+                  Without the complication of coordinating an entire in-house
+                  delivery team, your resources are free to be utilized where
+                  they are needed the most.
                 </Box>
                 <Box
                   style={{
@@ -180,10 +186,10 @@ export const Projects = (props) => {
                 <Box className={classes.heading}>Recent Projects Include</Box>
                 <Box className={classes.subheading}>qartt partner</Box>
                 <Box className={classes.text}>
-                  By joining us you will make great money on your own schedule.
-                  And you will be able to see how much you earned after each
-                  delivery and exactly how your earnings were calculated.Your
-                  money is deposited on a weekly basis with no delays.
+                  By joining qartt, you can pick up a great side-hustle with
+                  flexible hours and great pay. You will see your earnings in
+                  real-time, and see precisely how they are calculated. Your
+                  money is deposited weekly with zero delays.
                 </Box>
                 <Box
                   style={{
@@ -213,10 +219,12 @@ export const Projects = (props) => {
                 <Box className={classes.heading}>Recent Projects Include</Box>
                 <Box className={classes.subheading}>dashboard.earth</Box>
                 <Box className={classes.text}>
-                  Dashboard.Earth connects you to the actions necessary to
-                  thrive in the face of climate change. We deliver meaningful
-                  actions you can take towards making your city’s most audacious
-                  environmental goals a reality.
+                  Dashboard.Earth provides you with the actions needed to thrive
+                  in the face of climate change and the steps required to
+                  achieve them. The platform offers meaningful actions you can
+                  take to turn your city’s most audacious environmental goals
+                  into reality. One act is all it takes to start to turn the
+                  tides of climate change.
                 </Box>
                 <Box
                   style={{

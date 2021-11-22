@@ -174,10 +174,10 @@ export default function IndustriesTab() {
 
   return (
     <Grid container className={classes.main}>
-      <Box className={classes.mainheading}>Industries We Work</Box>
+      <Box className={classes.mainheading}>Areas of Expertise</Box>
       <Box className={classes.subheading}>
-        We Help a diverse clientele build result-driven mobile apps for
-        different industries
+        We Help a diverse clientele build result-driven applications for various
+        industries
       </Box>
       <div className={classes.root}>
         <Tabs
@@ -199,10 +199,10 @@ export default function IndustriesTab() {
           <img src={food} alt="" className={classes.img} />
           <Box className={classes.heading}>Food</Box>
           <Box className={classes.text}>
-            We build intelligent and efficient apps for food services that
-            assist businesses in new and existing ventures. Our food apps
-            include order-tracking, user-friendly experiences, secure payment
-            options, and easy-to-manage interfaces.
+            We build intuitive and efficient apps for the food & beverage
+            industry that assist businesses in their new and ongoing ventures.
+            Our food apps features include order tracking, user-friendly
+            portals, secure payment options, and easy-to-manage interfaces.
           </Box>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
@@ -211,27 +211,27 @@ export default function IndustriesTab() {
           <Box className={classes.text}>
             Kickstart your eCommerce venture with a TechTiz custom mobile
             application. We assemble modern features, fast-loading pages, and
-            manageable interfaces into eCommerce applications to make them more
-            effective and appealing.
+            manageable interfaces into eCommerce applications to give them a leg
+            up in an ever-expanding competitive market.
           </Box>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
           <img src={social} alt="" className={classes.img} />
           <Box className={classes.heading}>Social</Box>
           <Box className={classes.text}>
-            Engagement and growth can make or break a social app. TechTiz
-            specializes in making matchless, captivating social apps that keep
-            the user invested in experiencing more.
+            Online learning has taken the world by storm. We help you join this
+            exciting space with a bespoke teaching app that is simple and sleek
+            and helps you teach the next generation from the comfort of your own
+            home.
           </Box>
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
           <img src={education} alt="" className={classes.img} />
           <Box className={classes.heading}>Education</Box>
           <Box className={classes.text}>
-            E-Learning has taken the world by storm. We help you join this
-            exciting space with a bespoke teaching app that is simple and sleek
-            and helps you teach the next generation from the comfort of your
-            home.
+            Engagement and growth can make or break a social app. TechTiz
+            specializes in making matchless, captivating social experiences that
+            keep users invested in one more scroll.
           </Box>
         </TabPanel>
         <TabPanel value={value} index={4} dir={theme.direction}>

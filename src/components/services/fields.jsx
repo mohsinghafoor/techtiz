@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("md")]: {
       marginTop: "5rem",
+      height: 50,
     },
   },
 }));

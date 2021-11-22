@@ -121,15 +121,16 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: 28,
-    // lineHeight: 47,
+    lineHeight: "30px",
     textAlign: "left",
     color: "#000000",
     [theme.breakpoints.up("lg")]: {
       height: 80,
       marginLeft: 10,
+      lineHeight: "35px",
     },
     [theme.breakpoints.only("md")]: {
-      height: 90,
+      height: 105,
       fontSize: 25,
       marginLeft: -20,
       maxWidth: 500,
@@ -148,8 +149,8 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: 10,
     },
     [theme.breakpoints.only("md")]: {
-      height: 290,
-      lineHeight: "40px",
+      height: 230,
+      lineHeight: "30px",
       fontSize: 18,
       maxWidth: 550,
       marginLeft: -20,
@@ -232,13 +233,13 @@ export default function ServicesTab() {
             }}
           >
             <Box className={classes.heading}>
-              Join the future of mobility with our expertise
+              As more customers move exclusively to mobile, we will ensure that
+              you’re there waiting for them.
             </Box>
             <Box className={classes.text}>
-              At techtiz , the best mobile app development company in Pakistan,
-              We provide the best-in-class Mobile Application Development
-              services using the latest tools, frameworks and pre-defined
-              methodology.
+              At Techtiz, a premier app development company, we provide
+              best-in-class App Development services using the latest tools,
+              frameworks, and pre-defined methodologies.
             </Box>
             <Box className={classes.fieldroot}>
               <Box style={{ height: 50 }}>
@@ -280,12 +281,12 @@ export default function ServicesTab() {
             }}
           >
             <Box className={classes.heading}>
-              What We Offer as Front End Team
+              Backing You At The Very First Click
             </Box>
             <Box className={classes.text}>
-              Get Services of our highly qualified front end development team to
-              create interative custom web and mobile applications to deliver
-              pixel perfect ,stunning user experience.
+              Utilize the performance of our highly qualified front-end
+              development team to create interactive custom web and mobile
+              applications to deliver a pixel-perfect, user-friendly experience.
             </Box>
             <Box className={classes.fieldroot} style={{ width: 300 }}>
               <Box style={{ height: 50 }}>
@@ -318,13 +319,13 @@ export default function ServicesTab() {
             }}
           >
             <Box className={classes.heading}>
-              Get Services of our Experienced Back End Team
+              Ensure Your Brand Gets The Bespoke Platform It Deserves
             </Box>
             <Box className={classes.text}>
-              Our Backend development team will help you to create interative
-              custom web and mobile applications backends to smoothly run your
-              online business , and to provide stunning user experience to both
-              Customer and Users.
+              Our Backend development team will help create intuitive custom web
+              and mobile application backends to operate your online business
+              smoothly while providing a captivating user experience for both
+              users and your team members alike.
             </Box>
             <Box className={classes.fieldroot} style={{ width: 300 }}>
               <Box style={{ height: 50 }}>

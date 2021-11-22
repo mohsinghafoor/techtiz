@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: 800,
     fontSize: 30,
-    lineHeight: "141.5%",
+    lineHeight: "131.5%",
     /* or 42 */
 
     textAlign: "center",
@@ -71,14 +71,13 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     width: 465,
-    height: 80,
+    height: 100,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: 18,
     lineHeight: "28px",
     textAlign: "center",
-
     color: "#1E3849",
     [theme.breakpoints.down("xs")]: {
       width: 350,
@@ -87,22 +86,23 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     width: 230,
-    height: 50,
+    height: 40,
     background: "#7FC6DC",
     boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
     borderRadius: 72,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 16,
+    fontSize: 14,
     lineHeight: "28px",
     textAlign: "center",
     marginTop: 10,
     color: "#FFFFFF",
     [theme.breakpoints.down("xs")]: {
       width: 200,
-      fontSize: 14,
-      height: 50,
+      fontSize: 12,
+      height: 35,
+      paddingTop: 10,
       marginTop: 20,
     },
   },
@@ -113,16 +113,19 @@ export default function MobileStack() {
 
   return (
     <Container className={classes.root}>
-      <Box className={classes.heading}>Full-Stack App Development Company​</Box>
+      <Box className={classes.heading}>
+        A Full-Stack Web and Mobile App Development Company​​
+      </Box>
       <Box className={classes.blue}></Box>
       <Box className={classes.yellow}></Box>
       <img src={img1} alt="" className={classes.img} />
       <Box className={classes.text}>
-        At Techtiz, we build applications that click! With extraordinarily
-        creative minds on board.
+        With a team full of extraordinarily creative minds, we bring a new
+        digital life to your business. Techtiz, building applications that
+        connect!
       </Box>
       <Link to="contact">
-        <Button className={classes.btn}> Let’s Connect Today </Button>
+        <Button className={classes.btn}>Connect with Us Today! </Button>
       </Link>
     </Container>
   );

@@ -112,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 14,
     },
     [theme.breakpoints.only("sm")]: {
-      maxWidth: 373,
+      width: 373,
       fontSize: 18,
       height: 70,
     },
@@ -138,7 +138,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 14,
     },
     [theme.breakpoints.only("sm")]: {
-      maxWidth: 373,
+      width: 373,
       fontSize: 18,
     },
     [theme.breakpoints.only("xs")]: {

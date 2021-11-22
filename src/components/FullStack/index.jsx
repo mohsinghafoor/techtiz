@@ -32,11 +32,11 @@ const useStyles = makeStyles((theme) => ({
   },
   full: {
     display: "flex",
-    height: 105,
+    height: 115,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
-    fontSize: 45,
+    fontSize: 40,
     lineHeight: "61px",
     // /* or 61px */
     maxWidth: 631,
@@ -44,28 +44,11 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("md")]: {
       maxWidth: 500,
       fontSize: 30,
-      lineHeight: "51px",
-      height: 85,
+      lineHeight: "41px",
+      height: 65,
     },
   },
-  app: {
-    display: "flex",
-    maxWidth: 631,
-    height: 89,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 800,
-    fontSize: 45,
-    lineHeight: "50px",
-    /* or 50px */
-    color: "#3B3E56",
-    marginTop: 20,
-    [theme.breakpoints.only("md")]: {
-      maxWidth: 400,
-      fontSize: 30,
-      height: 70,
-    },
-  },
+
   techtiz: {
     display: "flex",
     maxWidth: 588,
@@ -73,20 +56,20 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 30,
-    lineHeight: "47px",
+    fontSize: 28,
+    lineHeight: "35px",
     color: "#1E3849",
     marginTop: 30,
     [theme.breakpoints.only("md")]: {
       maxWidth: 450,
-      fontSize: 24,
-      height: 100,
-      lineHeight: "37px",
+      fontSize: 22,
+      height: 120,
+      lineHeight: "30px",
     },
   },
   btn: {
-    width: 200,
-    height: 56,
+    width: 240,
+    height: 50,
     marginTop: 30,
     background: "#7FC6DC",
     boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
@@ -102,9 +85,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
 
     [theme.breakpoints.only("md")]: {
-      width: 156,
-      height: 45,
-      fontSize: 10,
+      width: 196,
+      height: 42,
+      fontSize: 12,
     },
   },
 
@@ -163,15 +146,16 @@ export default function FullStack() {
         <Grid container className={classes.main}>
           <Grid item xs={12} md={6} className={classes.dflex1}>
             <Box className={classes.full}>
-              Full-Stack Web/App Development Company​
+              A Full-Stack Web and Mobile App Development Company​
             </Box>
             {/* <Box className={classes.app}>Web/App Development Company​</Box> */}
             <Box className={classes.techtiz}>
-              At Techtiz, we build applications that click! With extraordinarily
-              creative minds on board.
+              With a team full of extraordinarily creative minds, we bring a new
+              digital life to your business. Techtiz, building applications that
+              connect!
             </Box>
             <Link to="contact">
-              <Button className={classes.btn}> Let’s Connect Today </Button>
+              <Button className={classes.btn}> Connect with Us Today! </Button>
             </Link>
           </Grid>
           <Grid
