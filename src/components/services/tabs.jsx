@@ -148,7 +148,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#000000",
     [theme.breakpoints.up("lg")]: {
-      height: 110,
+      height: 120,
       marginLeft: 10,
       lineHeight: "35px",
     },
@@ -162,7 +162,7 @@ const useStyles = makeStyles((theme) => ({
   text: {
     display: "flex",
     maxWidth: 600,
-    height: 200,
+    height: 190,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
