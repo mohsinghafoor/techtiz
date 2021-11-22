@@ -5,7 +5,7 @@ import FullStack from "./components/FullStack";
 import Industries from "./components/industries";
 import Pricing from "./components/pricing";
 import Process from "./components/process";
-import Services from "./components/platform";
+import Services from "./components/services";
 import ResponsiveFooter from "./components/Footer";
 import { Container } from "@material-ui/core";
 import Blogs from "./components/blogs";
