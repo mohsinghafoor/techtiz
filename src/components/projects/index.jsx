@@ -1,13 +1,26 @@
 import React from "react";
+import Carousel from "react-material-ui-carousel";
+import { Grid, Box, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Box } from "@material-ui/core";
 import flutter from "../../assets/flutter.png";
 import android from "../../assets/android.png";
-import qrat from "../../assets/qrat.png";
-import mobilefront from "../../assets/mobilefront.png";
-import mobileback from "../../assets/mobileback.png";
-
+import react from "../../assets/react.png";
+import ios from "../../assets/apple.png";
+import qart2 from "../../assets/qart2.png";
+import qart1 from "../../assets/qart1.png";
+import dashimg from "../../assets/dashboard3.png";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
+import ProjectsMobile from "./accordian";
 const useStyles = makeStyles((theme) => ({
+  main: {
+    marginTop: -10,
+    padding: 30,
+  },
+  contentStyle: {
+    height: "660px",
+    background: "grey",
+  },
   root: {
     display: "flex",
     justifyContent: "center",
@@ -21,6 +34,15 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 55,
     lineHeight: "64px",
     color: "#3B3E56",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 45,
+      lineHeight: "52px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 35,
+      lineHeight: "40px",
+      height: 80,
+    },
   },
   subheading: {
     display: "flex",
@@ -32,8 +54,15 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 800,
     fontSize: 30,
     lineHeight: "50px",
-
     color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 24,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 20,
+      height: 50,
+      lineHeight: "40px",
+    },
   },
   text: {
     display: "flex",
@@ -45,10 +74,18 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 22,
     lineHeight: "143.4%",
     /* or 32px */
-
     color: "#000000",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 18,
+      maxWidth: 578,
+      height: 160,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 16,
+      height: 190,
+    },
   },
-  androidimg: {
+  reactimg: {
     width: 50.56,
     height: 60.82,
   },
@@ -60,12 +97,11 @@ const useStyles = makeStyles((theme) => ({
   androidtext: {
     width: 80.6,
     height: 13.19,
-
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
     fontSize: 18,
-    lineHeight: "30px",
+    lineHeight: "24px",
 
     color: "#000000",
   },
@@ -81,106 +117,131 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
   },
   mobilefront: {
-    position: "absolute",
-    width: 242,
+    width: 442,
     height: 524,
-
     borderRadius: 28,
-  },
-  mobileback: {
-    width: 222,
-    height: 485,
-    position: "absolute",
-    borderRadius: 30,
-    marginLeft: 170,
-    marginTop: 20,
-  },
-  circle: {
-    width: 178,
-    height: 173,
-    position: "absolute",
-    borderRadius: "20rem",
-    background: "#FFFFFF",
-    boxShadow: "5px 4px 8px -2px rgba(0, 0, 0, 0.25)",
-    marginLeft: "-6rem",
-    marginTop: 20,
-  },
-  qrat: {
-    width: 160,
-    height: 161,
-    position: "absolute",
-    borderRadius: "10rem",
-    marginLeft: -85,
-    marginTop: 25,
-  },
-  yellowdot: {
-    width: 26,
-    height: 26,
-    position: "absolute",
-    borderRadius: "20rem",
-    background: "#FFC560",
-    marginTop: "40rem",
-    marginLeft: -220,
-  },
-  graydot1: {
-    width: 26,
-    height: 26,
-    position: "absolute",
-    borderRadius: "20rem",
-    background: "#C4C4C4",
-    marginTop: "40rem",
-    marginLeft: -170,
-  },
-  graydot2: {
-    width: 26,
-    height: 26,
-    position: "absolute",
-    borderRadius: "20rem",
-    background: "#C4C4C4",
-    marginTop: "40rem",
-    marginLeft: -120,
+    [theme.breakpoints.only("md")]: {
+      width: 394,
+      height: 490,
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: 314,
+      height: 430,
+      marginLeft: -30,
+    },
   },
 }));
-
-export default function Projects() {
+export const Projects = (props) => {
   const classes = useStyles();
-
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
   return (
-    <Grid className={classes.root} container>
-      <Grid item lg={6}>
-        <Box className={classes.heading}>Recent Projects Include</Box>
-        <Box className={classes.subheading}>Packing has never been easier.</Box>
-        <Box className={classes.text}>
-          Thank you again for the successful launch of the 3M and Converse
-          applications. Your dedication, hard-work, flexibility, patience and
-          professionalism is recognized and appreciated.
-        </Box>
-        <Box
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            width: 170,
-          }}
-        >
-          <Box>
-            <img src={android} alt="" className={classes.androidimg} />
-            <Box className={classes.androidtext}>Android</Box>
-          </Box>
-          <Box>
-            <img src={flutter} alt="" className={classes.flutterimg} />
-            <Box className={classes.fluttertext}>Flutter</Box>
-          </Box>
-        </Box>
-      </Grid>
-      <Grid item lg={4}>
-        <img src={mobilefront} alt="" className={classes.mobilefront} />
-        <img src={mobileback} alt="" className={classes.mobileback} />
-        <Box className={classes.circle}></Box>
-        <img src={qrat} alt="" className={classes.qrat} />
-        <Box className={classes.yellowdot}></Box>
-        <Box className={classes.graydot1}></Box>
-        <Box className={classes.graydot2}></Box>
-      </Grid>
-    </Grid>
+    <div className={classes.main} id="portfolio">
+      {isMobile ? (
+        <ProjectsMobile />
+      ) : (
+        <Container>
+          <Carousel effect="fade">
+            <Grid container className={classes.root}>
+              {/* First Component */}
+              <Grid item xs={6}>
+                <Box className={classes.heading}>Recent Projects Include</Box>
+                <Box className={classes.subheading}>qartt</Box>
+                <Box className={classes.text}>
+                  qartt will allow you to focus on your product, making life
+                  easier and saving you the hassle and expense of managing your
+                  own delivery team
+                </Box>
+                <Box
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: 170,
+                  }}
+                >
+                  <Box>
+                    <img src={flutter} alt="" className={classes.flutterimg} />
+                    <Box className={classes.fluttertext}>Flutter</Box>
+                  </Box>
+                </Box>
+              </Grid>
+              <Grid
+                item
+                xs={6}
+                style={{ display: "flex", justifyContent: "center" }}
+              >
+                <img src={qart1} alt="" className={classes.mobilefront} />
+              </Grid>
+            </Grid>
+
+            {/* Second Component */}
+            <Grid container className={classes.root}>
+              <Grid item xs={6}>
+                <Box className={classes.heading}>Recent Projects Include</Box>
+                <Box className={classes.subheading}>qartt partner</Box>
+                <Box className={classes.text}>
+                  By joining us you will make great money on your own schedule.
+                  And you will be able to see how much you earned after each
+                  delivery and exactly how your earnings were calculated.Your
+                  money is deposited on a weekly basis with no delays.
+                </Box>
+                <Box
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: 170,
+                  }}
+                >
+                  <Box>
+                    <img src={flutter} alt="" className={classes.flutterimg} />
+                    <Box className={classes.fluttertext}>Flutter</Box>
+                  </Box>
+                </Box>
+              </Grid>
+              <Grid
+                item
+                xs={6}
+                style={{ display: "flex", justifyContent: "center" }}
+              >
+                <img src={qart2} alt="" className={classes.mobilefront} />
+              </Grid>
+            </Grid>
+
+            {/* Third Component */}
+            <Grid container className={classes.root}>
+              <Grid item xs={6}>
+                <Box className={classes.heading}>Recent Projects Include</Box>
+                <Box className={classes.subheading}>dashboard.earth</Box>
+                <Box className={classes.text}>
+                  Dashboard.Earth connects you to the actions necessary to
+                  thrive in the face of climate change. We deliver meaningful
+                  actions you can take towards making your city’s most audacious
+                  environmental goals a reality.
+                </Box>
+                <Box
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: 170,
+                  }}
+                >
+                  <Box>
+                    <img src={react} alt="" className={classes.flutterimg} />
+                    <Box className={classes.androidtext}>React Native</Box>
+                  </Box>
+                </Box>
+              </Grid>
+              <Grid
+                item
+                xs={6}
+                style={{ display: "flex", justifyContent: "center" }}
+              >
+                <img src={dashimg} alt="" className={classes.mobilefront} />
+              </Grid>
+            </Grid>
+          </Carousel>
+        </Container>
+      )}
+    </div>
   );
-}
+};

@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, Container } from "@material-ui/core";
+import { Box, Container, Grid } from "@material-ui/core";
 
 import Card1 from "./card1";
 import Card2 from "./card2";
@@ -8,12 +8,15 @@ import Card3 from "./card3";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    marginTop: 200,
-  },
-  heading: {
     display: "flex",
     justifyContent: "center",
+    marginTop: 100,
+    [theme.breakpoints.up("lg")]: {
+      marginTop: 200,
+    },
+  },
+  heading: {
+    textAlign: "center",
     height: 55,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -21,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 55,
     lineHeight: "92px",
     color: "#3B3E56",
+    [theme.breakpoints.down("sm")]: { fontSize: 45, lineHeight: "70px" },
   },
 }));
 
@@ -28,11 +32,25 @@ export default function Pricing() {
   const classes = useStyles();
 
   return (
-    <Container className={classes.root}>
-      <Box className={classes.heading}>Our Pricing model</Box>
-      <Card1 />
-      <Card2 />
-      <Card3 />
+    <Container>
+      <Grid container className={classes.root}>
+        <Grid
+          item
+          xs={12}
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <Box className={classes.heading}>Our Pricing Model</Box>
+        </Grid>
+        <Grid style={{ display: "flex", justifyContent: "center" }} item md={3}>
+          <Card1 />
+        </Grid>
+        <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
+          <Card3 />
+        </Grid>
+        <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
+          <Card2 />
+        </Grid>
+      </Grid>
     </Container>
   );
 }

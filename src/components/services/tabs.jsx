@@ -1,16 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
+import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import Typography from "@material-ui/core/Typography";
-import { Box, Container } from "@material-ui/core";
-import TabValue from "./tabvalue";
-import MobileSide from "./mobilepic";
-import FrontEnd from "./frontend";
-import BackEnd from "./backend";
-import Quality from "./quality";
+import { Typography, Grid, Box } from "@material-ui/core";
+import pic1 from "../../assets/backend.png";
+import pic2 from "../../assets/what.png";
+import pic3 from "../../assets/new.jpg";
+import pic4 from "../../assets/quality1.png";
+import Fields from "./fields";
+import apple from "../../assets/apple.png";
+import react from "../../assets/react.png";
+import angular from "../../assets/angular.png";
+import android from "../../assets/android.png";
+import flutter from "../../assets/flutter.png";
+import node from "../../assets/node1.png";
+import html from "../../assets/html gray.png";
+import ruby from "../../assets/ruby.png";
+import css from "../../assets/css3.svg";
+import exp from "../../assets/exp.png";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -19,8 +27,8 @@ function TabPanel(props) {
     <div
       role="tabpanel"
       hidden={value !== index}
-      id={`full-width-tabpanel-${index}`}
-      aria-labelledby={`full-width-tab-${index}`}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
       {value === index && (
@@ -32,97 +40,355 @@ function TabPanel(props) {
   );
 }
 
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
+};
+
 function a11yProps(index) {
   return {
-    id: `full-width-tab-${index}`,
-    "aria-controls": `full-width-tabpanel-${index}`,
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
   };
 }
 
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
+    [theme.breakpoints.only("md")]: {},
   },
-  indicator: {
-    width: 4,
-    height: 3,
-    left: 56,
-    background: "yellow",
-    color: "black",
+  fieldroot: {
+    display: "flex",
+    justifyContent: "space-between",
+    flexGrow: 1,
+    maxWidth: 400,
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: 10,
+    },
+    [theme.breakpoints.down("md")]: {
+      marginTop: "-5rem",
+    },
+  },
+  apple: {
+    width: 55.09,
+    height: 58.82,
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 30,
+    },
+  },
+
+  applet: {
+    width: 74,
+    height: 51,
+    fontFamily: "Montserrat",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: 17,
+    lineHeight: "22px",
+    color: "#000000",
+    [theme.breakpoints.down("md")]: {
+      fontSize: 16,
+      width: 65,
+    },
   },
   name: {
+    display: "flex",
+    justifyContent: "space-between",
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    textAlign: "left",
+    marginLeft: 35,
+    height: 94,
+    fontWeight: 300,
+    fontSize: 22,
+    lineHeight: "47px",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 24,
+      marginLeft: 0,
+    },
+  },
+  indicator: {
+    height: 3,
+    background: "#FFC107",
+    color: "black",
+  },
+  heading: {
+    display: "flex",
+    maxWidth: 700,
+    height: 47,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 30,
+    fontSize: 28,
+    // lineHeight: 47,
     textAlign: "left",
-    lineHeight: "47px",
+    color: "#000000",
+    [theme.breakpoints.up("lg")]: {
+      height: 80,
+      marginLeft: 10,
+    },
+    [theme.breakpoints.only("md")]: {
+      height: 90,
+      fontSize: 25,
+      marginLeft: -20,
+      maxWidth: 500,
+    },
+  },
+  text: {
+    display: "flex",
+    maxWidth: 600,
+    height: 200,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 22,
+    color: "#000000",
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: 10,
+    },
+    [theme.breakpoints.only("md")]: {
+      height: 290,
+      lineHeight: "40px",
+      fontSize: 18,
+      maxWidth: 550,
+      marginLeft: -20,
+    },
+  },
+  img: {
+    width: 453.92,
+    height: 340.62,
+    marginTop: 30,
+    borderRadius: 10,
+    [theme.breakpoints.only("md")]: {
+      width: 350,
+      height: 300,
+      marginLeft: 20,
+      marginTop: 30,
+    },
+  },
+  backimg: {
+    width: 400.92,
+    height: 340.62,
+    marginTop: 30,
+    borderRadius: 10,
+    [theme.breakpoints.only("md")]: {
+      width: 340,
+      height: 220,
+      marginLeft: 20,
+    },
   },
 }));
+
 export default function ServicesTab() {
   const classes = useStyles();
-  const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
-  const handleChangeIndex = (index) => {
-    setValue(index);
-  };
-
   return (
-    <Container className={classes.root}>
+    <div className={classes.root}>
       <Tabs
         value={value}
         onChange={handleChange}
-        indicatorColor="primary"
-        textColor="primary"
         variant="fullWidth"
-        aria-label="full width tabs example"
         classes={{
           indicator: classes.indicator,
         }}
+        aria-label="simple tabs example"
       >
         <Tab
           label="Mobile Development"
+          className={classes.name}
           {...a11yProps(0)}
-          className={classes.name}
         />
         <Tab
-          label="Front-end Development"
+          label="Front-End development"
+          className={classes.name}
           {...a11yProps(1)}
-          className={classes.name}
         />
         <Tab
-          label="Back-end Development"
+          label="Back-End development"
+          className={classes.name}
           {...a11yProps(2)}
-          className={classes.name}
         />
         <Tab
-          label="Quality Assurance"
-          {...a11yProps(3)}
+          label="Quality- Assurance"
           className={classes.name}
+          {...a11yProps(3)}
         />
       </Tabs>
-      <TabPanel
-        value={value}
-        index={0}
-        dir={theme.direction}
-        className={classes.name}
-      >
-        <MobileSide />
+
+      <TabPanel value={value} index={0}>
+        <Grid container>
+          <Grid
+            item
+            md={7}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <Box className={classes.heading}>
+              Join the future of mobility with our expertise
+            </Box>
+            <Box className={classes.text}>
+              At techtiz , the best mobile app development company in Pakistan,
+              We provide the best-in-class Mobile Application Development
+              services using the latest tools, frameworks and pre-defined
+              methodology.
+            </Box>
+            <Box className={classes.fieldroot}>
+              <Box style={{ height: 50 }}>
+                <img src={react} alt="" className={classes.apple} />
+                <Box className={classes.applet}>React Native</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={flutter} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Flutter</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={apple} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Apple</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={android} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Android</Box>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            item
+            md={5}
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <img src={pic3} alt="" className={classes.img} />
+          </Grid>
+        </Grid>
       </TabPanel>
-      <TabPanel value={value} index={1} dir={theme.direction}>
-        <FrontEnd />
+      <TabPanel value={value} index={1}>
+        <Grid container>
+          <Grid
+            item
+            md={7}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <Box className={classes.heading}>
+              What We Offer as Front End Team
+            </Box>
+            <Box className={classes.text}>
+              Get Services of our highly qualified front end development team to
+              create interative custom web and mobile applications to deliver
+              pixel perfect ,stunning user experience.
+            </Box>
+            <Box className={classes.fieldroot} style={{ width: 300 }}>
+              <Box style={{ height: 50 }}>
+                <img src={react} alt="" className={classes.apple} />
+                <Box className={classes.applet}>React js</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={html} alt="" className={classes.apple} />
+                <Box className={classes.applet}>HTML5</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={css} alt="" className={classes.apple} />
+                <Box className={classes.applet}>CCS3</Box>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item md={5} style={{ display: "flex", alignItems: "center" }}>
+            <img src={pic2} alt="" className={classes.img} />
+          </Grid>
+        </Grid>
       </TabPanel>
-      <TabPanel value={value} index={2} dir={theme.direction}>
-        <BackEnd />
+      <TabPanel value={value} index={2}>
+        <Grid container>
+          <Grid
+            item
+            md={7}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <Box className={classes.heading}>
+              Get Services of our Experienced Back End Team
+            </Box>
+            <Box className={classes.text}>
+              Our Backend development team will help you to create interative
+              custom web and mobile applications backends to smoothly run your
+              online business , and to provide stunning user experience to both
+              Customer and Users.
+            </Box>
+            <Box className={classes.fieldroot} style={{ width: 300 }}>
+              <Box style={{ height: 50 }}>
+                <img src={ruby} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Ruby Js</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={node} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Node js</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={exp} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Firebase</Box>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item md={5} style={{ display: "flex", alignItems: "center" }}>
+            <img src={pic1} alt="" className={classes.backimg} />
+          </Grid>
+        </Grid>
       </TabPanel>
-      <TabPanel value={value} index={3} dir={theme.direction}>
-        <Quality />
+      <TabPanel value={value} index={3}>
+        <Grid container>
+          <Grid
+            item
+            md={7}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <Box className={classes.heading}>
+              Satsifaction of Client is Our First Priority
+            </Box>
+            <Box className={classes.text}>
+              We have compiled a team of highly professional and talented QA
+              engineers who reshapes project processes to ensure that our
+              clients enjoy a competitive edge in the customer experience
+              market! With our years of expertise and credibility, we have
+              crafted a client-centric methodology that aligns us with our
+              customer’s goals efficiently. Our quality assurance services are
+              fast, scalable, and adaptive towards our client’s needs!
+            </Box>
+            {/* <Box className={classes.fieldroot} style={{ width: 300 }}>
+              <Box style={{ height: 50 }}>
+                <img src={selinium} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Selenium</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={katolon} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Katalon</Box>
+              </Box>
+              <Box style={{ height: 50 }}>
+                <img src={appium} alt="" className={classes.apple} />
+                <Box className={classes.applet}>Appium</Box>
+              </Box>
+            </Box> */}
+          </Grid>
+          <Grid item md={5} style={{ display: "flex", alignItems: "center" }}>
+            <img src={pic4} alt="" className={classes.img} />
+          </Grid>
+        </Grid>
       </TabPanel>
-    </Container>
+      <Fields />
+    </div>
   );
 }
