@@ -15,13 +15,15 @@ import { Helmet } from "react-helmet";
 
 function App() {
   return (
-    <Container>
-      <Header />
-      <FullStack />
-      <Services />
-      <Process />
-      <Projects />
-      <Industries />
+    <div>
+      <Container>
+        <Header />
+        <FullStack />
+        <Services />
+        <Process />
+        <Projects />
+        <Industries />
+      </Container>
       <div
         style={{
           background:
@@ -32,9 +34,11 @@ function App() {
         <Pricing />
       </div>
       {/* <Blogs /> */}
-      <MyContactUs />
-      <ResponsiveFooter />
-    </Container>
+      <Container style={{ marginTop: 550 }}>
+        <MyContactUs />
+        <ResponsiveFooter />
+      </Container>
+    </div>
   );
 }
 

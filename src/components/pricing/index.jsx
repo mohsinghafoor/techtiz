@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, Grid } from "@material-ui/core";
+import { Box, Container, Grid } from "@material-ui/core";
 
 import Card1 from "./card1";
 import Card2 from "./card2";
@@ -32,19 +32,25 @@ export default function Pricing() {
   const classes = useStyles();
 
   return (
-    <Grid container className={classes.root}>
-      <Grid item xs={12} style={{ display: "flex", justifyContent: "center" }}>
-        <Box className={classes.heading}>Our Pricing Model</Box>
+    <Container>
+      <Grid container className={classes.root}>
+        <Grid
+          item
+          xs={12}
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <Box className={classes.heading}>Our Pricing Model</Box>
+        </Grid>
+        <Grid style={{ display: "flex", justifyContent: "center" }} item md={3}>
+          <Card1 />
+        </Grid>
+        <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
+          <Card3 />
+        </Grid>
+        <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
+          <Card2 />
+        </Grid>
       </Grid>
-      <Grid style={{ display: "flex", justifyContent: "center" }} item md={3}>
-        <Card1 />
-      </Grid>
-      <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
-        <Card3 />
-      </Grid>
-      <Grid item md={3} style={{ display: "flex", justifyContent: "center" }}>
-        <Card2 />
-      </Grid>
-    </Grid>
+    </Container>
   );
 }
