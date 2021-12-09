@@ -1,5 +1,5 @@
 {
-  "name": "material-ui",
+  "name": "techtiz",
   "homepage": "https://techtiz.com/",
   "version": "0.1.0",
   "private": true,
@@ -19,15 +19,10 @@
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-<<<<<<< HEAD
     "react-material-ui-carousel": "^2.3.1",
     "react-scripts": "^4.0.3",
-=======
     "react-helmet": "^6.1.0",
-    "react-material-ui-carousel": "^2.3.5",
-    "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
->>>>>>> mohsinsbranch
     "styled-components": "^5.3.1",
     "web-vitals": "^1.1.2"
   },
